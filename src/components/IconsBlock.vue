@@ -1,9 +1,16 @@
 <template>
-  <div class="flex flex-col items-start">
+  <div class="flex flex-col items-start w-56">
     <a :href="'mailto:' + email" target="_blank">
       <div class="block mt-4">
         <font-awesome-icon :icon="['fas', 'envelope']" class="text-2xl w-8" />
         <span class="ml-2"> {{ email }} </span>
+      </div>
+    </a>
+
+    <a :href="'https://www.linkedin.com/' + linkedin" target="_blank">
+      <div class="block mt-4">
+        <font-awesome-icon :icon="['fab', 'linkedin']" class="text-2xl w-8" />
+        <span class="ml-2"> {{ linkedin }} </span>
       </div>
     </a>
 
@@ -14,10 +21,10 @@
       </div>
     </a>
 
-    <a :href="'https://www.linkedin.com/' + linkedin" target="_blank">
+    <a :href="'https://www.' + website" target="_blank">
       <div class="block mt-4">
-        <font-awesome-icon :icon="['fab', 'linkedin']" class="text-2xl w-8" />
-        <span class="ml-2"> {{ linkedin }} </span>
+        <font-awesome-icon :icon="['fas', 'globe']" class="text-2xl w-8" />
+        <span class="ml-2"> {{ website }} </span>
       </div>
     </a>
 
@@ -41,6 +48,7 @@ export default {
       email: "qdr2104@columbia.edu",
       linkedin: "in/quintenroets",
       github: "quintenroets",
+      website: "quintenroets.com",
     };
   },
 };

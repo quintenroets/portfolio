@@ -2,7 +2,7 @@
   <div id="app" class="flex">
     <SidebarComponent class="w-1/5" />
     <div class="ml-auto w-4/5">
-      <nav class="space-x-20">
+      <nav class="space-x-20 overflow-x-auto">
         <router-link to="/">Home</router-link>
         <router-link to="/about">About</router-link>
         <router-link to="/">My mission</router-link>
@@ -36,6 +36,7 @@ nav a.router-link-exact-active {
   color: #222222;
   font-weight: bold;
 }
+
 body {
   background-color: #f6f9fc;
 }
