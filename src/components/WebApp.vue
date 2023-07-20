@@ -1,6 +1,6 @@
 <template>
   <div class="flex">
-    <SidebarComponent class="w-1/5 border-r fixed min-h-screen" />
+    <SidebarComponent class="w-1/5 border-r fixed min-h-screen min-w-fit" />
     <div class="ml-auto w-4/5 max-h-screen">
       <RouterBar />
     </div>

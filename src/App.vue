@@ -27,6 +27,11 @@ nav a.router-link-exact-active {
   font-weight: bold;
 }
 
+h1 {
+  font-weight: bold !important;
+  font-size: 2em !important;
+}
+
 body {
   background-color: #f6f9fc;
 }

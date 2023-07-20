@@ -3,9 +3,8 @@
     <nav class="space-x-20 whitespace-nowrap flex justify-center min-w-max">
       <router-link to="/">Home</router-link>
       <router-link to="/about">About</router-link>
-      <router-link to="/my mission">My mission</router-link>
-      <router-link to="/">Projects</router-link>
-      <router-link to="/">Open source</router-link>
+      <router-link to="/mission">Mission</router-link>
+      <router-link to="/projects">Projects</router-link>
       <router-link to="/resume">Resume</router-link>
     </nav>
   </div>
