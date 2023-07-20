@@ -1,17 +1,7 @@
 <template>
-  <div id="app" class="flex">
-    <SidebarComponent class="w-1/5" />
-    <div class="ml-auto w-4/5">
-      <nav class="space-x-20 overflow-x-auto">
-        <router-link to="/">Home</router-link>
-        <router-link to="/about">About</router-link>
-        <router-link to="/">My mission</router-link>
-        <router-link to="/">Projects</router-link>
-        <router-link to="/">Open source</router-link>
-        <router-link to="/resume">Resume</router-link>
-      </nav>
-      <router-view />
-    </div>
+  <div id="app">
+    <MobileApp v-if="ratio < 1" />
+    <WebApp v-else />
   </div>
 </template>
 
@@ -42,5 +32,9 @@ body {
 }
 </style>
 <script setup>
-import SidebarComponent from "./components/Sidebar.vue";
+import { ref } from "vue";
+
+const ratio = ref(window.innerWidth / window.innerHeight);
+import WebApp from "./components/WebApp.vue";
+import MobileApp from "./components/MobileApp.vue";
 </script>

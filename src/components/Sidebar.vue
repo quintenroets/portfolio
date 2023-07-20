@@ -1,14 +1,11 @@
 <template>
-  <div
-    class="min-h-screen border-r p-4 fixed overflow-x-auto"
-    style="background-color: #ebeef3"
-  >
+  <div class="p-4" style="background-color: #ebeef3">
     <img
       src="../assets/profile.jpeg"
-      class="rounded-full w-3/5 mx-auto mt-4 mb-4"
+      class="rounded-full w-48 h-48 mx-auto mt-4 mb-4"
       alt="Profile picture"
     />
-    <h1 class="text-2xl text-center my-4 font-bold">
+    <h1 class="text-2xl text-center my-4 font-bold w-full">
       {{ name }}
     </h1>
     <IconsBlock class="mx-auto" />
