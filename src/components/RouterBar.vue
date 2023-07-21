@@ -1,16 +1,19 @@
 <template>
   <div ref="navigation" class="overflow-x-auto">
-    <nav class="space-x-20 whitespace-nowrap flex justify-center min-w-max">
-      <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
-      <router-link to="/mission">Mission</router-link>
-      <router-link to="/projects">Projects</router-link>
-      <router-link to="/resume">Resume</router-link>
-    </nav>
+    <div class="flex justify-center">
+      <nav class="whitespace-nowrap flex justify-between w-full max-w-2xl px-4">
+        <router-link to="/">Home</router-link>
+        <router-link to="/about">About</router-link>
+        <router-link to="/mission">Mission</router-link>
+        <router-link to="/projects">Projects</router-link>
+        <router-link to="/resume">Resume</router-link>
+      </nav>
+    </div>
   </div>
+  <hr class="mb-4" />
   <div
     class="min-w-fit overflow-y-auto"
-    style="max-height: calc(100vh - 100px); min-height: calc(100vh - 100px)"
+    style="max-height: calc(100vh - 100px); min-height: calc(100vh - 105px)"
   >
     <router-view class="mb-10" v-if="ratio < 1" />
     <router-view v-else />
