@@ -9,10 +9,11 @@
     </nav>
   </div>
   <div
-    class="max-h-screen min-w-fit overflow-y-auto"
-    style="max-height: calc(100vh - 100px)"
+    class="min-w-fit overflow-y-auto"
+    style="max-height: calc(100vh - 100px); min-height: calc(100vh - 100px)"
   >
-    <router-view />
+    <router-view class="mb-10" v-if="ratio < 1" />
+    <router-view v-else />
   </div>
 </template>
 
@@ -34,7 +35,16 @@
 }
 </style>
 <script>
+import { ref } from "vue";
+
 export default {
   name: "RouterBar",
+
+  setup() {
+    const ratio = ref(window.innerWidth / window.innerHeight);
+    return {
+      ratio,
+    };
+  },
 };
 </script>

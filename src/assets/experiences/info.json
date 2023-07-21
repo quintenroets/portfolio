@@ -1,0 +1,50 @@
+[
+  {
+    "company": "Tekst.ai • Internship",
+    "url": "https://www.tekst.ai/",
+    "logo": "Tekst.ai.jpeg",
+    "duration": "Jun 2023 - Jul 2023 • 2 months",
+    "function": "NLP Research Engineer",
+    "location": "Ghent, Belgium",
+    "bullets": [
+      "Reduced data labeling time by 85% by developing a web interface labeling tool with pre-annotated suggestions based on Machine Learning predictions",
+      "Developed and benchmarked over 20 distinct NLP pipelines by conducting comparisons based on criteria such as speed, accuracy, efficiency, and privacy preservation",
+      "Managed a broad spectrum of datasets to conduct rigorous comparisons, including the curation of four customer-specific datasets, utilization of two open-source datasets, and generation of seven synthetic datasets",
+      "Optimized evaluation experiments by developing a parallelized, cloud-based approach, complemented by an innovative caching scheme, reducing the duration of a full experiment from 8 hours to less than 3 minutes",
+      "Deployed an enhanced email parser in production, leading to an average accuracy gain of 0.5% across all customer bases",
+      "Contributed to a $90K+ business development deal by presenting and demonstrating system capabilities"
+    ]
+  },
+  {
+    "company": "Robovision • Internship",
+    "url": "https://robovision.ai/",
+    "logo": "Robovision.jpeg",
+    "duration": "Jun 2021 - Jul 2021 • 2 months",
+    "function": "Deep Learning Research Intern",
+    "location": "Ghent, Belgium",
+    "bullets": [
+      "Investigated 11 approaches to detect performance issues in neural networks deployed in production",
+      "Delivered novel method detecting inference mistakes and distribution shifts on all production datasets with an overhead of less than 1% by combining 3 different techniques",
+      "Collaborated within Algorithms Team to improve existing algorithms and finish 4 software engineering issues",
+      "Introduced new custom debugging approach, making team members 50% more efficient in solving new issues",
+      "Enhanced optimization scheme of 2 production models, resulting in performance increases at 20+ customers",
+      "Increased stability and performance of most important classifier algorithm in company by 10%",
+      "Documented 3 solutions for general problems during existing codebase setup, optimizing future employee onboarding process"
+    ]
+  },
+  {
+    "company": "ST Engineering iDirect • Internship",
+    "url": "https://www.stengg.com/",
+    "logo": "Stengineering.jpeg",
+    "duration": "Jun 2020 - Jul 2020 • 2 months",
+    "function": "Software Developer",
+    "location": "Sint-Niklaas, Belgium",
+    "bullets": [
+      "Developed end-to-end testing framework for satellite traffic in Python and Robot Framework",
+      "Created package evaluating and summarizing performance of complete Dialog system with one single command",
+      "Presented results and discussed software architecture in daily meetings with international team of 15 people",
+      "Created 3 integration tests for modem configuration user interface, ensuring reliable software at 120+ customers",
+      "Compared and summarized testing framework support and learning curve for 7 different IDE’s in Confluence, optimizing development speed for all employees"
+    ]
+  }
+]

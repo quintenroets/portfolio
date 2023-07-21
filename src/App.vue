@@ -32,6 +32,11 @@ h1 {
   font-size: 2em !important;
 }
 
+p {
+  margin-bottom: 1em !important;
+  font-size: 17px !important;
+}
+
 body {
   background-color: #f6f9fc;
 }
