@@ -10,9 +10,10 @@
       </a>
       <div class="flex flex-col">
         <p style="font-weight: bold">{{ info.function }}</p>
-        <a :href="info.url">
-          <p>{{ info.company }}</p>
-        </a>
+        <p>
+          <a :href="info.url" style="color: #2c3e50">{{ info.company }} </a>
+          • {{ info.type }}
+        </p>
 
         <p>{{ info.duration }}</p>
         <p>{{ info.location }}</p>

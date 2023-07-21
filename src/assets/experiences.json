@@ -1,6 +1,7 @@
 [
   {
-    "company": "Tekst.ai • Internship",
+    "company": "Tekst.ai",
+    "type": "Internship",
     "url": "https://www.tekst.ai/",
     "logo": "Tekst.ai.jpeg",
     "duration": "Jun 2023 - Jul 2023 • 2 months",
@@ -16,7 +17,8 @@
     ]
   },
   {
-    "company": "Robovision • Internship",
+    "company": "Robovision",
+    "type": "Internship",
     "url": "https://robovision.ai/",
     "logo": "Robovision.jpeg",
     "duration": "Jun 2021 - Jul 2021 • 2 months",
@@ -33,7 +35,8 @@
     ]
   },
   {
-    "company": "ST Engineering iDirect • Internship",
+    "company": "ST Engineering iDirect",
+    "type": "Internship",
     "url": "https://www.stengg.com/",
     "logo": "Stengineering.jpeg",
     "duration": "Jun 2020 - Jul 2020 • 2 months",

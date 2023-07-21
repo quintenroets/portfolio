@@ -65,7 +65,7 @@ a {
 </style>
 <script>
 import ExperienceCard from "../components/ExperienceCard.vue";
-import experiences from "../assets/experiences/info.json";
+import experiences from "../assets/experiences.json";
 
 export default {
   name: "AboutView",
