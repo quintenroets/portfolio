@@ -3,7 +3,7 @@
     <h1>Welcome</h1>
     <div class="flex justify-center">
       <img
-        class="max-w-2xl my-4"
+        class="max-w-full w-96 p-2"
         alt="Profile picture"
         src="../assets/profile.jpeg"
         style="width: 450px"
