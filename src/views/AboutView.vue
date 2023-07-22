@@ -3,22 +3,21 @@
     <h1>Education</h1>
     <div class="flex justify-center">
       <div class="max-w-2xl mx-5 text-left mt-4">
-        <div class="flex">
+        <p>
           <a href="https://www.ugent.be/en" class="min-w-max">
             <img
               class="w-20 h-20 mb-4 mr-4 border-2"
               src="/logos/ugent.svg"
               alt="Ghent University"
+              style="float: left"
             />
           </a>
-          <p>
-            I started my education at
-            <a href="https://www.ugent.be/en">Ghent University</a>, where I
-            discovered my passion for Computer Science, developed a thorough
-            theoretical foundation in Machine Learning and fostered competitive
-            software development skills.
-          </p>
-        </div>
+          I started my education at
+          <a href="https://www.ugent.be/en">Ghent University</a>, where I
+          discovered my passion for Computer Science, developed a thorough
+          theoretical foundation in Machine Learning and fostered competitive
+          software development skills.
+        </p>
         <p>
           During my thesis research, I worked on domain adaptation of Computer
           Vision systems to out-of-distribution data. I applied feature
@@ -30,23 +29,22 @@
           <a href="https://robovision.ai/">Robovision</a>, making a relabeling
           system feasible in the industry for the first time.
         </p>
-        <div class="flex">
+        <p>
           <a href="https://www.columbia.edu/" class="min-w-max">
             <img
               class="w-20 h-20 mb-4 mr-4 border-2"
               src="/logos/columbia.jpeg"
               alt="Columbia University"
+              style="float: left"
             />
           </a>
-          <p>
-            Supported by a
-            <a href="https://www.baef.be/">BAEF</a> Fellowship, I completed an
-            additional Masters degree at
-            <a href="https://www.columbia.edu/">Columbia University</a>,
-            specializing in advanced Machine Learning topics. I completed the
-            1.5-year program in 9 months.
-          </p>
-        </div>
+          Supported by a
+          <a href="https://www.baef.be/">BAEF</a> Fellowship, I completed an
+          additional Masters degree at
+          <a href="https://www.columbia.edu/">Columbia University</a>,
+          specializing in advanced Machine Learning topics. I completed the
+          1.5-year program in 9 months.
+        </p>
 
         <p>
           At the
