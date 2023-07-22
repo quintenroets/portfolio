@@ -5,7 +5,7 @@
         <img
           class="w-20 h-20 mb-4 mr-4 border-2"
           :src="'/logos/' + info.logo"
-          alt="experience"
+          alt="Company logo"
         />
       </a>
       <div class="flex flex-col">
