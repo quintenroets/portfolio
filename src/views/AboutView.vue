@@ -29,7 +29,7 @@
         </p>
 
         <p>
-          In the
+          At the
           <a href="https://www.creativemachineslab.com/"
             >Creative Machines Lab</a
           >, I worked on the exact parameter reconstruction of black-box neural
