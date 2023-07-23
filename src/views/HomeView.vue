@@ -2,12 +2,12 @@
   <div>
     <h1>Welcome</h1>
     <div class="flex justify-center">
-      <div class="p-4">
+      <div class="p-5">
         <img
           class="max-w-full w-96 rounded"
           alt="Profile picture"
           src="../assets/profile.jpeg"
-          style="width: 470px"
+          style="width: 420px"
         />
       </div>
     </div>

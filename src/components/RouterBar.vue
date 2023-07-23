@@ -13,10 +13,16 @@
   <hr class="mb-4" />
   <div
     class="min-w-fit overflow-y-auto"
-    style="max-height: calc(100vh - 100px); min-height: calc(100vh - 105px)"
+    id="pagecontent"
+    style="max-height: calc(100vh - 105px)"
   >
-    <router-view class="mb-10" v-if="ratio < 1" />
+    <router-view
+      class="mb-10"
+      v-if="ratio < 1"
+      style="min-height: calc(100vh - 105px)"
+    />
     <router-view v-else />
+    <SidebarComponent class="w-full" v-if="ratio < 1" />
   </div>
 </template>
 
@@ -39,9 +45,11 @@
 </style>
 <script>
 import { ref } from "vue";
+import SidebarComponent from "@/components/Sidebar.vue";
 
 export default {
   name: "RouterBar",
+  components: { SidebarComponent },
 
   setup() {
     const ratio = ref(window.innerWidth / window.innerHeight);

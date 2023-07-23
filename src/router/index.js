@@ -47,6 +47,8 @@ router.beforeEach((to, from, next) => {
   }
   document.title = NAME + title;
   next();
+  const el = document.getElementById("pagecontent");
+  el.scrollTop = 0;
 });
 
 export default router;

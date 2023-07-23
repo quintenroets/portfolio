@@ -1,5 +1,5 @@
 <template>
-  <div class="p-4" style="background-color: #ebeef3">
+  <div class="p-4 pb-20 pt-5" style="background-color: #ebeef3">
     <img
       src="../assets/profile.jpeg"
       class="rounded-full w-48 h-48 mx-auto mt-4 mb-4"
