@@ -3,7 +3,7 @@
     <div class="flex">
       <a :href="info.url">
         <img
-          class="w-20 h-20 mb-4 mr-4 border-2"
+          class="w-20 h-20 mb-4 mr-4"
           :src="'/logos/' + info.logo"
           alt="Company logo"
         />

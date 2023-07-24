@@ -6,7 +6,7 @@
         <p>
           <a href="https://www.ugent.be/en" class="min-w-max">
             <img
-              class="w-20 h-20 mr-4 border-2"
+              class="w-20 h-20 mr-4"
               src="/logos/ugent.svg"
               alt="Ghent University"
               style="float: left"
@@ -32,7 +32,7 @@
         <p>
           <a href="https://www.columbia.edu/" class="min-w-max">
             <img
-              class="w-20 h-20 mr-4 border-2"
+              class="w-20 h-20 mr-4"
               src="/logos/columbia.jpeg"
               alt="Columbia University"
               style="float: left"
