@@ -12,12 +12,11 @@
               style="float: left"
             />
           </a>
-          Supported by a
-          <a href="https://www.baef.be/">BAEF Fellowship</a>, I specialized in
-          advanced Machine Learning topics at
-          <a href="https://www.columbia.edu/">Columbia University</a>. I
-          obtained a Master's degree in Computer Science and completed the
-          1.5-year program in 9 months.
+          Supported by a <a href="https://www.baef.be/">BAEF Fellowship</a>, I
+          obtained a Master's degree in Computer Science from
+          <a href="https://www.columbia.edu/">Columbia University</a>. In just 9
+          months, I completed the 1.5-year program, specializing in advanced
+          Machine Learning topics.
         </p>
 
         <p>
@@ -42,7 +41,8 @@
               style="float: left"
             />
           </a>
-          Before that, I earned a Master's degree in Computer Science from
+          Before that, I earned a Master's degree in Computer Science
+          Engineering from
           <a href="https://www.ugent.be/en">Ghent University</a>, where I
           acquired competitive software development skills and developed a
           thorough theoretical foundation in Machine Learning.
