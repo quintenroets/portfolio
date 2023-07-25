@@ -1,6 +1,7 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
+import VueGtag from "vue-gtag";
 
 // icons
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -19,4 +20,11 @@ import "@/assets/css/tailwind.css";
 const app = createApp(App);
 app.component("font-awesome-icon", FontAwesomeIcon);
 app.use(router);
+app.use(
+  VueGtag,
+  {
+    config: { id: process.env.VUE_APP_GA_ID },
+  },
+  router,
+);
 app.mount("#app");
