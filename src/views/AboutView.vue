@@ -4,6 +4,36 @@
     <div class="flex justify-center">
       <div class="max-w-2xl mx-5 text-left mt-4">
         <p>
+          <a href="https://www.columbia.edu/" class="min-w-max">
+            <img
+              class="w-20 h-20 mr-4"
+              src="/logos/columbia.jpeg"
+              alt="Columbia University"
+              style="float: left"
+            />
+          </a>
+          Supported by a
+          <a href="https://www.baef.be/">BAEF</a> Fellowship, I completed a
+          Master's degree in Computer Science at
+          <a href="https://www.columbia.edu/">Columbia University</a>,
+          specializing in advanced Machine Learning topics. I finished the
+          1.5-year program in 9 months.
+        </p>
+
+        <p>
+          At the
+          <a href="https://www.creativemachineslab.com/"
+            >Creative Machines Lab</a
+          >, I worked on the exact parameter reconstruction of black-box neural
+          networks. By visualizing the local optima in the reconstruction
+          process, I came up with an advanced sampling strategy by iteratively
+          combining in-distribution and out-of-distribution data. My
+          sample-efficient approach stabilized the reconstruction process for
+          large networks and allowed me to reconstruct a network with 318,000
+          parameters, the largest reconstruction seen to date. The corresponding
+          paper is currently under review for publication.
+        </p>
+        <p>
           <a href="https://www.ugent.be/en" class="min-w-max">
             <img
               class="w-20 h-20 mr-4"
@@ -12,11 +42,10 @@
               style="float: left"
             />
           </a>
-          I started my education at
+          Before that, I earned a Master's degree in Computer Science from
           <a href="https://www.ugent.be/en">Ghent University</a>, where I
-          discovered my passion for Computer Science, developed a thorough
-          theoretical foundation in Machine Learning and fostered competitive
-          software development skills.
+          acquired competitive software development skills and developed a
+          thorough theoretical foundation in Machine Learning.
         </p>
         <p>
           During my thesis research, I worked on domain adaptation of Computer
@@ -28,36 +57,6 @@
           state-of-the-art datasets and production datasets provided by
           <a href="https://robovision.ai/">Robovision</a>, making a relabeling
           system feasible in the industry for the first time.
-        </p>
-        <p>
-          <a href="https://www.columbia.edu/" class="min-w-max">
-            <img
-              class="w-20 h-20 mr-4"
-              src="/logos/columbia.jpeg"
-              alt="Columbia University"
-              style="float: left"
-            />
-          </a>
-          Supported by a
-          <a href="https://www.baef.be/">BAEF</a> Fellowship, I completed an
-          additional Masters degree at
-          <a href="https://www.columbia.edu/">Columbia University</a>,
-          specializing in advanced Machine Learning topics. I completed the
-          1.5-year program in 9 months.
-        </p>
-
-        <p>
-          At the
-          <a href="https://www.creativemachineslab.com/"
-            >Creative Machines Lab</a
-          >, I worked on the exact parameter reconstruction of black-box neural
-          networks. By visualizing the local optima in the reconstruction
-          process, I came up with an advanced sampling strategy that iteratively
-          combines in-distribution data and out-of-distribution data. This
-          sample-efficient approach stabilized the reconstruction process for
-          large networks and allowed me to reconstruct a network with 318,000
-          parameters, the largest reconstruction seen to date. The corresponding
-          paper is currently under review for publication.
         </p>
       </div>
     </div>
