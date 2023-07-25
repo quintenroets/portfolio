@@ -13,10 +13,10 @@
             />
           </a>
           Supported by a
-          <a href="https://www.baef.be/">BAEF</a> Fellowship, I completed a
-          Master's degree in Computer Science at
-          <a href="https://www.columbia.edu/">Columbia University</a>,
-          specializing in advanced Machine Learning topics. I finished the
+          <a href="https://www.baef.be/">BAEF Fellowship</a>, I specialized in
+          advanced Machine Learning topics at
+          <a href="https://www.columbia.edu/">Columbia University</a>. I
+          obtained a Master's degree in Computer Science and completed the
           1.5-year program in 9 months.
         </p>
 
@@ -26,8 +26,8 @@
             >Creative Machines Lab</a
           >, I worked on the exact parameter reconstruction of black-box neural
           networks. By visualizing the local optima in the reconstruction
-          process, I came up with an advanced sampling strategy by iteratively
-          combining in-distribution and out-of-distribution data. My
+          process, I came up with an advanced sampling strategy combining
+          in-distribution and out-of-distribution data iteratively. My
           sample-efficient approach stabilized the reconstruction process for
           large networks and allowed me to reconstruct a network with 318,000
           parameters, the largest reconstruction seen to date. The corresponding
