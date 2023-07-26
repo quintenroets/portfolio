@@ -6,7 +6,7 @@
         @load="loading = false"
         title="Resume Quinten Roets"
         class="rounded w-full h-full"
-        :src="resumeUrl"
+        src="https://quintenroets.com/Resume.pdf"
         type="application/pdf"
       />
     </div>
@@ -26,7 +26,6 @@ export default {
   data() {
     return {
       loading: true,
-      resumeUrl: process.env.VUE_APP_RESUME_URL,
     };
   },
 };
