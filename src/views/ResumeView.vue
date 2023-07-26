@@ -1,13 +1,11 @@
 <template>
   <div class="flex flex-grow justify-center items-center">
     <div class="vl-parent w-full h-full max-w-7xl">
-      <loading v-model:active="loading" is-full-page="false" />
-      <div class="w-32 h-32" v-if="loading" />
+      <loading class="w-full h-full" :active="loading" :is-full-page="false" />
       <iframe
         @load="loading = false"
         title="Resume Quinten Roets"
         class="rounded w-full h-full"
-        :class="{ 'h-1/2': loading }"
         :src="resumeUrl"
         type="application/pdf"
       />
@@ -28,8 +26,7 @@ export default {
   data() {
     return {
       loading: true,
-      fullPage: false,
-      resumeUrl: "https://www.quintenroets.com/Resume.pdf",
+      resumeUrl: process.env.VUE_APP_RESUME_URL,
     };
   },
 };

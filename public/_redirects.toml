@@ -1,14 +1,4 @@
 [[redirects]]
-from = "/resume.pdf"
-to = "https://www.hln.be"
-status = 200
-
-[[redirects]]
-from = "/Resume%20Quinten%20Roets.pdf"
-to = "/resume.pdf"
-status = 200
-
-[[redirects]]
 from = "/*"
 to = "/index.html"
 status = 200
