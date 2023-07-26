@@ -45,7 +45,26 @@ a {
 </style>
 
 <script>
+import { useHead } from "@vueuse/head";
+
 export default {
   name: "HomeView",
+
+  setup() {
+    useHead({
+      // Can be static or computed
+      title: "About",
+      meta: [
+        {
+          name: `description`,
+          content:
+            "This page is the main page of the personal portfolio website and welcomes visitors.",
+        },
+      ],
+      htmlAttrs: {
+        lang: "en",
+      },
+    });
+  },
 };
 </script>
