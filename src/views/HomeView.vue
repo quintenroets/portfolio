@@ -57,10 +57,6 @@ export default {
           name: `description`,
           content: "Main page of the portfolio website.",
         },
-        {
-          name: `robots`,
-          content: "index, follow",
-        },
       ],
     });
   },
