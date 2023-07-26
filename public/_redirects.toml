@@ -1,0 +1,15 @@
+[[redirects]]
+from = "/resume.pdf"
+to = "https://drive.google.com/uc?export=view&id=10hKc4KDKM8tuC-eNfLfz6VeA9GHbWIP4"
+status = 200
+headers = { Content-Disposition = "inline; filename=\"Your_Filename.pdf\"" }
+
+[[redirects]]
+from = "/Resume%20Quinten%20Roets.pdf"
+to = "/resume.pdf"
+status = 200
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
