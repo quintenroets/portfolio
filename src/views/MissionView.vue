@@ -15,8 +15,8 @@
             As a Machine Learning enthusiast with two Master degrees in AI, I
             have been privileged to observe and participate in the ongoing AI
             revolution from a front-line perspective. My hands-on experiences
-            with foundation models have strengthened my belief that the
-            boundaries of AI are inexhaustible.
+            with foundation models have solidified my belief that the boundaries
+            of AI are inexhaustible.
           </p>
           <p>
             I envision a future world transformed by AI where humanity thrives
