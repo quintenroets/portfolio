@@ -49,4 +49,17 @@ import { ref } from "vue";
 const ratio = ref(window.innerWidth / window.innerHeight);
 import SidebarComponent from "@/components/Sidebar.vue";
 import RouterBar from "@/components/RouterBar.vue";
+import { useHead } from "unhead";
+
+useHead({
+  meta: [
+    {
+      name: `description`,
+      content: "Portfolio website of Quinten Roets.",
+    },
+  ],
+  htmlAttrs: {
+    lang: "en",
+  },
+});
 </script>
