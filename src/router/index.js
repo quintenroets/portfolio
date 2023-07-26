@@ -5,7 +5,7 @@ import { NAME } from "@/constants";
 const routes = [
   {
     path: "/",
-    name: "home",
+    name: "",
     component: HomeView,
   },
   {
@@ -32,6 +32,12 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/ResumeView.vue"),
   },
+  {
+    path: "/contact",
+    name: "contact",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../components/Sidebar.vue"),
+  },
 ];
 
 const router = createRouter({
@@ -40,7 +46,7 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from, next) => {
-  let title = to.path.replace("/", "");
+  let title = to.name;
   title = title.charAt(0).toUpperCase() + title.slice(1);
   if (title) {
     title = " - " + title;

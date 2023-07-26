@@ -1,28 +1,31 @@
 <template>
-  <div ref="navigation" class="overflow-x-auto">
-    <div class="flex justify-center">
-      <nav class="whitespace-nowrap flex justify-between w-full max-w-2xl px-4">
-        <router-link to="/">Home</router-link>
-        <router-link to="/about">About</router-link>
-        <router-link to="/mission">Mission</router-link>
-        <router-link to="/projects">Projects</router-link>
-        <router-link to="/resume">Resume</router-link>
-      </nav>
+  <div class="flex flex-col h-screen justify-start">
+    <div ref="navigation" class="overflow-x-auto flex-shrink-0">
+      <div class="flex justify-center">
+        <nav
+          class="whitespace-nowrap flex justify-between w-full max-w-2xl px-4"
+          :style="{ 'font-size': ratio < 1 ? '13px' : '' }"
+        >
+          <router-link to="/">Home</router-link>
+          <router-link to="/about">About</router-link>
+          <router-link to="/mission">Mission</router-link>
+          <router-link to="/projects">Projects</router-link>
+          <router-link to="/resume">Resume</router-link>
+          <router-link to="/contact" v-if="ratio < 1">Contact</router-link>
+        </nav>
+      </div>
+      <hr />
     </div>
-  </div>
-  <hr class="mb-4" />
-  <div
-    class="min-w-fit overflow-y-auto"
-    id="pagecontent"
-    style="max-height: calc(100vh - 105px)"
-  >
-    <router-view
-      class="mb-10"
-      v-if="ratio < 1"
-      style="min-height: calc(100vh - 105px)"
-    />
-    <router-view v-else />
-    <SidebarComponent class="w-full" v-if="ratio < 1" />
+    <div
+      class="flex flex-col min-w-fit overflow-y-auto flex-grow p-6"
+      :class="{ 'px-2': ratio >= 1 }"
+      id="pagecontent"
+    >
+      <router-view
+        class="flex flex-grow flex-col"
+        :class="{ 'pb-14': ratio < 1, 'overflow-y-auto': ratio >= 1 }"
+      />
+    </div>
   </div>
 </template>
 
@@ -45,11 +48,9 @@
 </style>
 <script>
 import { ref } from "vue";
-import SidebarComponent from "@/components/Sidebar.vue";
 
 export default {
   name: "RouterBar",
-  components: { SidebarComponent },
 
   setup() {
     const ratio = ref(window.innerWidth / window.innerHeight);

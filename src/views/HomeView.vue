@@ -2,7 +2,7 @@
   <div>
     <h1>Welcome</h1>
     <div class="flex justify-center">
-      <div class="p-5">
+      <div class="py-4 mx-8">
         <img
           class="max-w-full w-96 rounded"
           alt="Profile picture"
@@ -12,7 +12,7 @@
       </div>
     </div>
     <div class="flex justify-center">
-      <div class="max-w-2xl mx-5 mt-4 text-left">
+      <div class="max-w-2xl mt-4 text-left">
         <p>
           Hello and welcome! My name is Quinten. I work as a Graduate Research
           Assistant at the

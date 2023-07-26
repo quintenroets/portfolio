@@ -1,7 +1,9 @@
 <template>
-  <div id="app">
-    <MobileApp v-if="ratio < 1" />
-    <WebApp v-else />
+  <div class="flex" id="app">
+    <div class="overflow-x-auto w-1/5" v-if="ratio >= 1">
+      <SidebarComponent class="min-w-fit h-full w-full" />
+    </div>
+    <RouterBar class="flex-grow" />
   </div>
 </template>
 
@@ -45,6 +47,6 @@ body {
 import { ref } from "vue";
 
 const ratio = ref(window.innerWidth / window.innerHeight);
-import WebApp from "./components/WebApp.vue";
-import MobileApp from "./components/MobileApp.vue";
+import SidebarComponent from "@/components/Sidebar.vue";
+import RouterBar from "@/components/RouterBar.vue";
 </script>

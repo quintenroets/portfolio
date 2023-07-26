@@ -2,7 +2,7 @@
   <div>
     <h1>Projects</h1>
     <div class="flex justify-center">
-      <div class="max-w-2xl mx-5 text-left mt-4">
+      <div class="max-w-2xl text-left mt-4">
         <p>
           You can learn more about my projects on my
           <a href="https://www.github.com/quintenroets">Github</a> page.

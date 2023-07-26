@@ -1,9 +1,9 @@
 <template>
   <div>
     <div class="flex justify-center">
-      <div class="max-w-2xl mx-5">
+      <div class="max-w-2xl">
         <h1>AI for the benefit of humanity</h1>
-        <div class="my-4 flex justify-center mx-2">
+        <div class="my-4 flex justify-center">
           <img
             class="w-full rounded max-w-2xl"
             alt="Wallpaper"
