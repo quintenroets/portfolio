@@ -4,11 +4,13 @@
     :class="{ rounded: ratio < 1 }"
     style="background-color: #ebeef3"
   >
-    <img
-      src="../assets/profile.jpeg"
-      class="rounded-full w-48 h-48 mx-auto mt-10"
-      alt="Profile picture"
-    />
+    <div class="image-wrapper rounded-full w-48 aspect-1 mx-auto mt-10">
+      <img
+        src="../assets/profile.jpeg"
+        class="rounded-full"
+        alt="Profile picture"
+      />
+    </div>
     <h1 class="text-2xl text-center my-4 font-bold w-full">
       {{ name }}
     </h1>

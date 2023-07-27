@@ -4,11 +4,9 @@
       <div class="max-w-2xl">
         <h1>AI for the benefit of humanity</h1>
         <div class="my-4 flex justify-center">
-          <img
-            class="w-full rounded max-w-2xl"
-            alt="Wallpaper"
-            src="../assets/wallpaper.png"
-          />
+          <div class="image-wrapper max-w-2xl w-full aspect-4">
+            <img alt="Wallpaper" src="../assets/wallpaper.png" />
+          </div>
         </div>
         <div class="text-left">
           <p>

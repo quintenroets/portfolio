@@ -2,11 +2,9 @@
   <div>
     <div class="flex">
       <a :href="info.url">
-        <img
-          class="w-20 h-20 mb-4 mr-4"
-          :src="'/logos/' + info.logo"
-          alt="Company logo"
-        />
+        <div class="image-wrapper w-20 aspect-1 mb-4 mr-4">
+          <img :src="'/logos/' + info.logo" alt="Company logo" />
+        </div>
       </a>
       <div class="flex flex-col">
         <p style="font-weight: bold">{{ info.function }}</p>

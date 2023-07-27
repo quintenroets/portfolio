@@ -3,12 +3,12 @@
     <h1>Welcome</h1>
     <div class="flex justify-center">
       <div class="py-4 mx-8">
-        <img
-          class="max-w-full w-96 rounded"
-          alt="Profile picture"
-          src="../assets/profile.jpeg"
+        <div
+          class="image-wrapper aspect-1 max-w-full w-96"
           style="width: 420px"
-        />
+        >
+          <img alt="Profile picture" src="../assets/profile.jpeg" />
+        </div>
       </div>
     </div>
     <div class="flex justify-center">

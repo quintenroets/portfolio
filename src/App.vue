@@ -1,7 +1,7 @@
 <template>
   <div class="flex" id="app">
     <div class="overflow-x-auto w-1/5" v-if="ratio >= 1">
-      <SidebarComponent class="min-w-fit h-full w-full" />
+      <SidebarComponent class="h-full w-full overflow-auto" />
     </div>
     <RouterBar class="flex-grow" />
   </div>
@@ -41,6 +41,16 @@ p {
 
 body {
   background-color: #f6f9fc;
+}
+
+.image-wrapper {
+  background-color: #e5e7eb;
+  border-radius: 0.25rem;
+}
+
+img {
+  border-radius: 0.25rem;
+  object-fit: contain;
 }
 </style>
 <script setup>

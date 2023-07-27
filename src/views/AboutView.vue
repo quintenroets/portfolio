@@ -5,12 +5,9 @@
       <div class="max-w-2xl text-left mt-4">
         <p>
           <a href="https://www.columbia.edu/" class="min-w-max">
-            <img
-              class="w-20 h-20 mr-4"
-              src="/logos/columbia.jpeg"
-              alt="Columbia University"
-              style="float: left"
-            />
+            <div class="image-wrapper w-20 aspect-1 mr-4" style="float: left">
+              <img src="/logos/columbia.jpeg" alt="Columbia University" />
+            </div>
           </a>
           Supported by a <a href="https://www.baef.be/">BAEF Fellowship</a>, I
           obtained a Master's degree in Computer Science from
