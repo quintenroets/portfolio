@@ -5,7 +5,7 @@
         <h1>AI for the benefit of humanity</h1>
         <div class="my-4 flex justify-center">
           <div class="image-wrapper max-w-2xl w-full aspect-4">
-            <img alt="Wallpaper" src="../assets/wallpaper.png" />
+            <img alt="Wallpaper" src="../assets/wallpaper.webp" />
           </div>
         </div>
         <div class="text-left">

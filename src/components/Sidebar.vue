@@ -6,7 +6,7 @@
   >
     <div class="image-wrapper rounded-full w-48 aspect-1 mx-auto mt-10">
       <img
-        src="../assets/profile.jpeg"
+        src="../assets/profile.webp"
         class="rounded-full"
         alt="Profile picture"
       />

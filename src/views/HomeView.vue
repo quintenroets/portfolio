@@ -7,7 +7,7 @@
           class="image-wrapper aspect-1 max-w-full w-96"
           style="width: 420px"
         >
-          <img alt="Profile picture" src="../assets/profile.jpeg" />
+          <img alt="Profile picture" src="../assets/profile.webp" />
         </div>
       </div>
     </div>
