@@ -59,7 +59,7 @@
     </div>
     <h1 class="m-4">Professional Experience</h1>
     <div class="flex justify-center">
-      <div class="max-w-2xl min-w-2xl mx-5 mt-4 text-left">
+      <div class="max-w-2xl mt-4 text-left">
         <ExperienceCard
           class="mb-14"
           v-for="(experience, index) in experiences"
