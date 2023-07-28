@@ -18,39 +18,41 @@
           </p>
           <p>
             I envision a future world transformed by AI where humanity thrives
-            on a global scale. Humans are liberated to pursue their passions
-            while advanced AI agents care for their health, build their houses
-            and design their roads. However, this future is not without its
-            challenges. The accelerating advancement and adoption of AI carries
-            an incredible risk and raises ethical and control issues.
+            on a global scale. A world where humans are liberated to pursue
+            their passions while advanced AI agents care for their health, build
+            their houses and design their roads. However, this future is not
+            without its challenges. The accelerating advancement and adoption of
+            AI raises complex issues surrounding ethics and control. Moreover,
+            as intelligent systems become a bigger part of our lives, the
+            consequence of any misbehavior becomes more severe.
           </p>
           <p>
             This is why I believe in the importance of
             <a href="https://en.wikipedia.org/wiki/AI_safety">AI safety</a>.
-            This field of AI studies problems like machine alignment and
-            mechanistic interpretability to safeguard the adoption of advanced
-            AI. By prioritizing AI safety, I believe we can build a world where
-            we thrive under advanced AI. We have one chance to do it right, and
-            we must act now!
+            This domain studies problems like machine alignment and mechanistic
+            interpretability to safeguard the adoption of advanced AI. By
+            prioritizing AI safety, I believe we can build a world where we
+            thrive alongside intelligent systems. We have one chance to do it
+            right, and we must act now!
           </p>
           <p>
             I am a proud member of the
             <a href="https://www.effectivealtruism.org/">Effective Altruism</a>
-            community. I have completed the AI Safety Fellowship and
-            participated in the
+            community where I completed an AI Safety Fellowship. Last December,
+            I participated in the
             <a
               href="https://www.effectivealtruism.org/ea-global/events/eagxberkeley2022"
               >EAGxBerkeley</a
             >
-            conference last December. I will be at the
+            conference and this August, I will be at the
             <a href="https://www.effectivealtruism.org/ea-global/events/eagxnyc"
               >EAGxNYC</a
             >
-            conference this August and hope to see you there!
+            conference. I hope to see you there!
           </p>
           <p style="margin-bottom: 0 !important">
-            If you want to learn more about the dangers and possibilities of
-            advanced AI I strongly recommend you to read
+            For those interested in the dangers and possibilities of advanced
+            AI, I recommend reading
             <a href="https://en.wikipedia.org/wiki/Our_Final_Invention">
               Our Final Invention
             </a>
@@ -73,4 +75,3 @@ a {
   color: #2980b9;
 }
 </style>
-<script setup></script>
