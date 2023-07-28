@@ -23,8 +23,8 @@
             their houses and design their roads. However, this future is not
             without its challenges. The accelerating advancement and adoption of
             AI raises complex issues surrounding ethics and control. Moreover,
-            as intelligent systems become a bigger part of our lives, the
-            consequence of any misbehavior becomes more severe.
+            the impact of misbehaving systems increases as AI agents become a
+            bigger part of our lives.
           </p>
           <p>
             This is why I believe in the importance of
