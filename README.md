@@ -1,4 +1,4 @@
-# Source code for my personal portfolio website
+# Personal portfolio website
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7a8de122-5f2e-445d-875b-8fb6363b89e4/deploy-status)](https://app.netlify.com/sites/quintenroets/deploys)
 
