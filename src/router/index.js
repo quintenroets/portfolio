@@ -54,6 +54,9 @@ router.beforeEach((to, from, next) => {
   document.title = NAME + title;
   to.meta.canonicalUrl = ROOT_URL + to.path;
   next();
+});
+
+router.afterEach(() => {
   const el = document.getElementById("pagecontent");
   el.scrollTop = 0;
 });
