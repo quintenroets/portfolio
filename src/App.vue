@@ -60,12 +60,21 @@ const ratio = ref(window.innerWidth / window.innerHeight);
 import SidebarComponent from "@/components/Sidebar.vue";
 import RouterBar from "@/components/RouterBar.vue";
 import { useHead } from "unhead";
+import { useRoute } from "vue-router";
+import { ROOT_URL } from "@/constants";
 
+const route = useRoute();
 useHead({
   meta: [
     {
       name: `description`,
       content: "Portfolio website of Quinten Roets.",
+    },
+  ],
+  link: [
+    {
+      rel: "canonical",
+      href: `${ROOT_URL}${route.fullPath}`,
     },
   ],
   htmlAttrs: {

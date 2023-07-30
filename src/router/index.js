@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
-import { NAME, ROOT_URL } from "@/constants";
+import { NAME } from "@/constants";
 
 const routes = [
   {
@@ -52,7 +52,6 @@ router.beforeEach((to, from, next) => {
     title = " - " + title;
   }
   document.title = NAME + title;
-  to.meta.canonicalUrl = ROOT_URL + to.path;
   next();
 });
 
