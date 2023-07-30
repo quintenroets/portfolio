@@ -8,12 +8,12 @@
     "function": "NLP Research Engineer",
     "location": "Ghent, Belgium",
     "bullets": [
-      "Reduced data labeling time by 85% by developing a web interface labeling tool with pre-annotated suggestions based on Machine Learning predictions",
-      "Developed and benchmarked over 20 distinct NLP pipelines by conducting comparisons based on criteria such as speed, accuracy, efficiency, and privacy preservation",
+      "Created web-based labeling tool pre-annotated with ML-based suggestions, reducing manual annotation time by 85%",
+      "Developed and benchmarked over 20 distinct NLP pipelines, analyzing speed, accuracy, efficiency, and privacy preservation",
       "Managed a broad spectrum of datasets to conduct rigorous comparisons, including the curation of four customer-specific datasets, utilization of two open-source datasets, and generation of seven synthetic datasets",
       "Optimized evaluation experiments by developing a parallelized, cloud-based approach, complemented by an innovative caching scheme, reducing the duration of a full experiment from 8 hours to less than 3 minutes",
       "Deployed an enhanced email parser in production, leading to an average accuracy gain of 0.5% across all customer bases",
-      "Contributed to a $90K+ business development deal by presenting and demonstrating system capabilities"
+      "Contributed to a $90K+ business development deal by presenting system capabilities to customer"
     ]
   },
   {
