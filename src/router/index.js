@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
-import { NAME } from "@/constants";
+import { NAME, ROOT_URL } from "@/constants";
 
 const routes = [
   {
@@ -52,6 +52,7 @@ router.beforeEach((to, from, next) => {
     title = " - " + title;
   }
   document.title = NAME + title;
+  to.meta.canonicalUrl = ROOT_URL + to.path;
   next();
   const el = document.getElementById("pagecontent");
   el.scrollTop = 0;
