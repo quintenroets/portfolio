@@ -5,7 +5,10 @@
       <div class="max-w-2xl text-left mt-4">
         <p>
           You can learn more about my projects on my
-          <a href="https://www.github.com/quintenroets?tab=repositories">Github</a> page.
+          <a href="https://www.github.com/quintenroets?tab=repositories"
+            >Github
+          </a>
+          page.
         </p>
       </div>
     </div>
