@@ -18,9 +18,7 @@
         </p>
         <p>
           For more details about my work, please visit my
-          <a href="https://www.github.com/quintenroets?tab=repositories"
-            >Github
-          </a>
+          <a href="https://www.github.com/quintenroets">Github </a>
           page.
         </p>
       </div>
