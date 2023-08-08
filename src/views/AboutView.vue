@@ -10,7 +10,7 @@
             </div>
           </a>
           Supported by a <a href="https://www.baef.be/">BAEF Fellowship</a>, I
-          obtained a Master's degree in Computer Science from
+          obtained a master's degree in Computer Science from
           <a href="https://www.columbia.edu/">Columbia University</a>. In just 9
           months, I completed the 1.5-year program, specializing in advanced
           Machine Learning topics.
@@ -24,10 +24,12 @@
           networks. By visualizing the local optima in the reconstruction
           process, I came up with an advanced sampling strategy iteratively
           combining in-distribution and out-of-distribution data. My
-          sample-efficient approach stabilized the reconstruction process for
-          large networks and allowed me to reconstruct a network with 318,000
-          parameters, the largest reconstruction seen to date. The corresponding
-          paper is currently under review for publication.
+          sample-efficient
+          <a href="https://github.com/quintenroets/revnets/">approach</a>
+          stabilized the reconstruction process for large networks and enabled
+          me to reconstruct a network with 318,000 parameters, the largest
+          reconstruction seen to date. The corresponding paper is currently
+          under review for publication.
         </p>
         <p>
           <a href="https://www.ugent.be/en" class="min-w-max">
@@ -38,7 +40,7 @@
               style="float: left"
             />
           </a>
-          Before that, I earned a Master's degree in Computer Science
+          Before that, I earned a master's degree in Computer Science
           Engineering from
           <a href="https://www.ugent.be/en">Ghent University</a>, where I
           acquired competitive software development skills and developed a

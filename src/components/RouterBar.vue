@@ -9,7 +9,7 @@
           <router-link to="/">Home</router-link>
           <router-link to="/about">About</router-link>
           <router-link to="/mission">Mission</router-link>
-          <router-link to="/projects">Projects</router-link>
+          <router-link to="/portfolio">Portfolio</router-link>
           <router-link to="/resume">Resume</router-link>
           <router-link to="/contact" v-if="ratio < 1">Contact</router-link>
         </nav>
