@@ -16,6 +16,7 @@
 <script>
 import Loading from "vue-loading-overlay";
 import "vue-loading-overlay/dist/css/index.css";
+import { useHead } from "unhead";
 
 export default {
   name: "ResumeView",
@@ -28,22 +29,16 @@ export default {
       loading: true,
     };
   },
+
+  setup() {
+    useHead({
+      meta: [
+        {
+          name: "description",
+          content: "View the Resume of Quinten Roets.",
+        },
+      ],
+    });
+  },
 };
 </script>
-<style scoped>
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-  background-color: rgba(100, 100, 100, 0.25);
-  border: 2px solid transparent;
-  border-radius: 10px;
-  background-clip: padding-box;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: rgba(40, 40, 40, 0.5);
-  border: 2px solid transparent;
-  border-radius: 10px;
-  background-clip: padding-box;
-}
-</style>

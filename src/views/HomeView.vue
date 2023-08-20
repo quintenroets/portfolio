@@ -40,12 +40,6 @@
   </div>
 </template>
 
-<style scoped>
-a {
-  color: #2980b9;
-}
-</style>
-
 <script>
 import { useHead } from "unhead";
 
@@ -57,7 +51,8 @@ export default {
       meta: [
         {
           name: `description`,
-          content: "Main page of the portfolio website.",
+          content:
+            "Hi! My name is Quinten Roets. Welcome to my portfolio website.",
         },
       ],
     });

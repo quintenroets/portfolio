@@ -26,9 +26,21 @@
   </div>
 </template>
 
-<style scoped>
-a {
-  color: #2980b9;
-}
-</style>
-<script setup></script>
+<script>
+import { useHead } from "unhead";
+export default {
+  name: "ProjectsView",
+
+  setup() {
+    useHead({
+      meta: [
+        {
+          name: "description",
+          content:
+            "Discover the unique projects that shaped my Software Engineering skills.",
+        },
+      ],
+    });
+  },
+};
+</script>

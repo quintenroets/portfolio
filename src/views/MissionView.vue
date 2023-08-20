@@ -70,8 +70,21 @@
   </div>
 </template>
 
-<style scoped>
-a {
-  color: #2980b9;
-}
-</style>
+<script>
+import { useHead } from "unhead";
+export default {
+  name: "MissionView",
+
+  setup() {
+    useHead({
+      meta: [
+        {
+          name: "description",
+          content:
+            "Explore what fuels my passion in Machine Learning and learn more about AI safety.",
+        },
+      ],
+    });
+  },
+};
+</script>

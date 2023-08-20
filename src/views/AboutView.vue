@@ -74,14 +74,10 @@
   </div>
 </template>
 
-<style scoped>
-a {
-  color: #2980b9;
-}
-</style>
 <script>
 import ExperienceCard from "../components/ExperienceCard.vue";
 import experiences from "../assets/experiences.json";
+import { useHead } from "unhead";
 
 export default {
   name: "AboutView",
@@ -90,6 +86,18 @@ export default {
     return {
       experiences: experiences,
     };
+  },
+  setup() {
+    useHead({
+      meta: [
+        {
+          name: `description`,
+          content:
+            "Discover my education at Columbia University & Ghent University and " +
+            "explore my professional experiences at Tekst.ai, Robovision & ST Engineering iDirect.",
+        },
+      ],
+    });
   },
 };
 </script>

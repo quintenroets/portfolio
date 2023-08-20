@@ -1,9 +1,9 @@
 <template>
   <div class="flex flex-col h-screen justify-start">
-    <div ref="navigation" class="overflow-x-auto flex-shrink-0">
+    <div class="overflow-x-auto flex-shrink-0">
       <div class="flex justify-center">
         <nav
-          class="whitespace-nowrap flex justify-between w-full max-w-2xl px-4"
+          class="whitespace-nowrap flex justify-between w-full max-w-2xl px-4 py-7"
           :style="{ 'font-size': ratio < 1 ? '13px' : '' }"
         >
           <router-link to="/">Home</router-link>
@@ -19,7 +19,7 @@
     <div
       class="flex flex-col min-w-fit overflow-y-auto flex-grow p-6"
       :class="{ 'px-2': ratio >= 1 }"
-      id="pagecontent"
+      id="pageContent"
     >
       <router-view
         class="flex flex-grow flex-col"
@@ -29,23 +29,6 @@
   </div>
 </template>
 
-<style>
-::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-  background-color: rgba(100, 100, 100, 0.25);
-  border: 2px solid transparent;
-  border-radius: 10px;
-  background-clip: padding-box;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: rgba(40, 40, 40, 0.5);
-  border: 2px solid transparent;
-  border-radius: 10px;
-  background-clip: padding-box;
-}
-</style>
 <script>
 import { ref } from "vue";
 
@@ -60,3 +43,14 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+a {
+  color: #2c3e50;
+}
+
+a.router-link-exact-active {
+  color: #222222;
+  font-weight: bold;
+}
+</style>

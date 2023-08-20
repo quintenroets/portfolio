@@ -16,17 +16,8 @@
   color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
-}
-
-nav a {
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #222222;
-  font-weight: bold;
+#pageContent a {
+  color: #2980b9;
 }
 
 h1 {
@@ -52,6 +43,22 @@ img {
   border-radius: 0.25rem;
   object-fit: contain;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(100, 100, 100, 0.25);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(40, 40, 40, 0.5);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background-clip: padding-box;
+}
 </style>
 <script setup>
 import { ref } from "vue";
@@ -60,21 +67,12 @@ const ratio = ref(window.innerWidth / window.innerHeight);
 import SidebarComponent from "@/components/Sidebar.vue";
 import RouterBar from "@/components/RouterBar.vue";
 import { useHead } from "unhead";
-import { useRoute } from "vue-router";
-import { ROOT_URL } from "@/constants";
 
-const route = useRoute();
 useHead({
   meta: [
     {
       name: `description`,
       content: "Portfolio website of Quinten Roets.",
-    },
-  ],
-  link: [
-    {
-      rel: "canonical",
-      href: `${ROOT_URL}${route.fullPath}`,
     },
   ],
   htmlAttrs: {
