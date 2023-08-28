@@ -27,6 +27,7 @@ app.use(
   VueGtag,
   {
     config: { id: process.env.VUE_APP_GA_ID },
+    deferScriptLoad: true,
   },
   router,
 );
