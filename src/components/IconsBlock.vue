@@ -39,6 +39,18 @@
 </template>
 
 <script>
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+
+// icons
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import {
+  faMapMarkerAlt,
+  faEnvelope,
+  faGlobe,
+} from "@fortawesome/free-solid-svg-icons";
+library.add(faLinkedin, faGithub, faGlobe, faMapMarkerAlt, faEnvelope);
+
 export default {
   name: "IconsBlock",
   data() {
@@ -51,6 +63,7 @@ export default {
       website: "quintenroets.com",
     };
   },
+  components: { FontAwesomeIcon },
 };
 </script>
 
