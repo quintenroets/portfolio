@@ -42,7 +42,7 @@ p {
 }
 </style>
 <script>
-const requireLogo = require.context("@/assets/logos/", false, /\.(webp|svg)$/);
+const requireLogo = require.context("@/assets/logos/", false, /\.webp$/);
 
 export default {
   name: "ExperienceCard",

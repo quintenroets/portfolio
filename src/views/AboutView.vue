@@ -37,12 +37,7 @@
         <p>
           <a href="https://www.ugent.be/en" class="min-w-max">
             <div class="image-wrapper w-20 aspect-1 mr-4 float-left">
-              <img
-                class="bg-white"
-                src="../assets/logos/ugent.svg"
-                alt="Ghent University"
-                width="1000"
-              />
+              <img src="../assets/logos/ugent.webp" alt="Ghent University" />
             </div>
           </a>
           Before that, I earned a master's degree in Computer Science
