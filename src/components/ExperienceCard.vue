@@ -3,11 +3,11 @@
     <div class="flex">
       <a :href="info.url">
         <div class="image-wrapper w-20 aspect-1 mb-4 mr-4">
-          <img :src="'/logos/' + info.logo" alt="Company logo" />
+          <img :src="logoUrl" alt="Company logo" />
         </div>
       </a>
       <div class="flex flex-col">
-        <p style="font-weight: bold">{{ info.function }}</p>
+        <p class="font-bold">{{ info.function }}</p>
         <p>
           <a :href="info.url" style="color: #2c3e50">{{ info.company }} </a>
           • {{ info.type }}
@@ -42,10 +42,17 @@ p {
 }
 </style>
 <script>
+const requireLogo = require.context("@/assets/logos/", false, /\.(webp|svg)$/);
+
 export default {
   name: "ExperienceCard",
   props: {
     info: {},
+  },
+  computed: {
+    logoUrl() {
+      return requireLogo("./" + this.info.logo);
+    },
   },
 };
 </script>
