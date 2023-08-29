@@ -12,32 +12,27 @@ const routes = [
   {
     path: "/about",
     name: "about",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+    component: () => import("../views/AboutView.vue"),
   },
   {
     path: "/mission",
     name: "mission",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/MissionView.vue"),
+    component: () => import("../views/MissionView.vue"),
   },
   {
     path: "/portfolio",
     name: "portfolio",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/PortfolioView.vue"),
+    component: () => import("../views/PortfolioView.vue"),
   },
   {
     path: "/resume",
     name: "resume",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/ResumeView.vue"),
+    component: () => import("../views/ResumeView.vue"),
   },
   {
     path: "/contact",
     name: "contact",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../components/Sidebar.vue"),
+    component: () => import("../components/Sidebar.vue"),
   },
 ];
 
