@@ -1,39 +1,14 @@
 <template>
   <div class="flex flex-col items-start w-56">
-    <a :href="'mailto:' + email" target="_blank">
-      <div class="block mt-4">
-        <font-awesome-icon :icon="['fas', 'envelope']" class="text-2xl w-8" />
-        <span class="ml-2"> {{ email }} </span>
-      </div>
-    </a>
-
-    <a :href="'https://www.linkedin.com/' + linkedin" target="_blank">
-      <div class="block mt-4">
-        <font-awesome-icon :icon="['fab', 'linkedin']" class="text-2xl w-8" />
-        <span class="ml-2"> {{ linkedin }} </span>
-      </div>
-    </a>
-
-    <a :href="'https://www.github.com/' + github" target="_blank">
-      <div class="block mt-4">
-        <font-awesome-icon :icon="['fab', 'github']" class="text-2xl w-8" />
-        <span class="ml-2"> {{ github }} </span>
-      </div>
-    </a>
-
-    <a :href="'https://www.' + website" target="_blank">
-      <div class="block mt-4">
-        <font-awesome-icon :icon="['fas', 'globe']" class="text-2xl w-8" />
-        <span class="ml-2"> {{ website }} </span>
-      </div>
-    </a>
-
-    <div class="block mt-4">
-      <font-awesome-icon
-        :icon="['fas', 'map-marker-alt']"
-        class="text-2xl w-8"
-      />
-      <span class="ml-2"> {{ location }} </span>
+    <div class="block mt-4" v-for="item in contactItems" :key="item.href">
+      <component
+        target="_blank"
+        :href="item.href"
+        :is="item.href ? 'a' : 'div'"
+      >
+        <font-awesome-icon :icon="item.icon" class="text-2xl w-8" />
+        <span class="ml-2"> {{ item.text }} </span>
+      </component>
     </div>
   </div>
 </template>
@@ -54,13 +29,37 @@ library.add(faLinkedin, faGithub, faGlobe, faMapMarkerAlt, faEnvelope);
 export default {
   name: "IconsBlock",
   data() {
+    const email = "qdr2104@columbia.edu";
+    const username = "quintenroets";
+
     return {
       name: "Quinten Roets",
-      location: "New York, USA",
-      email: "qdr2104@columbia.edu",
-      linkedin: "in/quintenroets",
-      github: "quintenroets",
-      website: "quintenroets.com",
+      contactItems: [
+        {
+          href: `mailto:${email}`,
+          icon: ["fas", "envelope"],
+          text: email,
+        },
+        {
+          href: `https://www.linkedin.com/in/${username}`,
+          icon: ["fab", "linkedin"],
+          text: `in/${username}`,
+        },
+        {
+          href: `https://www.github.com/${username}`,
+          icon: ["fab", "github"],
+          text: username,
+        },
+        {
+          href: `https://www.${username}.com`,
+          icon: ["fas", "globe"],
+          text: `${username}.com`,
+        },
+        {
+          icon: ["fas", "map-marker-alt"],
+          text: "New York, USA",
+        },
+      ],
     };
   },
   components: { FontAwesomeIcon },
