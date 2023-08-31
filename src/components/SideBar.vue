@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col" :class="{ 'flex flex-grow pb-14': !square }">
+  <div class="flex flex-col" :class="{ 'flex flex-grow': !square }">
     <div
       class="flex flex-col flex-grow bg-sidebargray"
       :class="{ rounded: !square }"

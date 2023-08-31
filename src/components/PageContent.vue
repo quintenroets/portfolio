@@ -1,11 +1,11 @@
 <template>
-  <div class="flex-grow overflow-y-auto mx-1 my-5">
-    <router-view
-      class="mx-4"
-      :class="{
-        'pb-14': ratio < 1,
-      }"
-    />
+  <div
+    class="flex-grow overflow-y-auto mx-1 my-5"
+    :class="{
+      'mb-20': ratio < 1,
+    }"
+  >
+    <router-view class="mx-4" />
   </div>
 </template>
 
