@@ -1,11 +1,12 @@
 <template>
-  <router-view
-    class="m-6"
-    :class="{
-      'pb-14 mx-0': ratio < 1,
-      'mx-2': ratio >= 1,
-    }"
-  />
+  <div class="flex-grow overflow-y-auto mx-1 my-5">
+    <router-view
+      class="mx-4"
+      :class="{
+        'pb-14': ratio < 1,
+      }"
+    />
+  </div>
 </template>
 
 <style>

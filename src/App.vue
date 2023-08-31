@@ -3,11 +3,11 @@
     <SideBar
       v-if="ratio >= 1"
       class="h-page w-1/5 overflow-x-auto"
-      :ratio="ratio"
+      :square="true"
     />
     <div class="flex flex-grow flex-col h-screen">
       <NavigationBar class="overflow-x-auto" :ratio="ratio" />
-      <PageContent class="overflow-y-auto" :ratio="ratio" />
+      <PageContent class="flex flex-grow flex-col" :ratio="ratio" />
     </div>
   </div>
 </template>
