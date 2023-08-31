@@ -9,10 +9,9 @@
       <div class="flex flex-col">
         <p class="font-bold">{{ info.function }}</p>
         <p>
-          <a :href="info.url" style="color: #2c3e50">{{ info.company }} </a>
+          <a :href="info.url">{{ info.company }} </a>
           • {{ info.type }}
         </p>
-
         <p>{{ info.duration }}</p>
         <p>{{ info.location }}</p>
       </div>
@@ -32,13 +31,12 @@
 </template>
 
 <style scoped>
-a {
-  color: #2980b9;
-}
-
 p {
   margin-bottom: 0 !important;
   font-size: 14px !important;
+}
+a {
+  @apply text-dark !important;
 }
 </style>
 <script>

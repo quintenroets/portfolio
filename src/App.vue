@@ -1,9 +1,14 @@
 <template>
   <div class="flex" id="app">
-    <div class="overflow-x-auto w-1/5" v-if="ratio >= 1">
-      <SidebarComponent class="h-full w-full overflow-auto" />
+    <SideBar
+      v-if="ratio >= 1"
+      class="h-page w-1/5 overflow-x-auto"
+      :ratio="ratio"
+    />
+    <div class="flex flex-grow flex-col h-screen">
+      <NavigationBar class="overflow-x-auto" :ratio="ratio" />
+      <PageContent class="overflow-y-auto" :ratio="ratio" />
     </div>
-    <RouterBar class="flex-grow" />
   </div>
 </template>
 
@@ -13,11 +18,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-}
-
-#pageContent a {
-  color: #2980b9;
+  @apply text-dark;
 }
 
 h1 {
@@ -31,12 +32,12 @@ p {
 }
 
 body {
-  background-color: #f6f9fc;
+  @apply bg-background-blue;
 }
 
 .image-wrapper {
-  background-color: #e5e7eb;
   border-radius: 0.25rem;
+  @apply bg-sidebargray;
 }
 
 img {
@@ -64,8 +65,9 @@ img {
 import { ref } from "vue";
 
 const ratio = ref(window.innerWidth / window.innerHeight);
-import SidebarComponent from "@/components/Sidebar.vue";
-import RouterBar from "@/components/RouterBar.vue";
+import SideBar from "@/components/SideBar.vue";
+import NavigationBar from "@/components/NavigationBar.vue";
+import PageContent from "@/components/PageContent.vue";
 import { useHead } from "unhead";
 
 useHead({

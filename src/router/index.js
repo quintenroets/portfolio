@@ -32,7 +32,7 @@ const routes = [
   {
     path: "/contact",
     name: "contact",
-    component: () => import("../components/Sidebar.vue"),
+    component: () => import("../components/SideBar.vue"),
   },
 ];
 

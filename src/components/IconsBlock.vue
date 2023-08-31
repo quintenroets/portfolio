@@ -66,6 +66,6 @@ export default {
 
 <style scoped>
 a {
-  color: #2c3e50 !important;
+  @apply text-dark !important;
 }
 </style>

@@ -1,9 +1,5 @@
 <template>
-  <div
-    class="flex flex-col"
-    :class="{ rounded: ratio < 1 }"
-    style="background-color: #ebeef3"
-  >
+  <div class="flex flex-col bg-sidebargray" :class="{ rounded: ratio < 1 }">
     <div class="image-wrapper rounded-full w-48 aspect-1 mx-auto mt-10">
       <img
         src="../assets/profile.webp"
@@ -11,7 +7,7 @@
         alt="Profile picture"
       />
     </div>
-    <h1 class="text-2xl text-center my-4 font-bold w-full">
+    <h1 class="text-2xl text-center my-4">
       {{ name }}
     </h1>
     <IconsBlock class="mx-auto" />
@@ -21,25 +17,17 @@
 <script>
 import IconsBlock from "@/components/IconsBlock.vue";
 import { NAME } from "@/constants";
-import { ref } from "vue";
 
 export default {
-  name: "SidebarComponent",
+  name: "SideBar",
   components: { IconsBlock },
   data() {
     return {
       name: NAME,
-      location: "New York, USA",
-      email: "qdr2104@columbia.edu",
-      linkedin: "in/quintenroets",
-      github: "quintenroets",
     };
   },
-  setup() {
-    const ratio = ref(window.innerWidth / window.innerHeight);
-    return {
-      ratio,
-    };
+  props: {
+    ratio: {},
   },
 };
 </script>
