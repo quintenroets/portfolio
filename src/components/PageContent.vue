@@ -2,7 +2,7 @@
   <router-view
     class="m-6"
     :class="{
-      'pb-14': ratio < 1,
+      'pb-14 mx-0': ratio < 1,
       'mx-2': ratio >= 1,
     }"
   />
