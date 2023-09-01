@@ -4,12 +4,7 @@
     <div class="flex justify-center">
       <div class="py-4 mx-8">
         <div class="image-wrapper aspect-1 max-w-full">
-          <img
-            class="w-96"
-            alt="Profile picture"
-            src="/profile.webp"
-            style="width: 420px"
-          />
+          <img class="w-420" alt="Profile picture" src="/profile.webp" />
         </div>
       </div>
     </div>

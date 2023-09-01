@@ -10,6 +10,9 @@ module.exports = {
         sidebargray: "#e5e7eb",
         "background-blue": "#f6f9fc",
       },
+      width: {
+        420: "420px",
+      },
     },
   },
   plugins: [require("@tailwindcss/aspect-ratio")],
