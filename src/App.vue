@@ -69,6 +69,7 @@ import SideBar from "@/components/SideBar.vue";
 import NavigationBar from "@/components/NavigationBar.vue";
 import PageContent from "@/components/PageContent.vue";
 import { useHead } from "unhead";
+import mainImageUrl from "./assets/profile.webp";
 
 useHead({
   meta: [
@@ -80,5 +81,12 @@ useHead({
   htmlAttrs: {
     lang: "en",
   },
+  link: [
+    {
+      rel: "preload",
+      as: "image",
+      href: mainImageUrl,
+    },
+  ],
 });
 </script>
