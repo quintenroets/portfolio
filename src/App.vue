@@ -2,7 +2,7 @@
   <div class="flex" id="app">
     <SideBar
       v-if="ratio >= 1"
-      class="h-page w-1/5 overflow-x-auto"
+      class="w-1/5 max-h-screen overflow-auto"
       :square="true"
     />
     <div class="flex flex-grow flex-col h-screen">
