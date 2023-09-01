@@ -20,8 +20,12 @@
 </template>
 
 <script>
-import IconsBlock from "@/components/IconsBlock.vue";
+import { defineAsyncComponent } from "vue";
+
 import { NAME } from "@/constants";
+const IconsBlock = defineAsyncComponent(() =>
+  import("@/components/IconsBlock.vue"),
+);
 
 export default {
   name: "SideBar",
