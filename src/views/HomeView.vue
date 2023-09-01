@@ -8,7 +8,7 @@
             class="w-420"
             alt="Profile picture"
             src="/profile.webp"
-            width="420"
+            height="420"
           />
         </div>
       </div>
