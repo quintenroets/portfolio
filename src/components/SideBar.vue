@@ -5,11 +5,7 @@
       :class="{ rounded: !square }"
     >
       <div class="image-wrapper rounded-full w-48 aspect-1 mx-auto mt-10">
-        <img
-          src="../assets/profile.webp"
-          class="rounded-full"
-          alt="Profile picture"
-        />
+        <img src="/favicon.ico" class="rounded-full" alt="Profile picture" />
       </div>
       <h1 class="text-2xl text-center my-4">
         {{ name }}

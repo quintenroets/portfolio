@@ -7,7 +7,7 @@
           <img
             class="w-96"
             alt="Profile picture"
-            src="../assets/profile.webp"
+            src="/favicon.ico"
             style="width: 420px"
           />
         </div>

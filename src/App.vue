@@ -69,7 +69,6 @@ import SideBar from "@/components/SideBar.vue";
 import NavigationBar from "@/components/NavigationBar.vue";
 import PageContent from "@/components/PageContent.vue";
 import { useHead } from "unhead";
-import mainImageUrl from "./assets/profile.webp";
 
 useHead({
   meta: [
@@ -85,7 +84,7 @@ useHead({
     {
       rel: "preload",
       as: "image",
-      href: mainImageUrl,
+      href: "/favicon.ico",
     },
   ],
 });
