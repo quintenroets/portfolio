@@ -80,12 +80,5 @@ useHead({
   htmlAttrs: {
     lang: "en",
   },
-  link: [
-    {
-      rel: "preload",
-      as: "image",
-      href: "/favicon.ico",
-    },
-  ],
 });
 </script>
