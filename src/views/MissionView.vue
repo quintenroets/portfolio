@@ -17,14 +17,14 @@
             of AI are inexhaustible.
           </p>
           <p>
-            I envision a future world transformed by AI where humanity thrives
-            on a global scale. A world where humans are liberated to pursue
-            their passions while advanced AI agents care for their health, build
-            their houses and design their roads. However, this future is not
-            without its challenges. The accelerating advancement and adoption of
-            AI raises complex issues surrounding ethics and control. Moreover,
-            the impact of a misbehaving system grows more severe as AI agents
-            become a bigger part of our lives.
+            I envision a future world transformed by AI, where humanity thrives
+            on a global scale. In this world, humans are free to pursue their
+            passions, while advanced AI agents construct their houses and
+            provide healthcare. However, this future is not without its
+            challenges. The accelerating advancement and adoption of AI raises
+            complex issues surrounding ethics and control. Moreover, the impact
+            of a misbehaving system grows as AI agents become more deeply
+            ingrained in our lives.
           </p>
           <p>
             This is why I believe in the importance of
