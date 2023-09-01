@@ -59,9 +59,4 @@ router.beforeEach((to, from, next) => {
   next();
 });
 
-router.afterEach(() => {
-  const el = document.getElementById("pageContent");
-  el.scrollTop = 0;
-});
-
 export default router;

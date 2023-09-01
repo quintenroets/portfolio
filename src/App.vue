@@ -6,7 +6,7 @@
       :square="true"
     />
     <div class="flex flex-grow flex-col h-screen">
-      <NavigationBar class="overflow-x-auto" :ratio="ratio" />
+      <NavigationBar :ratio="ratio" />
       <PageContent class="flex flex-grow flex-col" :ratio="ratio" />
     </div>
   </div>
