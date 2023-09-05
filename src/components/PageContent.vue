@@ -17,7 +17,6 @@ a {
 
 <script>
 export default {
-  name: "PageContent",
   props: {
     ratio: {},
   },

@@ -19,8 +19,6 @@ import "vue-loading-overlay/dist/css/index.css";
 import { useHead } from "unhead";
 
 export default {
-  name: "ResumeView",
-
   components: {
     Loading,
   },

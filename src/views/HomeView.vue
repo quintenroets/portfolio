@@ -39,8 +39,6 @@
 import { useHead } from "unhead";
 
 export default {
-  name: "HomeView",
-
   setup() {
     useHead({
       meta: [

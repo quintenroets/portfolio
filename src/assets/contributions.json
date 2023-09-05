@@ -1,0 +1,50 @@
+[
+    {
+        "project": "Pytorch Lightning",
+        "url": "https://github.com/Lightning-AI/lightning/",
+        "logo": "Lightning.webp",
+        "contributions": [
+            [
+                18369,
+                [
+                    "Discovered inefficiency in high-frequency metric rendering procedure in Pytorch Lightning's Rich Progress Bar",
+                    "Improved runtime efficiency by replacing in-loop string concatenations with generator expression",
+                    "Benchmarked and visualized performance gains using timeit",
+                    "Boosted metric rendering speed by 10%"
+                ]
+            ],
+            [
+                18372,
+                [
+                    "Enabled user-defined delimiter for machine learning metrics displayed in PyTorch Lightning's Rich Progress Bar, improving flexibility in metrics report"
+                ]
+            ],
+            [
+                18373,
+                [
+                    "Introduced configurable formatting type for metric values in PyTorch Lightning's Rich Progress Bar, enabling informative display of loss values in atypical ranges"
+                ]
+            ],
+            [
+                18483,
+                [
+                    "Improved stability of metrics rendering display by standardizing a formatting type with consistent decimal precision",
+                    "Implemented unit tests to verify the behavior and configuration of custom metric formatting"
+                ]
+            ]
+        ]
+    },
+    {
+        "project": "Fish Shell",
+        "url": "https://github.com/fish-shell/fish-shell/",
+        "logo": "Fish.webp",
+        "contributions": [
+            [
+                9565,
+                [
+                    "Introduced configurable external cursor shape, allowing users to specify cursor shape when running scripts"
+                ]
+            ]
+        ]
+    }
+]

@@ -67,12 +67,11 @@
     <div class="flex justify-center">
       <div class="max-w-2xl mt-4 text-left">
         <ExperienceCard
-          class="mb-14"
-          v-for="(experience, index) in experiences"
-          :key="index"
+          class="mb-10"
+          v-for="experience in experiences"
+          :key="experience"
           v-bind:info="experience"
-          v-bind:index="index"
-        ></ExperienceCard>
+        />
       </div>
     </div>
   </div>
@@ -84,7 +83,6 @@ import experiences from "../assets/experiences.json";
 import { useHead } from "unhead";
 
 export default {
-  name: "AboutView",
   components: { ExperienceCard },
   data() {
     return {

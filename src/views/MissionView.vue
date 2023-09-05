@@ -73,8 +73,6 @@
 <script>
 import { useHead } from "unhead";
 export default {
-  name: "MissionView",
-
   setup() {
     useHead({
       meta: [

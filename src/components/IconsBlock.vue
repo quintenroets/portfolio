@@ -25,7 +25,6 @@ import {
 library.add(faLinkedin, faGithub, faGlobe, faMapMarkerAlt, faEnvelope);
 
 export default {
-  name: "IconsBlock",
   data() {
     const email = "qdr2104@columbia.edu";
     const username = "quintenroets";

@@ -24,7 +24,6 @@ const IconsBlock = defineAsyncComponent(() =>
 );
 
 export default {
-  name: "SideBar",
   components: { IconsBlock },
   data() {
     return {

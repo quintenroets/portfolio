@@ -20,7 +20,7 @@
     <ul class="list-disc list-inside">
       <span v-for="(item, index) in info.bullets" :key="index">
         <span class="flex">
-          <li></li>
+          <li class="w-4"></li>
           <span>
             {{ item }}
           </span>
@@ -43,7 +43,6 @@ a {
 const requireLogo = require.context("@/assets/logos/", false, /\.webp$/);
 
 export default {
-  name: "ExperienceCard",
   props: {
     info: {},
   },

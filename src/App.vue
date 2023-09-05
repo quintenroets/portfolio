@@ -32,7 +32,7 @@ p {
 }
 
 body {
-  @apply bg-background-blue;
+  @apply bg-background-white;
 }
 
 .image-wrapper {

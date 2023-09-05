@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Portfolio</h1>
+    <h1>Projects</h1>
     <div class="flex justify-center">
       <div class="max-w-2xl text-left mt-4">
         <p>
@@ -23,13 +23,32 @@
         </p>
       </div>
     </div>
+    <h1>Open-source contributions</h1>
+    <div class="flex justify-center">
+      <div class="max-w-2xl mt-4 text-left flex-grow">
+        <ContributionCard
+          class="mb-8"
+          v-for="contribution in contributions"
+          :key="contribution"
+          v-bind:info="contribution"
+        />
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import { useHead } from "unhead";
+import ContributionCard from "@/components/ContributionCard.vue";
+import contributions from "../assets/contributions.json";
+
 export default {
-  name: "ProjectsView",
+  components: { ContributionCard },
+  data() {
+    return {
+      contributions: contributions,
+    };
+  },
 
   setup() {
     useHead({
