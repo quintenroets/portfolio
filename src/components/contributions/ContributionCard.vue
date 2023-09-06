@@ -1,7 +1,7 @@
 <template>
   <div class="mb-8">
     <div class="mb-4 max-w-fit">
-      <a :href="url" class="flex items-center">
+      <a target="_blank" rel="noopener" :href="url" class="flex items-center">
         <div
           class="image-wrapper w-9 aspect-1 bg-background-white"
           :class="name === 'Pytorch Lightning' ? 'mr-1' : 'mr-2.5'"

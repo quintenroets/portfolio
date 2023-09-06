@@ -7,6 +7,8 @@
             Discovered inefficiency in high-frequency metric rendering procedure
             in Pytorch Lightning's
             <a
+              target="_blank"
+              rel="noopener"
               href="https://lightning.ai/docs/pytorch/stable/api/lightning.pytorch.callbacks.RichProgressBar.html"
             >
               Rich Progress Bar</a
@@ -18,7 +20,12 @@
           </ContributionLine>
           <ContributionLine>
             Benchmarked and visualized performance gains using
-            <a href="https://docs.python.org/3/library/timeit.html">timeit</a>
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://docs.python.org/3/library/timeit.html"
+              >timeit</a
+            >
           </ContributionLine>
         </PullRequest>
         <PullRequest :project-url="url" :number="18372">
@@ -26,6 +33,8 @@
             Enabled user-defined delimiter for machine learning metrics
             displayed in PyTorch Lightning's
             <a
+              target="_blank"
+              rel="noopener"
               href="https://lightning.ai/docs/pytorch/stable/api/lightning.pytorch.callbacks.RichProgressBar.html"
             >
               Rich Progress Bar</a
@@ -37,6 +46,8 @@
             Introduced configurable formatting type for metric values in PyTorch
             Lightning's
             <a
+              target="_blank"
+              rel="noopener"
               href="https://lightning.ai/docs/pytorch/stable/api/lightning.pytorch.callbacks.RichProgressBar.html"
             >
               Rich Progress Bar</a

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="flex">
-      <a :href="info.url">
+      <a :href="info.url" target="_blank" rel="noopener">
         <div class="image-wrapper w-20 aspect-1 mb-4 mr-4">
           <img :src="logoUrl" alt="Company logo" />
         </div>
@@ -9,7 +9,9 @@
       <div class="flex flex-col">
         <p class="font-bold">{{ info.function }}</p>
         <p>
-          <a :href="info.url">{{ info.company }} </a>
+          <a :href="info.url" target="_blank" rel="noopener"
+            >{{ info.company }}
+          </a>
           • {{ info.type }}
         </p>
         <p>{{ info.duration }}</p>

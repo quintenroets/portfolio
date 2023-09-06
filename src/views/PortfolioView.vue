@@ -11,14 +11,23 @@
         </p>
         <p>
           My recent open-source project,
-          <a href="https://pypi.org/project/canvasdl/">canvasdl</a>, has
-          received over 4,000 downloads within a month of its release. This
-          Python package simplifies academic life by automating tasks like
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://pypi.org/project/canvasdl/"
+            >canvasdl</a
+          >, has received over 4,000 downloads within a month of its release.
+          This Python package simplifies academic life by automating tasks like
           downloading materials, checking updates, and managing deadlines.
         </p>
         <p>
           For more details about my work, please visit my
-          <a href="https://www.github.com/quintenroets">Github </a>
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://www.github.com/quintenroets"
+            >Github
+          </a>
           page.
         </p>
       </div>

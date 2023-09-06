@@ -2,8 +2,8 @@
   <div class="m-2 ml-1 mr-0 mb-4">
     <a
       class="flex items-center mb-2 max-w-fit"
-      rel="noopener"
       target="_blank"
+      rel="noopener"
       :href="projectUrl + 'pull/' + number"
     >
       <font-awesome-icon

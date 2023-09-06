@@ -4,7 +4,12 @@
     <div class="flex justify-center">
       <div class="max-w-2xl text-left mt-4">
         <p>
-          <a href="https://www.columbia.edu/" class="min-w-max">
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://www.columbia.edu/"
+            class="min-w-max"
+          >
             <div class="image-wrapper w-20 aspect-1 mr-4 float-left">
               <img
                 src="../assets/logos/columbia.webp"
@@ -12,30 +17,46 @@
               />
             </div>
           </a>
-          Supported by a <a href="https://www.baef.be/">BAEF Fellowship</a>, I
-          obtained a master's degree in Computer Science from
-          <a href="https://www.columbia.edu/">Columbia University</a>. In just 9
-          months, I completed the 1.5-year program, specializing in advanced
-          Machine Learning topics.
+          Supported by a
+          <a target="_blank" rel="noopener" href="https://www.baef.be/"
+            >BAEF Fellowship</a
+          >, I obtained a master's degree in Computer Science from
+          <a target="_blank" rel="noopener" href="https://www.columbia.edu/"
+            >Columbia University</a
+          >. In just 9 months, I completed the 1.5-year program, specializing in
+          advanced Machine Learning topics.
         </p>
 
         <p>
           At the
-          <a href="https://www.creativemachineslab.com/"
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://www.creativemachineslab.com/"
             >Creative Machines Lab</a
           >, I worked on the exact parameter reconstruction of black-box neural
           networks. By visualizing the local optima in the reconstruction
           process, I came up with an advanced sampling strategy iteratively
           combining in-distribution and out-of-distribution data. My
           sample-efficient
-          <a href="https://github.com/quintenroets/revnets/">approach</a>
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://github.com/quintenroets/revnets/"
+            >approach</a
+          >
           stabilized the reconstruction process for large networks and enabled
           me to reconstruct a network with 318,000 parameters, the largest
           reconstruction seen to date. The corresponding paper is currently
           under review for publication.
         </p>
         <p>
-          <a href="https://www.ugent.be/en" class="min-w-max">
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://www.ugent.be/en"
+            class="min-w-max"
+          >
             <div class="image-wrapper w-20 aspect-1 mr-4 float-left">
               <img
                 class="bg-white"
@@ -46,9 +67,10 @@
           </a>
           Before that, I earned a master's degree in Computer Science
           Engineering from
-          <a href="https://www.ugent.be/en">Ghent University</a>, where I
-          acquired competitive software development skills and developed a
-          thorough theoretical foundation in Machine Learning.
+          <a target="_blank" rel="noopener" href="https://www.ugent.be/en"
+            >Ghent University</a
+          >, where I acquired competitive software development skills and
+          developed a thorough theoretical foundation in Machine Learning.
         </p>
         <p>
           During my thesis research, I worked on domain adaptation of Computer

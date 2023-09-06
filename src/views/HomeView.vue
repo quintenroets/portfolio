@@ -13,10 +13,16 @@
         <p>
           Hello and welcome! My name is Quinten. I work as a Graduate Research
           Assistant at the
-          <a href="https://www.creativemachineslab.com/"
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://www.creativemachineslab.com/"
             >Creative Machines Lab</a
           >
-          at <a href="https://www.columbia.edu/">Columbia University</a>.
+          at
+          <a target="_blank" rel="noopener" href="https://www.columbia.edu/"
+            >Columbia University</a
+          >.
         </p>
         <p>
           I am a Machine Learning expert with a specialization in Computer

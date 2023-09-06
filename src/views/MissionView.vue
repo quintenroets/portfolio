@@ -37,27 +37,43 @@
           </p>
           <p>
             I am a proud member of the
-            <a href="https://www.effectivealtruism.org/">Effective Altruism</a>
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://www.effectivealtruism.org/"
+              >Effective Altruism</a
+            >
             community where I completed an AI Safety Fellowship. Last December,
             I participated in the
             <a
+              target="_blank"
+              rel="noopener"
               href="https://www.effectivealtruism.org/ea-global/events/eagxberkeley2022"
               >EAGxBerkeley</a
             >
             conference and this August, I will be at the
-            <a href="https://www.effectivealtruism.org/ea-global/events/eagxnyc"
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://www.effectivealtruism.org/ea-global/events/eagxnyc"
               >EAGxNYC</a
             >
             conference. I hope to see you there!
           </p>
-          <p style="margin-bottom: 0 !important">
+          <p class="mb-0 !important">
             For those interested in the dangers and possibilities of advanced
             AI, I recommend reading
-            <a href="https://en.wikipedia.org/wiki/Our_Final_Invention">
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://en.wikipedia.org/wiki/Our_Final_Invention"
+            >
               Our Final Invention
             </a>
             by James Barrat and
             <a
+              target="_blank"
+              rel="noopener"
               href="https://en.wikipedia.org/wiki/Superintelligence:_Paths,_Dangers,_Strategies"
             >
               Superintelligence
