@@ -23,9 +23,9 @@
         </p>
       </div>
     </div>
-    <h1 class="my-4">Open-source contributions</h1>
+    <h1 class="my-4 mt-10">Open-source contributions</h1>
     <div class="flex justify-center">
-      <div class="max-w-2xl mt-4 text-left flex-grow">
+      <div class="max-w-2xl text-left flex-grow">
         <ContributionCard
           class="mb-8"
           v-for="contribution in contributions"

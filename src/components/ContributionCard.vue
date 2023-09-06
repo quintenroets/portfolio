@@ -2,11 +2,14 @@
   <div class="mb-6">
     <a :href="info.url">
       <div class="flex items-center mb-4">
-        <div class="image-wrapper w-9 aspect-1 mr-2 bg-background-white">
+        <div
+          class="image-wrapper w-9 aspect-1 mr-2 bg-background-white"
+          :class="{ 'mr-1': info.project === 'Pytorch Lightning' }"
+        >
           <img :src="logoUrl" alt="Project logo" />
         </div>
         <div
-          class="flex flex-col justify-center font-bold text-2xl text-dark !important"
+          class="flex flex-col justify-center font-bold text-xl text-dark !important"
         >
           {{ info.project }}
         </div>
