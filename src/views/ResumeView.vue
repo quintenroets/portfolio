@@ -15,6 +15,7 @@
           class="absolute top-0 left-0 w-full h-full z-1"
           v-touch:swipe.left="$router.goRight"
           v-touch:swipe.right="$router.goLeft"
+          v-if="$router.isTouchDevice"
         ></div>
       </div>
     </div>
