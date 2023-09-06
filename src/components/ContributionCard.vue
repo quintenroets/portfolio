@@ -3,8 +3,8 @@
     <a :href="info.url">
       <div class="flex items-center mb-4">
         <div
-          class="image-wrapper w-9 aspect-1 mr-2 bg-background-white"
-          :class="{ 'mr-1': info.project === 'Pytorch Lightning' }"
+          class="image-wrapper w-9 aspect-1 bg-background-white"
+          :class="info.project === 'Pytorch Lightning' ? 'mr-1' : 'mr-2'"
         >
           <img :src="logoUrl" alt="Project logo" />
         </div>
