@@ -16,7 +16,7 @@
             [
                 18372,
                 [
-                    "Enabled user-defined delimiter for machine learning metrics displayed in PyTorch Lightning's Rich Progress Bar, improving flexibility in metrics report"
+                    "Enabled user-defined delimiter for machine learning metrics displayed in PyTorch Lightning's Rich Progress Bar, enhancing flexibility and readability of metrics display"
                 ]
             ],
             [
