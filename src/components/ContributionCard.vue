@@ -19,7 +19,12 @@
         v-for="(item, index) in info.contributions"
         :key="index"
       >
-        <a class="flex items-center mb-2" :href="info.url + 'pull/' + item[0]">
+        <a
+          class="flex items-center mb-2 max-w-fit"
+          rel="noopener"
+          target="_blank"
+          :href="info.url + 'pull/' + item[0]"
+        >
           <font-awesome-icon
             class="w-6 h-6 mr-2 text-dark !important"
             :icon="['fab', 'github']"

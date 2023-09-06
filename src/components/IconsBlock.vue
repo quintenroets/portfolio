@@ -2,6 +2,7 @@
   <div class="flex flex-col items-start w-56">
     <div class="block mt-4" v-for="item in contactItems" :key="item.href">
       <component
+        rel="noopener"
         target="_blank"
         :href="item.href"
         :is="item.href ? 'a' : 'div'"
