@@ -42,7 +42,7 @@
             [
                 9565,
                 [
-                    "Introduced configurable external cursor shape, allowing users to specify cursor shape when running scripts"
+                    "Introduced configurable external cursor shape, enabling users to specify cursor shape during scripts executions"
                 ]
             ]
         ]
