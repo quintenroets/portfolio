@@ -23,33 +23,16 @@
         </p>
       </div>
     </div>
-    <h1 class="my-4 mt-10">Open-source contributions</h1>
-    <div class="flex justify-center">
-      <div class="max-w-2xl text-left flex-grow">
-        <ContributionCard
-          class="mb-8"
-          v-for="contribution in contributions"
-          :key="contribution"
-          v-bind:info="contribution"
-        />
-      </div>
-    </div>
+    <ContributionsComponent />
   </div>
 </template>
 
 <script>
 import { useHead } from "unhead";
-import ContributionCard from "@/components/ContributionCard.vue";
-import contributions from "../assets/contributions.json";
+import ContributionsComponent from "@/components/contributions/ContributionsComponent.vue";
 
 export default {
-  components: { ContributionCard },
-  data() {
-    return {
-      contributions: contributions,
-    };
-  },
-
+  components: { ContributionsComponent },
   setup() {
     useHead({
       meta: [
