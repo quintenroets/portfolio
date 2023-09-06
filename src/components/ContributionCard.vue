@@ -15,16 +15,16 @@
 
     <div>
       <div
-        class="m-2 ml-1 mr-0"
+        class="m-2 ml-1 mr-0 mb-4"
         v-for="(item, index) in info.contributions"
         :key="index"
       >
-        <a class="flex items-center" :href="info.url + 'pull/' + item[0]">
+        <a class="flex items-center mb-2" :href="info.url + 'pull/' + item[0]">
           <font-awesome-icon
             class="w-6 h-6 mr-2 text-dark !important"
             :icon="['fab', 'github']"
           />
-          <div class="mt-1">#{{ item[0] }}</div>
+          <div>#{{ item[0] }}</div>
         </a>
         <div>
           <ul class="list-disc list-inside">
