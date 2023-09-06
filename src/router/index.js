@@ -59,4 +59,26 @@ router.beforeEach((to, from, next) => {
   next();
 });
 
+router.goLeft = function () {
+  let index = router.getIndex();
+  router.goIndex(index - 1);
+};
+
+router.goRight = function () {
+  let index = router.getIndex();
+  router.goIndex(index + 1);
+};
+
+router.getIndex = function () {
+  let currentPath = this.currentRoute.value.path;
+  return routes.findIndex((route) => route.path === currentPath);
+};
+
+router.goIndex = function (index) {
+  if (index >= 0 && index < routes.length) {
+    let path = routes[index].path;
+    this.push(path);
+  }
+};
+
 export default router;

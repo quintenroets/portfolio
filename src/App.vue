@@ -1,5 +1,10 @@
 <template>
-  <div class="flex" id="app">
+  <div
+    class="flex"
+    id="app"
+    v-touch:swipe.left="$router.goRight"
+    v-touch:swipe.right="$router.goLeft"
+  >
     <SideBar
       v-if="ratio >= 1"
       class="w-1/5 max-h-screen overflow-auto"
