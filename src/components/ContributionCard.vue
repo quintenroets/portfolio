@@ -4,7 +4,7 @@
       <div class="flex items-center mb-4">
         <div
           class="image-wrapper w-9 aspect-1 bg-background-white"
-          :class="info.project === 'Pytorch Lightning' ? 'mr-1' : 'mr-2'"
+          :class="info.project === 'Pytorch Lightning' ? 'mr-1' : 'mr-2.5'"
         >
           <img :src="logoUrl" alt="Project logo" />
         </div>
