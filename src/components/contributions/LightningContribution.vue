@@ -51,7 +51,8 @@
               href="https://lightning.ai/docs/pytorch/stable/api/lightning.pytorch.callbacks.RichProgressBar.html"
             >
               Rich Progress Bar</a
-            >, enabling informative display of loss values in all possible ranges
+            >, enabling informative display of loss values in all possible
+            ranges
           </ContributionLine>
         </PullRequest>
         <PullRequest :project-url="url" :number="18483">
