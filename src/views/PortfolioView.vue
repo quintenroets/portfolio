@@ -23,7 +23,7 @@
         </p>
       </div>
     </div>
-    <h1>Open-source contributions</h1>
+    <h1 class="my-4">Open-source contributions</h1>
     <div class="flex justify-center">
       <div class="max-w-2xl mt-4 text-left flex-grow">
         <ContributionCard
