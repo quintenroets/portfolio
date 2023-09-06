@@ -80,8 +80,10 @@
           acquired data. My efficient framework labeled 10,000 data samples in
           under 2 minutes and achieved accuracies of over 99% on both
           state-of-the-art datasets and production datasets provided by
-          <a href="https://robovision.ai/">Robovision</a>, making a relabeling
-          system feasible in the industry for the first time.
+          <a target="_blank" rel="noopener" href="https://robovision.ai/"
+            >Robovision</a
+          >, making a relabeling system feasible in the industry for the first
+          time.
         </p>
       </div>
     </div>

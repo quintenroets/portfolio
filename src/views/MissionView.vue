@@ -28,11 +28,15 @@
           </p>
           <p>
             This is why I believe in the importance of
-            <a href="https://en.wikipedia.org/wiki/AI_safety">AI safety</a>.
-            This domain studies problems like machine alignment and mechanistic
-            interpretability to safeguard the adoption of advanced AI. By
-            prioritizing AI safety, I believe we can build a world where we
-            thrive alongside intelligent systems. We have one chance to do it
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://en.wikipedia.org/wiki/AI_safety"
+              >AI safety</a
+            >. This domain studies problems like machine alignment and
+            mechanistic interpretability to safeguard the adoption of advanced
+            AI. By prioritizing AI safety, I believe we can build a world where
+            we thrive alongside intelligent systems. We have one chance to do it
             right, and we must act now!
           </p>
           <p>
