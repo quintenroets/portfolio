@@ -3,6 +3,8 @@ import HomeView from "../views/HomeView.vue";
 import { NAME, ROOT_URL } from "@/constants";
 import { useHead } from "unhead";
 
+let isTouchDevice = "ontouchstart" in window || window.DocumentTouch;
+
 const routes = [
   {
     path: "/",
@@ -75,7 +77,7 @@ router.getIndex = function () {
 };
 
 router.goIndex = function (index) {
-  if (index >= 0 && index < routes.length) {
+  if (index >= 0 && index < routes.length && isTouchDevice) {
     let path = routes[index].path;
     this.push(path);
   }
