@@ -15,7 +15,8 @@
           class="absolute top-0 left-0 w-full h-full z-1"
           v-touch:swipe.left="$router.goRight"
           v-touch:swipe.right="$router.goLeft"
-          v-if="$router.isTouchDevice"
+          v-on:touchend="onTouchEnd"
+          v-if="$router.isTouchDevice && this.catchEvents"
         ></div>
       </div>
     </div>
@@ -34,9 +35,9 @@ export default {
   data() {
     return {
       loading: true,
+      catchEvents: true,
     };
   },
-
   setup() {
     useHead({
       meta: [
@@ -46,6 +47,11 @@ export default {
         },
       ],
     });
+  },
+  methods: {
+    onTouchEnd() {
+      this.catchEvents = false;
+    },
   },
 };
 </script>
