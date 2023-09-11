@@ -10,7 +10,7 @@
     "bullets": [
       "Created web-based labeling tool pre-annotated with ML-based suggestions, reducing manual annotation time by 85%",
       "Developed and benchmarked over 20 distinct NLP pipelines, analyzing speed, accuracy, efficiency, and privacy preservation",
-      "Managed a broad spectrum of datasets to conduct rigorous comparisons, creating four customer-specific datasets, curating two open-source datasets, and generating seven synthetic datasets",
+      "Managed a broad spectrum of datasets to conduct rigorous comparisons, creating four customer-specific datasets, generating seven synthetic datasets, and curating two open-source datasets",
       "Optimized evaluation experiments by developing a parallelized, cloud-based approach, complemented by an innovative caching scheme, reducing the duration of a full experiment from 8 hours to less than 3 minutes",
       "Deployed an enhanced email parser in production, leading to an average accuracy gain of 0.5% across all customer bases",
       "Contributed to a $90K+ business development deal by presenting system capabilities to customer"
