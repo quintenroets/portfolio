@@ -11,17 +11,10 @@
     <div class="flex justify-center">
       <div class="max-w-2xl mt-4 text-left">
         <p>
-          Hello and welcome! My name is Quinten. I work as a Graduate Research
-          Assistant at the
-          <a
-            target="_blank"
-            rel="noopener"
-            href="https://www.creativemachineslab.com/"
-            >Creative Machines Lab</a
-          >
-          at
-          <a target="_blank" rel="noopener" href="https://www.columbia.edu/"
-            >Columbia University</a
+          Hello and welcome! My name is Quinten. I work as a Deep Learning Data
+          Engineer at
+          <a target="_blank" rel="noopener" href="https://www.flawlessai.com/"
+            >Flawless</a
           >.
         </p>
         <p>
