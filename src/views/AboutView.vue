@@ -82,7 +82,7 @@
           state-of-the-art datasets and production datasets provided by
           <a target="_blank" rel="noopener" href="https://robovision.ai/"
             >Robovision</a
-          >, making a relabeling system feasible in the industry for the first
+          >, making a retraining system feasible in the industry for the first
           time.
         </p>
       </div>
