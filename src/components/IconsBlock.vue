@@ -55,7 +55,7 @@ export default {
         },
         {
           icon: ["fas", "map-marker-alt"],
-          text: "New York, USA",
+          text: "Santa Monica, CA",
         },
       ],
     };
