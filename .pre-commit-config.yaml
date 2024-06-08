@@ -15,3 +15,6 @@ repos:
         files: ".*(vue|ts)"
         language: system
         pass_filenames: false
+
+ci:
+    skip: [install, lint]
