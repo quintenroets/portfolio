@@ -1,5 +1,32 @@
 [
   {
+    "company": "Flawless",
+    "type": "Full-time",
+    "url": "https://www.flawlessai.com/",
+    "logo": "Flawless.webp",
+    "duration": "Oct 2023 - now",
+    "location": "Santa Monica, CA",
+    "formatting_skip_margin": "true"
+  },
+  {
+    "duration": "May 2024 - now",
+    "function": "Deep Learning Engineer",
+    "bullets": [
+      "Productionizing research projects in the science department",
+      "Creating end-to-end evaluation pipeline for all technical components in the organization",
+      "Running and orchestrating distributed experiments processing up to 400 million frames"
+    ],
+    "formatting_skip_margin": "true"
+  },
+  {
+    "duration": "Oct 2023 - May 2024 • 8 months",
+    "function": "Deep Learning Data Engineer",
+    "bullets": [
+      "Sourcing, ingesting and processing large-scale multimodal datasets",
+      "Creating scalable framework for data lineage, ensuring responsible and consensual use of data for AI across the organization"
+    ]
+  },
+  {
     "company": "Tekst.ai",
     "type": "Internship",
     "url": "https://www.tekst.ai/",
@@ -22,7 +49,7 @@
     "url": "https://robovision.ai/",
     "logo": "Robovision.webp",
     "duration": "Jun 2021 - Jul 2021 • 2 months",
-    "function": "Deep Learning Research Intern",
+    "function": "Deep Learning Research Engineer",
     "location": "Ghent, Belgium",
     "bullets": [
       "Investigated 11 approaches to detect performance issues in neural networks deployed in production",

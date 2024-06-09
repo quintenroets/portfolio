@@ -1,21 +1,30 @@
 <template>
   <div class="m-2 ml-1 mr-0 mb-4">
-    <a
-      class="flex items-center mb-2 max-w-fit"
-      target="_blank"
-      rel="noopener"
-      :href="projectUrl + 'pull/' + number"
-    >
-      <font-awesome-icon
-        class="w-6 h-6 mr-2 text-dark !important"
-        :icon="['fab', 'github']"
-      />
-      <div>#{{ number }}</div>
-    </a>
-    <div>
-      <ul class="list-disc list-inside">
-        <slot />
-      </ul>
+    <div class="flex">
+      <div>
+        <font-awesome-icon
+          class="w-5 h-5 text-dark !important m-0.5 mr-1.5"
+          :icon="['fab', 'github']"
+        />
+      </div>
+      <div>
+        <div class="flex items-center mb-1 ml-1 max-w-fit">
+          {{ title }}
+          <a
+            target="_blank"
+            class="ml-2"
+            rel="noopener"
+            :href="projectUrl + 'pull/' + number"
+          >
+            #{{ number }}
+          </a>
+        </div>
+        <div>
+          <ul class="list-disc list-inside">
+            <slot />
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -30,6 +39,7 @@ export default {
   props: {
     projectUrl: String,
     number: Number,
+    title: String,
   },
   components: { FontAwesomeIcon },
 };

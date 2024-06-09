@@ -2,7 +2,11 @@
   <div>
     <ContributionCard name="Pytorch Lightning" :url="url" logo="Lightning.webp">
       <div>
-        <PullRequest :project-url="url" :number="18369">
+        <PullRequest
+          :project-url="url"
+          :number="18369"
+          title="Fix inefficiency in rich progress bar"
+        >
           <ContributionLine>
             Discovered inefficiency in high-frequency metric rendering procedure
             in Pytorch Lightning's
@@ -28,7 +32,12 @@
             >
           </ContributionLine>
         </PullRequest>
-        <PullRequest :project-url="url" :number="18372">
+        <PullRequest
+          :project-url="url"
+          :number="18372"
+          title="Make delimiter in rich progress bar configurable
+"
+        >
           <ContributionLine>
             Enabled user-defined delimiter for machine learning metrics
             displayed in PyTorch Lightning's
@@ -41,7 +50,11 @@
             >, enhancing flexibility and readability of metrics display
           </ContributionLine>
         </PullRequest>
-        <PullRequest :project-url="url" :number="18373">
+        <PullRequest
+          :project-url="url"
+          :number="18373"
+          title="Configurable metric formatting for RichProgressBar"
+        >
           <ContributionLine>
             Introduced configurable formatting type for metric values in PyTorch
             Lightning's
@@ -55,7 +68,11 @@
             ranges
           </ContributionLine>
         </PullRequest>
-        <PullRequest :project-url="url" :number="18483">
+        <PullRequest
+          :project-url="url"
+          :number="18483"
+          title="Improve default metric formatting for RichProgressBar"
+        >
           <ContributionLine>
             Improved stability of metrics rendering display by standardizing a
             formatting type with consistent decimal precision

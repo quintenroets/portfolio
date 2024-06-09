@@ -6,7 +6,8 @@
         :style="{ 'font-size': ratio < 1 ? '13px' : '' }"
       >
         <router-link to="/">Home</router-link>
-        <router-link to="/about">About</router-link>
+        <router-link to="/experience">Experience</router-link>
+        <router-link to="/education">Education</router-link>
         <router-link to="/mission">Mission</router-link>
         <router-link to="/portfolio">Portfolio</router-link>
         <router-link to="/resume">Resume</router-link>

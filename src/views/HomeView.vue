@@ -14,7 +14,7 @@
           Hello and welcome! My name is Quinten. I work as a Deep Learning
           Engineer at
           <a target="_blank" rel="noopener" href="https://www.flawlessai.com/"
-            >Flawless</a
+            >Flawless AI</a
           >.
         </p>
         <p>

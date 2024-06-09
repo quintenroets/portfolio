@@ -2,7 +2,11 @@
   <div>
     <ContributionCard name="Fish Shell" :url="url" logo="Fish.webp">
       <div>
-        <PullRequest :project-url="url" :number="9565">
+        <PullRequest
+          :project-url="url"
+          :number="9565"
+          title="Add new variable for external cursor mode"
+        >
           <ContributionLine>
             Introduced configurable external cursor shape, enabling users to
             specify cursor shape during script executions

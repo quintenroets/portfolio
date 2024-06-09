@@ -1,14 +1,22 @@
 <template>
-  <div>
+  <div
+    :class="{
+      'mb-10': !info.formatting_skip_margin,
+      'mb-4': info.formatting_skip_margin && info.bullets,
+    }"
+  >
     <div class="flex">
-      <a :href="info.url" target="_blank" rel="noopener">
-        <div class="image-wrapper w-20 aspect-1 mb-4 mr-4">
+      <a :href="info.url" target="_blank" rel="noopener" v-if="info.url">
+        <div
+          class="image-wrapper w-20 aspect-1 mr-4"
+          :class="{ 'mb-4': info.bullets, 'mb-2': !info.bullets }"
+        >
           <img :src="logoUrl" alt="Company logo" />
         </div>
       </a>
       <div class="flex flex-col">
         <p class="font-bold">{{ info.function }}</p>
-        <p>
+        <p v-if="info.company">
           <a :href="info.url" target="_blank" rel="noopener"
             >{{ info.company }}
           </a>
@@ -18,8 +26,7 @@
         <p>{{ info.location }}</p>
       </div>
     </div>
-
-    <ul class="list-disc list-inside">
+    <ul class="list-disc list-inside" v-if="info.bullets">
       <span v-for="(item, index) in info.bullets" :key="index">
         <span class="flex">
           <li class="w-4"></li>
