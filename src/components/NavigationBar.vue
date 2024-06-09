@@ -3,7 +3,8 @@
     <div class="flex justify-center overflow-x-auto">
       <nav
         class="whitespace-nowrap flex justify-between w-full max-w-2xl px-4 py-7"
-        :style="{ 'font-size': ratio < 1 ? '13px' : '' }"
+        :class="{ 'px-3': ratio < 1 }"
+        :style="{ 'font-size': ratio < 1 ? '11px' : '' }"
       >
         <router-link to="/">Home</router-link>
         <router-link to="/experience">Experience</router-link>
