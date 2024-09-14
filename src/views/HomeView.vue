@@ -11,7 +11,7 @@
     <div class="flex justify-center">
       <div class="max-w-2xl mt-4 text-left">
         <p>
-          Hello and welcome! My name is Quinten. I work as a Deep Learning
+          Hello and welcome! My name is Quinten. I work as a Machine Learning
           Engineer at
           <a target="_blank" rel="noopener" href="https://www.flawlessai.com/"
             >Flawless AI</a
