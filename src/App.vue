@@ -31,6 +31,11 @@ h1 {
   font-size: 2em !important;
 }
 
+h2 {
+  font-weight: bold !important;
+  font-size: 1.5em !important;
+}
+
 p {
   margin-bottom: 1em !important;
   font-size: 17px !important;
