@@ -12,9 +12,9 @@
     "duration": "May 2024 - now",
     "function": "Machine Learning Engineer",
     "bullets": [
-      "Productionizing research projects in the science department",
-      "Creating end-to-end evaluation pipeline for all technical components in the organization",
-      "Running and orchestrating distributed experiments processing up to 400 million frames per hour"
+      "Pioneered fully automated pipeline for the core product, reducing the time to process new projects from 4 weeks to 1 day",
+      "Standardized component interfaces and built parameterizable template repository with fully automated CI/CD, reducing the time to integrate new research solutions from 2 months to 6 hours",
+      "Orchestrated distributed experiments with full lineage, processing up to 400 million frames per hour"
     ],
     "formatting_skip_margin": "true"
   },
@@ -22,8 +22,8 @@
     "duration": "Oct 2023 - May 2024 • 8 months",
     "function": "Deep Learning Data Engineer",
     "bullets": [
-      "Sourcing, ingesting and processing large-scale multimodal datasets",
-      "Creating scalable framework for data lineage, ensuring responsible and consensual use of data for AI across the organization"
+      "Created scalable framework for ingesting, processing, and curating visual data, delivering 7 datasets and 54 million samples",
+      "Developed sampling algorithm for custom training data distributions, increasing model performance for 12 different projects"
     ]
   },
   {
@@ -35,12 +35,10 @@
     "function": "NLP Research Engineer",
     "location": "Ghent, Belgium",
     "bullets": [
-      "Created web-based labeling tool pre-annotated with ML-based suggestions, reducing manual annotation time by 85%",
-      "Developed and benchmarked over 20 distinct NLP pipelines, analyzing speed, accuracy, efficiency, and privacy preservation",
-      "Managed a broad spectrum of datasets to conduct rigorous comparisons, creating four customer-specific datasets, generating seven synthetic datasets, and curating two open-source datasets",
-      "Optimized evaluation experiments by developing a parallelized, cloud-based approach, complemented by an innovative caching scheme, reducing the duration of a full experiment from 8 hours to less than 3 minutes",
-      "Deployed an enhanced email parser in production, leading to an average accuracy gain of 0.5% across all customer bases",
-      "Contributed to a $90K+ business development deal by presenting system capabilities to customer"
+      "Invented method to measure degree of privacy-preservation in text embeddings, contributing to $90K business deal",
+      "Designed parallelized, distributed experiments with innovative caching scheme, reducing benchmarking time for different product solutions to under 3 minutes",
+      "Created web-based labeling tool pre-annotated with internal ML-based suggestions, reducing manual annotation time by 95%",
+      "Deployed an enhanced email parser in production, leading to an average accuracy gain of 0.5% across all customers"
     ]
   },
   {
