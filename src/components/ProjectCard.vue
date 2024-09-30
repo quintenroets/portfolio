@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div class="w-[36rem]" v-if="project">
+    <div>
       <a
         target="_blank"
         rel="noopener"
         :href="fullProjectUrl"
-        class="flex items-center"
+        class="flex items-center max-w-fit"
       >
         <font-awesome-icon
           class="w-6 h-6 text-dark hover:text-dark !important mr-1.5"
