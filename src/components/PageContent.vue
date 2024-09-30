@@ -13,6 +13,12 @@
 a {
   @apply text-blue !important;
 }
+a {
+  @apply hover:text-hover-blue !important;
+}
+a * {
+  @apply hover:text-hover-blue;
+}
 </style>
 
 <script>

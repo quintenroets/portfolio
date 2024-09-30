@@ -18,7 +18,7 @@
         </div>
         <font-awesome-icon
           v-else
-          class="w-8 h-8 text-dark !important mr-2.5"
+          class="w-8 h-8 text-dark hover:text-dark mr-2.5 !important"
           :icon="['fab', 'github']"
         />
         <div class="text-xl text-dark">
@@ -32,7 +32,7 @@
         :href="this.fullProjectUrl + '/pull/' + contribution.number"
       >
         <font-awesome-icon
-          class="w-5 h-5 text-dark !important"
+          class="w-5 h-5 text-dark hover:text-dark !important"
           :icon="['fab', 'github']"
         />
         #{{ contribution.number }}

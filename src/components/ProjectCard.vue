@@ -8,11 +8,11 @@
         class="flex items-center"
       >
         <font-awesome-icon
-          class="w-8 h-8 text-dark !important mr-2.5"
+          class="w-8 h-8 text-dark hover:text-dark !important mr-2.5"
           :icon="['fab', 'github']"
         />
         <div class="text-xl text-dark">
-          {{ project.name }}
+          {{ project.name ? project.name : project.url }}
         </div>
       </a>
     </div>
