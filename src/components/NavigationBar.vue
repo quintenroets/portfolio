@@ -29,7 +29,7 @@ export default {
 
 <style scoped>
 a {
-  @apply text-dark !important;
+  @apply text-dark hover:text-dark !important;
 }
 
 a.router-link-exact-active {

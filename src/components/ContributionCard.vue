@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="flex justify-between">
+    <div class="flex justify-between w-full">
       <a
         target="_blank"
         rel="noopener"
@@ -8,7 +8,7 @@
         class="flex items-center"
       >
         <div
-          class="image-wrapper w-9 aspect-1 bg-almost-white p-0 m-0"
+          class="image-wrapper w-6 aspect-1 bg-almost-white p-0 m-0"
           v-if="contribution.projectLogoUrl"
           :class="
             contribution.project === 'Pytorch Lightning' ? 'mr-1' : 'mr-2.5'
@@ -18,7 +18,7 @@
         </div>
         <font-awesome-icon
           v-else
-          class="w-9 h-9 text-dark !important mr-2.5"
+          class="w-6 h-6 text-dark hover:text-dark mr-2.5 !important"
           :icon="['fab', 'github']"
         />
         <div class="text-xl text-dark">
@@ -32,22 +32,18 @@
         :href="this.fullProjectUrl + '/pull/' + contribution.number"
       >
         <font-awesome-icon
-          class="w-5 h-5 text-dark !important"
+          class="w-5 h-5 text-dark hover:text-dark !important"
           :icon="['fab', 'github']"
         />
         #{{ contribution.number }}
       </a>
     </div>
 
-    <div class="text-lg font-bold my-3">
+    <div class="text-lg font-bold my-2">
       {{ contribution.title }}
     </div>
     <ul class="list-disc ml-4">
-      <span
-        class="flex text-left"
-        v-for="line in contribution.bullets"
-        :key="line"
-      >
+      <span class="flex" v-for="line in contribution.bullets" :key="line">
         <li>
           <span v-html="line"></span>
         </li>
