@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="my-4 mt-10">Open-source Contributions</h1>
+    <h1 class="my-4">Open-source Contributions</h1>
     <div class="flex justify-center">
       <div class="px-12 relative">
         <div
@@ -13,7 +13,7 @@
               @next="onNext"
               @previous="onPrevious"
             />
-            <ContributionsCard v-bind:contribution="contribution" />
+            <ContributionCard v-bind:contribution="contribution" />
           </div>
         </div>
       </div>
@@ -24,7 +24,7 @@
 <script>
 import contributions from "../assets/contributions.json";
 import NavigationButtonsComponent from "@/components/NavigationButtonsComponent.vue";
-import ContributionsCard from "@/components/ContributionsCard.vue";
+import ContributionCard from "@/components/ContributionCard.vue";
 export default {
   data() {
     return {
@@ -49,7 +49,7 @@ export default {
   },
   components: {
     NavigationButtonsComponent,
-    ContributionsCard,
+    ContributionCard,
   },
 };
 </script>

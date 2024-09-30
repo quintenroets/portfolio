@@ -8,7 +8,7 @@
         class="flex items-center"
       >
         <div
-          class="image-wrapper w-9 aspect-1 bg-almost-white p-0 m-0"
+          class="image-wrapper w-8 aspect-1 bg-almost-white p-0 m-0"
           v-if="contribution.projectLogoUrl"
           :class="
             contribution.project === 'Pytorch Lightning' ? 'mr-1' : 'mr-2.5'
@@ -18,7 +18,7 @@
         </div>
         <font-awesome-icon
           v-else
-          class="w-9 h-9 text-dark !important mr-2.5"
+          class="w-8 h-8 text-dark !important mr-2.5"
           :icon="['fab', 'github']"
         />
         <div class="text-xl text-dark">
@@ -43,11 +43,7 @@
       {{ contribution.title }}
     </div>
     <ul class="list-disc ml-4">
-      <span
-        class="flex text-left"
-        v-for="line in contribution.bullets"
-        :key="line"
-      >
+      <span class="flex" v-for="line in contribution.bullets" :key="line">
         <li>
           <span v-html="line"></span>
         </li>
