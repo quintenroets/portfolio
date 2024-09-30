@@ -14,7 +14,7 @@
     <div class="flex justify-center">
       <div class="px-12 relative">
         <div
-          class="bg-almost-white rounded-xl shadow-lg w-[39rem] h-48 border-2"
+          class="bg-almost-white rounded-xl shadow-lg w-[36rem] h-48 border-2"
         >
           <div class="p-6 text-left h-full">
             <NavigationButtonsComponent
@@ -23,27 +23,21 @@
               @next="onNext"
               @previous="onPrevious"
             />
-            <ProjectCard
-              v-bind:project="project"
-              v-if="currentIndex < numberOfProjects - 1"
-            />
-            <div
-              class="flex items-center h-full"
-              v-if="currentIndex === numberOfProjects - 1"
-            >
-              <div class="w-full text-center text-lg">
-                For all projects and more details, please visit my
-                <a
-                  target="_blank"
-                  rel="noopener"
-                  href="https://www.github.com/quintenroets"
-                  >Github
-                </a>
-                page.
-              </div>
-            </div>
+            <ProjectCard v-bind:project="project" />
           </div>
         </div>
+      </div>
+    </div>
+    <div class="flex justify-center">
+      <div class="max-w-2xl text-left mt-4">
+        For all 33 projects and more details, please visit my
+        <a
+          target="_blank"
+          rel="noopener"
+          href="https://www.github.com/quintenroets"
+          >Github
+        </a>
+        page.
       </div>
     </div>
   </div>
@@ -65,7 +59,7 @@ export default {
       return projects[this.currentIndex];
     },
     numberOfProjects() {
-      return projects.length + 1;
+      return projects.length;
     },
   },
   methods: {

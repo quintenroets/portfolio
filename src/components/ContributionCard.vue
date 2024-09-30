@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="flex justify-between w-[36rem]">
+    <div class="flex justify-between w-full">
       <a
         target="_blank"
         rel="noopener"
@@ -39,7 +39,7 @@
       </a>
     </div>
 
-    <div class="text-lg font-bold my-3">
+    <div class="text-lg font-bold my-2">
       {{ contribution.title }}
     </div>
     <ul class="list-disc ml-4">

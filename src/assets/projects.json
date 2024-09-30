@@ -1,6 +1,68 @@
 [
   {
     "url": "canvasdl",
-    "description": "Canvasdl is a Python package that simplifies academic life by automating tasks like downloading materials, checking updates, and managing deadlines. It has received over 4,000 downloads within a month of its release."
-  }
+    "description": "Canvasdl is a Python package that simplifies academic life by automating tasks like downloading materials, checking updates, and managing deadlines. The package has received over 4,000 downloads within a month of its release."
+  },
+  { "name": "actions", "description": "GitHub actions for CI/CD" },
+  {
+    "name": "backup",
+    "description": "Back up import files across entire disk"
+  },
+  {
+    "name": "cacher",
+    "description": "Persistent cache for expensive function calls"
+  },
+  { "name": "chat", "description": "CLI interface for local LLM assistant" },
+  { "name": "cli", "description": "High-level CLI" },
+  {
+    "name": "corona",
+    "description": "Visualize current situation of corona pandemic in Belgium"
+  },
+  {
+    "name": "downloader",
+    "description": "Download files in chunks with option to resume from partial downloads and retry on errors"
+  },
+  { "name": "music", "description": "Analyze your favorite music" },
+  {
+    "name": "music-frontend",
+    "description": "Manage your liked/favorite artists"
+  },
+  {
+    "name": "package-dev-tools",
+    "description": "CI/CD tools for Python packages"
+  },
+  {
+    "name": "package-dev-utils",
+    "description": "Common development utilities for Python packages"
+  },
+  {
+    "name": "package-utils",
+    "description": "Common utilities for Python packages"
+  },
+  { "name": "portfolio", "description": "Portfolio webapp" },
+  {
+    "name": "powertrace",
+    "description": "Detailed stack trace logging and visualization"
+  },
+  {
+    "name": "powertrace-hooks",
+    "description": "Automated stack trace logging and visualization"
+  },
+  {
+    "name": "python-package-template",
+    "description": "Template for Python package published on PyPI"
+  },
+  {
+    "name": "revnets",
+    "description": "Reverse engineer internal parameters of black box neural networks"
+  },
+  {
+    "name": "school",
+    "description": "Automatically download Ufora course materials"
+  },
+  {
+    "name": "superpathlib",
+    "description": "Enhanced pathlib library for advanced file operations"
+  },
+  { "name": "sysetup", "description": "Personal setup for linux OS" }
 ]

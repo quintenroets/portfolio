@@ -1,10 +1,10 @@
 <template>
   <div>
-    <h1 class="my-4">Open-source Contributions</h1>
+    <h1 class="mb-4">Open-source Contributions</h1>
     <div class="flex justify-center">
       <div class="px-12 relative">
         <div
-          class="bg-almost-white rounded-xl shadow-lg w-[39rem] h-72 border-2"
+          class="bg-almost-white rounded-xl shadow-lg w-[36rem] h-64 border-2"
         >
           <div class="p-6 text-left h-full">
             <NavigationButtonsComponent
