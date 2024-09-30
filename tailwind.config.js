@@ -9,6 +9,7 @@ module.exports = {
         dark: "#2c3e50",
         sidebargray: "#e5e7eb",
         "background-white": "#f6f9fc",
+        "almost-white": "#f1f4f7",
       },
       width: {
         420: "420px",
