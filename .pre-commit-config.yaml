@@ -1,4 +1,9 @@
 repos:
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: "v4.0.0-alpha.8"
+    hooks:
+      - id: prettier
+        files: ".*json"
   - repo: local
     hooks:
       - id: install
@@ -17,4 +22,4 @@ repos:
         pass_filenames: false
 
 ci:
-    skip: [install, lint]
+  skip: [install, lint]

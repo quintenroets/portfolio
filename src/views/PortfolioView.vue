@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Projects</h1>
+    <h1>Open-source Projects</h1>
     <div class="flex justify-center">
       <div class="max-w-2xl text-left mt-4">
         <p>
@@ -38,7 +38,7 @@
 
 <script>
 import { useHead } from "unhead";
-import ContributionsComponent from "@/components/contributions/ContributionsComponent.vue";
+import ContributionsComponent from "@/components/ContributionsComponent.vue";
 
 export default {
   components: { ContributionsComponent },

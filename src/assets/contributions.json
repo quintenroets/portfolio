@@ -1,0 +1,85 @@
+[
+  {
+    "number": "18369",
+    "title": "Fix inefficiency in RichProgressbar",
+    "project": "Pytorch Lightning",
+    "projectUrl": "Lightning-AI/lightning",
+    "projectLogoUrl": "Lightning.webp",
+    "bullets": [
+      "Discovered inefficiency in high-frequency metric rendering function, <br> inside Pytorch Lightning's <a target=\"_blank\" rel=\"noopener\" href=\"https://lightning.ai/docs/pytorch/stable/api/lightning.pytorch.callbacks.RichProgressBar.html\" > RichProgressBar</a>",
+      "Replaced in-loop string concatenations with a generator expression, <br> improving runtime efficiency by 10%",
+      "benchmarked and visualized performance gains using <a target=\"_blank\"rel=\"noopener\" href=\"https://docs.python.org/3/library/timeit.html\">timeit</a>"
+    ]
+  },
+  {
+    "number": "18373",
+    "title": "Introduce configurable metric formatting in RichProgressBar",
+    "project": "Pytorch Lightning",
+    "projectUrl": "Lightning-AI/lightning",
+    "projectLogoUrl": "Lightning.webp",
+    "bullets": [
+      "Introduced configurable formatting display for metric values <br> in Pytorch Lightning's <a target=\"_blank\" rel=\"noopener\" href=\"https://lightning.ai/docs/pytorch/stable/api/lightning.pytorch.callbacks.RichProgressBar.html\" > RichProgressBar</a>, <br> enabling precise tracking of extreme loss values during training"
+    ]
+  },
+  {
+    "number": "18483",
+    "title": "Improve default metric formatting for RichProgressbar",
+    "project": "Pytorch Lightning",
+    "projectUrl": "Lightning-AI/lightning",
+    "projectLogoUrl": "Lightning.webp",
+    "bullets": [
+      "Introduced a consistent decimal precision for all metric values, <br>improving stability and readability for all machine learning metrics displayed",
+      "Implemented unit tests for verifying configurable formatting"
+    ]
+  },
+  {
+    "number": "18372",
+    "title": "Introduce configurable delimiter in RichProgressbar",
+    "project": "Pytorch Lightning",
+    "projectUrl": "Lightning-AI/lightning",
+    "projectLogoUrl": "Lightning.webp",
+    "bullets": [
+      "Introduced configurable delimiter for machine learning metrics <br> in PyTorch Lightning's <a target=\"_blank\" rel=\"noopener\" href=\"https://lightning.ai/docs/pytorch/stable/api/lightning.pytorch.callbacks.RichProgressBar.html\" > Rich Progress Bar</a>, <br> enhancing flexibility and readability of the display"
+    ]
+  },
+  {
+    "number": "9565",
+    "title": "Add new variable for external cursor mode",
+    "project": "Fish Shell",
+    "projectUrl": "fish-shell/fish-shell",
+    "projectLogoUrl": "Fish.webp",
+    "bullets": [
+      "Introduced configurable external cursor shape, <br> enabling users to specify cursor shape during script executions"
+    ]
+  },
+  {
+    "number": "814",
+    "title": "Add mouse scroll support",
+    "project": "keyd",
+    "projectUrl": "rvaiya/keyd",
+    "projectLogoUrl": "",
+    "bullets": [
+      "Enabled mapping mouse scrolling to custom actions when modifier key is active"
+    ]
+  },
+  {
+    "number": "10",
+    "title": "Support cycling through windows",
+    "project": "ww-run-raise",
+    "projectUrl": "academo/ww-run-raise",
+    "projectLogoUrl": "",
+    "bullets": [
+      "Added functionality to cycle through open windows when application is raised repeatedly"
+    ]
+  },
+  {
+    "number": "11",
+    "title": "Support multiple users",
+    "project": "ww-run-raise",
+    "projectUrl": "academo/ww-run-raise",
+    "projectLogoUrl": "",
+    "bullets": [
+      "Added functionality to make the program work when multiple users are logged in"
+    ]
+  }
+]
