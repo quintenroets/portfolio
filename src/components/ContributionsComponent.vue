@@ -6,7 +6,7 @@
         <div
           class="bg-almost-white rounded-xl shadow-lg w-[39rem] h-72 border-2"
         >
-          <div class="p-6 text-left">
+          <div class="p-6 text-left h-full">
             <NavigationButtonsComponent
               v-bind:current-index="currentIndex"
               v-bind:total="numberOfContributions"
