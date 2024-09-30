@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="flex justify-between">
+    <div class="flex justify-between w-[36rem]">
       <a
         target="_blank"
         rel="noopener"
