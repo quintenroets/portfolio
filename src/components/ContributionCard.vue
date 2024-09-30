@@ -8,7 +8,7 @@
         class="flex items-center"
       >
         <div
-          class="image-wrapper w-8 aspect-1 bg-almost-white p-0 m-0"
+          class="image-wrapper w-6 aspect-1 bg-almost-white p-0 m-0"
           v-if="contribution.projectLogoUrl"
           :class="
             contribution.project === 'Pytorch Lightning' ? 'mr-1' : 'mr-2.5'
@@ -18,7 +18,7 @@
         </div>
         <font-awesome-icon
           v-else
-          class="w-8 h-8 text-dark hover:text-dark mr-2.5 !important"
+          class="w-6 h-6 text-dark hover:text-dark mr-2.5 !important"
           :icon="['fab', 'github']"
         />
         <div class="text-xl text-dark">

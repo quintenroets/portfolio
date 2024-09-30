@@ -8,15 +8,15 @@
         class="flex items-center"
       >
         <font-awesome-icon
-          class="w-8 h-8 text-dark hover:text-dark !important mr-2.5"
+          class="w-6 h-6 text-dark hover:text-dark !important mr-1.5"
           :icon="['fab', 'github']"
         />
-        <div class="text-xl text-dark">
+        <div class="text-xl">
           {{ project.name ? project.name : project.url }}
         </div>
       </a>
     </div>
-    <div class="mt-4 text-left">
+    <div class="mt-2 text-left">
       <span v-html="project.description"></span>
     </div>
   </div>
