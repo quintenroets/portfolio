@@ -1,68 +1,79 @@
 [
+  { "url": "cli", "description": "High-level CLI" },
   {
-    "url": "canvasdl",
-    "description": "Canvasdl is a Python package that simplifies academic life by automating tasks like downloading materials, checking updates, and managing deadlines. The package has received over 4,000 downloads within a month of its release."
+    "url": "cacher",
+    "description": "Persistent cache for expensive function calls"
   },
-  { "name": "actions", "description": "GitHub actions for CI/CD" },
   {
-    "name": "backup",
+    "url": "backup",
     "description": "Back up import files across entire disk"
   },
   {
-    "name": "cacher",
-    "description": "Persistent cache for expensive function calls"
+    "url": "canvasdl",
+    "description": "Canvasdl is a Python package that simplifies academic life by automating tasks like downloading materials, checking updates, and managing deadlines. The package has received over 4,000 downloads within a month of its release.",
+    "image": "https://raw.githubusercontent.com/quintenroets/canvasdl/main/examples/console.png",
+    "packageName": "canvasdl"
   },
-  { "name": "chat", "description": "CLI interface for local LLM assistant" },
-  { "name": "cli", "description": "High-level CLI" },
   {
-    "name": "corona",
+    "url": "actions",
+    "description": "GitHub actions for CI/CD",
+    "image": "https://raw.githubusercontent.com/quintenroets/actions/main/assets/examples/workflow.png"
+  },
+  {
+    "url": "chat",
+    "description": "CLI interface for local LLM assistant",
+
+    "image": "https://raw.githubusercontent.com/quintenroets/chat/main/assets/examples/example.png"
+  },
+  {
+    "url": "corona",
     "description": "Visualize current situation of corona pandemic in Belgium"
   },
   {
-    "name": "downloader",
+    "url": "downloader",
     "description": "Download files in chunks with option to resume from partial downloads and retry on errors"
   },
-  { "name": "music", "description": "Analyze your favorite music" },
+  { "url": "music", "description": "Analyze your favorite music" },
   {
-    "name": "music-frontend",
+    "url": "music-frontend",
     "description": "Manage your liked/favorite artists"
   },
   {
-    "name": "package-dev-tools",
+    "url": "package-dev-tools",
     "description": "CI/CD tools for Python packages"
   },
   {
-    "name": "package-dev-utils",
+    "url": "package-dev-utils",
     "description": "Common development utilities for Python packages"
   },
   {
-    "name": "package-utils",
+    "url": "package-utils",
     "description": "Common utilities for Python packages"
   },
-  { "name": "portfolio", "description": "Portfolio webapp" },
+  { "url": "portfolio", "description": "Portfolio webapp" },
   {
-    "name": "powertrace",
+    "url": "powertrace",
     "description": "Detailed stack trace logging and visualization"
   },
   {
-    "name": "powertrace-hooks",
+    "url": "powertrace-hooks",
     "description": "Automated stack trace logging and visualization"
   },
   {
-    "name": "python-package-template",
+    "url": "python-package-template",
     "description": "Template for Python package published on PyPI"
   },
   {
-    "name": "revnets",
+    "url": "revnets",
     "description": "Reverse engineer internal parameters of black box neural networks"
   },
   {
-    "name": "school",
+    "url": "school",
     "description": "Automatically download Ufora course materials"
   },
   {
-    "name": "superpathlib",
-    "description": "Enhanced pathlib library for advanced file operations"
+    "url": "superpathlib",
+    "description": "Enhanced pathlib library for advanced file operations. 2000+ monthly downloads"
   },
-  { "name": "sysetup", "description": "Personal setup for linux OS" }
+  { "url": "sysetup", "description": "Personal setup for linux OS" }
 ]

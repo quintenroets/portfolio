@@ -13,9 +13,7 @@
     </div>
     <div class="flex justify-center">
       <div class="px-12 relative">
-        <div
-          class="bg-almost-white rounded-xl shadow-lg w-[36rem] h-48 border-2"
-        >
+        <div class="bg-almost-white rounded-xl shadow-lg w-[40rem] border-2">
           <div class="p-6 text-left h-full">
             <NavigationButtonsComponent
               v-bind:current-index="currentIndex"
@@ -23,7 +21,7 @@
               @next="onNext"
               @previous="onPrevious"
             />
-            <ProjectCard v-bind:project="project" />
+            <ProjectCard v-bind:project="project" class="mb-4" />
           </div>
         </div>
       </div>
