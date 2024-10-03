@@ -65,8 +65,8 @@
             conference. I hope to see you there!
           </p>
           <p class="mb-0 !important">
-            For those interested in the dangers and possibilities of advanced
-            AI, I recommend reading
+            For those interested in the possibilities and risks of advanced AI,
+            I recommend reading
             <a
               target="_blank"
               rel="noopener"

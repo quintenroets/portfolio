@@ -1,24 +1,26 @@
 [
-  { "url": "cli", "description": "High-level CLI" },
-  {
-    "url": "cacher",
-    "description": "Persistent cache for expensive function calls"
-  },
   {
     "url": "backup",
-    "description": "Back up import files across entire disk"
+    "description": "Automate the back up of important files across the entire disk",
+    "image": "backup.png"
   },
   {
     "url": "canvasdl",
-    "description": "Canvasdl is a Python package that simplifies academic life by automating tasks like downloading materials, checking updates, and managing deadlines. The package has received over 4,000 downloads within a month of its release.",
+    "description": "Simplify academic life by automating tasks like downloading materials, checking updates, and managing deadlines. The package has received over 4,000 downloads within a month of its release.",
     "image": "https://raw.githubusercontent.com/quintenroets/canvasdl/main/examples/console.png",
     "packageName": "canvasdl"
   },
   {
-    "url": "actions",
-    "description": "GitHub actions for CI/CD",
-    "image": "https://raw.githubusercontent.com/quintenroets/actions/main/assets/examples/workflow.png"
+    "url": "music",
+    "description": "Analyze and manage your favorite artists and their music",
+    "image": "https://raw.githubusercontent.com/quintenroets/music/main/assets/examples/artists.png"
   },
+  {
+    "url": "revnets",
+    "description": "Reverse engineer internal parameters of black box neural networks",
+    "image": "revnets.png"
+  },
+
   {
     "url": "chat",
     "description": "CLI interface for local LLM assistant",
@@ -27,16 +29,37 @@
   },
   {
     "url": "corona",
-    "description": "Visualize current situation of corona pandemic in Belgium"
+    "description": "Visualize current Covid pandemic situation in Belgium",
+    "image": "https://raw.githubusercontent.com/quintenroets/corona/main/examples/out.png"
+  },
+  {
+    "url": "actions",
+    "description": "GitHub actions for CI/CD",
+    "image": "https://raw.githubusercontent.com/quintenroets/actions/main/assets/examples/workflow.png"
+  },
+  { "url": "portfolio", "description": "Portfolio webapp" },
+  {
+    "url": "school",
+    "description": "Automatically download Ufora course materials"
+  },
+  { "url": "sysetup", "description": "Personal setup for linux OS" },
+  {
+    "url": "python-package-template",
+    "description": "Template for Python package published on PyPI"
+  },
+
+  {
+    "url": "superpathlib",
+    "description": "Enhanced pathlib library for advanced file operations. 2000+ monthly downloads"
+  },
+  { "url": "cli", "description": "High-level CLI" },
+  {
+    "url": "cacher",
+    "description": "Persistent cache for expensive function calls"
   },
   {
     "url": "downloader",
     "description": "Download files in chunks with option to resume from partial downloads and retry on errors"
-  },
-  { "url": "music", "description": "Analyze your favorite music" },
-  {
-    "url": "music-frontend",
-    "description": "Manage your liked/favorite artists"
   },
   {
     "url": "package-dev-tools",
@@ -50,7 +73,6 @@
     "url": "package-utils",
     "description": "Common utilities for Python packages"
   },
-  { "url": "portfolio", "description": "Portfolio webapp" },
   {
     "url": "powertrace",
     "description": "Detailed stack trace logging and visualization"
@@ -58,22 +80,5 @@
   {
     "url": "powertrace-hooks",
     "description": "Automated stack trace logging and visualization"
-  },
-  {
-    "url": "python-package-template",
-    "description": "Template for Python package published on PyPI"
-  },
-  {
-    "url": "revnets",
-    "description": "Reverse engineer internal parameters of black box neural networks"
-  },
-  {
-    "url": "school",
-    "description": "Automatically download Ufora course materials"
-  },
-  {
-    "url": "superpathlib",
-    "description": "Enhanced pathlib library for advanced file operations. 2000+ monthly downloads"
-  },
-  { "url": "sysetup", "description": "Personal setup for linux OS" }
+  }
 ]
