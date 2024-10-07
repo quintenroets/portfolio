@@ -29,7 +29,7 @@
       <div class="my-2 text-center text-lg">
         <span v-html="project.description"></span>
       </div>
-      <div class="flex justify-center grow">
+      <div class="flex justify-center grow mb-6">
         <img
           :src="imageUrl"
           alt="Project image"

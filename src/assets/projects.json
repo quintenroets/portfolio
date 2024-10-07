@@ -1,31 +1,30 @@
 [
   {
     "url": "backup",
-    "description": "Automate the backup of important files across the entire disk",
-    "image": "backup.png",
+    "description": "Automated backup and restoration of important files across the entire disk",
+    "image": "backup.webp",
     "badges": "true",
     "package": "backupmaster"
   },
   {
     "url": "canvasdl",
-    "description": "Simplify academic life by automating tasks like downloading materials, checking updates, and managing deadlines",
-    "image": "canvasdl.png",
+    "description": "Cli tool to simplify academic life by automating tasks like downloading course material, checking updates, and managing deadlines",
+    "image": "canvasdl.webp",
     "packageName": "canvasdl",
     "badges": "true"
   },
   {
     "url": "music",
-    "description": "Analyze and manage favorite music and artists",
+    "description": "Application to analyze and manage favorite music and artists",
     "image": "https://raw.githubusercontent.com/quintenroets/music/main/assets/examples/artists.png",
     "badges": "true",
     "package": "musicmaster"
   },
   {
     "url": "revnets",
-    "description": "Reverse engineer internal parameters of black box neural networks",
-    "image": "revnets.png"
+    "description": "Experiments to reconstruct internal parameters of black box neural networks",
+    "image": "revnets.webp"
   },
-
   {
     "url": "chat",
     "description": "CLI interface for local LLM assistant",
@@ -35,7 +34,7 @@
   },
   {
     "url": "corona",
-    "description": "Visualize current Covid pandemic situation in Belgium",
+    "description": "Visualization tool for current Covid pandemic situation in Belgium",
     "image": "https://raw.githubusercontent.com/quintenroets/corona/main/examples/out.png"
   },
   {
@@ -43,17 +42,21 @@
     "description": "GitHub actions for CI/CD",
     "image": "https://raw.githubusercontent.com/quintenroets/actions/main/assets/examples/workflow.png"
   },
-  { "url": "portfolio", "description": "Portfolio webapp" },
   {
     "url": "sysetup",
-    "description": "Personal setup for linux OS",
+    "description": "Automated personal setup for new installations of Linux systems, including apps, shortcuts, and settings.",
     "image": "sysetup.webp"
   },
   {
-    "url": "python-package-template",
-    "description": "Template for Python package published on PyPI"
+    "url": "portfolio",
+    "description": "Portfolio webapp",
+    "image": "portfolio.webp"
   },
-
+  {
+    "url": "python-package-template",
+    "description": "Repository to automate the maintenance of Python projects. Custom CI scripts instantiate new projects and propagate all changes in this repository to derived project with pull requests.",
+    "image": "template.webp"
+  },
   {
     "url": "superpathlib",
     "description": "Enhanced pathlib library for advanced file operations.",
@@ -61,7 +64,7 @@
   },
   {
     "url": "cli",
-    "description": "High-level CLI",
+    "description": "High-level interface for interactions with the command-line and external processes",
     "badges": "true",
     "package": "powercli"
   },
@@ -71,7 +74,7 @@
   },
   {
     "url": "downloader",
-    "description": "Download files in chunks, resume from partial downloads and retry on errors",
+    "description": "Package to download files in chunks, resume from partial downloads and retry on errors",
     "badges": "true"
   },
   {
@@ -81,22 +84,22 @@
   },
   {
     "url": "package-dev-utils",
-    "description": "Common development utilities for Python packages",
+    "description": "Development utilities for Python packages",
     "badges": "true"
   },
   {
     "url": "package-utils",
-    "description": "Common utilities for Python packages",
+    "description": "Generic utilities for Python packages",
     "badges": "true"
   },
   {
     "url": "powertrace",
-    "description": "Detailed stack trace logging and visualization",
+    "description": "Package for detailed stack trace logging and visualization",
     "badges": "true"
   },
   {
     "url": "powertrace-hooks",
-    "description": "Automated stack trace logging and visualization",
+    "description": "Package that installs automated stack trace logging and visualization",
     "badges": "true"
   }
 ]
