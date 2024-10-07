@@ -4,7 +4,7 @@
       <div class="flex justify-between w-full">
         <ExternalLink
           :href="fullProjectUrl"
-          class="flex items-center"
+          class="flex items-center text-black !important"
           :highlight="false"
         >
           <div
@@ -79,3 +79,12 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+span >>> a {
+  @apply text-blue;
+}
+span >>> a {
+  @apply hover:text-hover-blue;
+}
+</style>
