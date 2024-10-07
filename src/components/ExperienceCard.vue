@@ -17,7 +17,7 @@
       <div class="flex flex-col">
         <p class="font-bold">{{ info.function }}</p>
         <p v-if="info.company">
-          <ExternalLink :href="info.url">
+          <ExternalLink :href="info.url" :highlight-without-hover="false">
             {{ info.company }}
           </ExternalLink>
           • {{ info.type }}
