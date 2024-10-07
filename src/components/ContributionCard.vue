@@ -4,7 +4,7 @@
       <div class="flex justify-between w-full">
         <ExternalLink
           :href="fullProjectUrl"
-          class="flex items-center text-black !important"
+          class="flex items-center"
           :highlight="false"
         >
           <div
@@ -27,7 +27,7 @@
         </ExternalLink>
         <ExternalLink class="text-xl" :href="url">
           <font-awesome-icon
-            class="w-5 h-5 text-dark hover:text-dark !important"
+            class="w-5 h-5 text-dark hover:text-dark"
             :icon="['fab', 'github']"
           />
           #{{ contribution.number }}

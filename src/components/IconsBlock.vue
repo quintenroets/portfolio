@@ -59,9 +59,3 @@ export default {
   components: { FontAwesomeIcon, ExternalLink },
 };
 </script>
-
-<style scoped>
-a {
-  @apply text-dark !important;
-}
-</style>

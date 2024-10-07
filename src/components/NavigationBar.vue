@@ -28,10 +28,6 @@ export default {
 </script>
 
 <style scoped>
-a {
-  @apply text-dark hover:text-dark !important;
-}
-
 a.router-link-exact-active {
   font-weight: bold;
   @apply text-black;
