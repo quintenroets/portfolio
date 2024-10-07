@@ -1,8 +1,8 @@
 <template>
-  <div class="flex flex-col" :class="{ 'flex flex-grow': !square }">
+  <div class="flex flex-col" :class="{ 'flex-grow': !this.square }">
     <div
       class="flex flex-col flex-grow bg-sidebargray"
-      :class="{ rounded: !square }"
+      :class="{ rounded: !this.square }"
     >
       <div class="image-wrapper rounded-full w-48 aspect-1 mx-auto mt-10">
         <img src="/profile.webp" class="rounded-full" alt="Profile picture" />

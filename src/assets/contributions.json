@@ -59,7 +59,7 @@
     "projectUrl": "rvaiya/keyd",
     "projectLogoUrl": "",
     "bullets": [
-      "Enabled mapping mouse scrolling to custom actions when modifier key is active"
+      "Implemented support for mapping mouse scrolling to custom actions when modifier key is active"
     ]
   },
   {

@@ -12,8 +12,8 @@
     "duration": "May 2024 - now",
     "function": "Machine Learning Engineer",
     "bullets": [
-      "Pioneered fully automated pipeline for the core product, reducing the time to process new projects from 4 weeks to 1 day",
-      "Standardized component interfaces and built parameterizable template repository with fully automated CI/CD, reducing the time to integrate new research solutions from 2 months to 6 hours",
+      "Pioneered fully automated pipeline for the core product, reducing the time to process new client projects from 4 weeks to 1 day",
+      "Standardized component interfaces and built parameterizable template repository with fully automated CI/CD process, reducing the time to integrate new research solutions from 2 months to 6 hours",
       "Orchestrated distributed experiments with full lineage, processing up to 400 million frames per hour"
     ],
     "formatting_skip_margin": "true"
@@ -23,7 +23,7 @@
     "function": "Deep Learning Data Engineer",
     "bullets": [
       "Created scalable framework for ingesting, processing, and curating visual data, delivering 7 datasets and 54 million samples",
-      "Developed sampling algorithm for custom training data distributions, increasing model performance for 12 different projects"
+      "Developed sampling algorithm for custom training distributions, increasing model performance by 3-7% for 12 projects in total"
     ]
   },
   {

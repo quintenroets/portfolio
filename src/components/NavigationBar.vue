@@ -9,8 +9,8 @@
         <router-link to="/">Home</router-link>
         <router-link to="/experience">Experience</router-link>
         <router-link to="/education">Education</router-link>
-        <router-link to="/mission">Mission</router-link>
         <router-link to="/portfolio">Portfolio</router-link>
+        <router-link to="/mission">Mission</router-link>
         <router-link to="/resume">Resume</router-link>
         <router-link to="/contact" v-if="ratio < 1">Contact</router-link>
       </nav>
@@ -28,10 +28,6 @@ export default {
 </script>
 
 <style scoped>
-a {
-  @apply text-dark hover:text-dark !important;
-}
-
 a.router-link-exact-active {
   font-weight: bold;
   @apply text-black;

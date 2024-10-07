@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ProjectsComponent />
+    <ProjectsComponent class="mb-4" />
     <ContributionsComponent />
   </div>
 </template>
@@ -11,7 +11,10 @@ import ContributionsComponent from "@/components/ContributionsComponent.vue";
 import ProjectsComponent from "@/components/ProjectsComponent.vue";
 
 export default {
-  components: { ContributionsComponent, ProjectsComponent },
+  components: {
+    ContributionsComponent,
+    ProjectsComponent,
+  },
   setup() {
     useHead({
       meta: [

@@ -13,8 +13,8 @@
         <p>
           Hello and welcome! My name is Quinten. I work as a Machine Learning
           Engineer at
-          <a target="_blank" rel="noopener" href="https://www.flawlessai.com/"
-            >Flawless AI</a
+          <ExternalLink href="https://www.flawlessai.com/"
+            >Flawless AI</ExternalLink
           >.
         </p>
         <p>
@@ -36,6 +36,7 @@
 
 <script>
 import { useHead } from "unhead";
+import ExternalLink from "@/components/externalLink.vue";
 
 export default {
   setup() {
@@ -49,5 +50,6 @@ export default {
       ],
     });
   },
+  components: { ExternalLink },
 };
 </script>

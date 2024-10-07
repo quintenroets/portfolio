@@ -4,46 +4,35 @@
     <div class="flex justify-center">
       <div class="max-w-2xl text-left mt-4">
         <p>
-          <a
-            target="_blank"
-            rel="noopener"
-            href="https://www.columbia.edu/"
-            class="min-w-max"
-          >
+          <ExternalLink href="https://www.columbia.edu/" class="min-w-max">
             <div class="image-wrapper w-20 aspect-1 mr-4 float-left">
               <img
                 src="../assets/logos/columbia.webp"
                 alt="Columbia University"
               />
             </div>
-          </a>
+          </ExternalLink>
           Supported by a
-          <a target="_blank" rel="noopener" href="https://www.baef.be/"
-            >BAEF Fellowship</a
+          <ExternalLink href="https://www.baef.be/"
+            >BAEF Fellowship</ExternalLink
           >, I obtained a master's degree in Computer Science from
-          <a target="_blank" rel="noopener" href="https://www.columbia.edu/"
-            >Columbia University</a
+          <ExternalLink href="https://www.columbia.edu/"
+            >Columbia University</ExternalLink
           >. In just 9 months, I completed the 1.5-year program, specializing in
           advanced Machine Learning topics.
         </p>
 
         <p>
           At the
-          <a
-            target="_blank"
-            rel="noopener"
-            href="https://www.creativemachineslab.com/"
-            >Creative Machines Lab</a
+          <ExternalLink href="https://www.creativemachineslab.com/"
+            >Creative Machines Lab</ExternalLink
           >, I worked on the exact parameter reconstruction of black-box neural
           networks. By visualizing the local optima in the reconstruction
           process, I came up with an advanced sampling strategy iteratively
           combining in-distribution and out-of-distribution data. My
           sample-efficient
-          <a
-            target="_blank"
-            rel="noopener"
-            href="https://github.com/quintenroets/revnets/"
-            >approach</a
+          <ExternalLink href="https://github.com/quintenroets/revnets/"
+            >approach</ExternalLink
           >
           stabilized the reconstruction process for large networks and enabled
           me to reconstruct a network with 318,000 parameters, the largest
@@ -51,12 +40,7 @@
           under review for publication.
         </p>
         <p>
-          <a
-            target="_blank"
-            rel="noopener"
-            href="https://www.ugent.be/en"
-            class="min-w-max"
-          >
+          <ExternalLink href="https://www.ugent.be/en" class="min-w-max">
             <div class="image-wrapper w-20 aspect-1 mr-4 float-left">
               <img
                 class="bg-white"
@@ -64,11 +48,11 @@
                 alt="Ghent University"
               />
             </div>
-          </a>
+          </ExternalLink>
           Before that, I earned a master's degree in Computer Science
           Engineering from
-          <a target="_blank" rel="noopener" href="https://www.ugent.be/en"
-            >Ghent University</a
+          <ExternalLink href="https://www.ugent.be/en"
+            >Ghent University</ExternalLink
           >, where I acquired competitive software development skills and
           developed a thorough theoretical foundation in Machine Learning.
         </p>
@@ -80,10 +64,9 @@
           acquired data. My efficient framework labeled 10,000 data samples in
           under 2 minutes and achieved accuracies of over 99% on both
           state-of-the-art datasets and production datasets provided by
-          <a target="_blank" rel="noopener" href="https://robovision.ai/"
-            >Robovision</a
-          >, making an automated retraining system feasible in the industry for
-          the first time.
+          <ExternalLink href="https://robovision.ai/">Robovision</ExternalLink>,
+          making an automated retraining system feasible in the industry for the
+          first time.
         </p>
       </div>
     </div>
@@ -92,6 +75,7 @@
 
 <script>
 import { useHead } from "unhead";
+import ExternalLink from "@/components/externalLink.vue";
 
 export default {
   setup() {
@@ -105,5 +89,6 @@ export default {
       ],
     });
   },
+  components: { ExternalLink },
 };
 </script>
