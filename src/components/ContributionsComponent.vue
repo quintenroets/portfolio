@@ -47,3 +47,12 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+a >>> a {
+  @apply text-blue;
+}
+a >>> a {
+  @apply hover:text-hover-blue;
+}
+</style>

@@ -6,9 +6,9 @@
     "projectUrl": "Lightning-AI/lightning",
     "projectLogoUrl": "Lightning.webp",
     "bullets": [
-      "Discovered inefficiency in high-frequency metric rendering function, <br> inside Pytorch Lightning's <ExternalLink target=\"_blank\" rel=\"noopener\" href=\"https://lightning.ai/docs/pytorch/stable/api/lightning.pytorch.callbacks.RichProgressBar.html\" > RichProgressBar</ExternalLink>",
+      "Discovered inefficiency in high-frequency metric rendering function, <br> inside Pytorch Lightning's <a href=\"https://lightning.ai/docs/pytorch/stable/api/lightning.pytorch.callbacks.RichProgressBar.html\" > RichProgressBar </a>",
       "Replaced in-loop string concatenations with a generator expression, <br> improving runtime efficiency by 10%",
-      "benchmarked and visualized performance gains using <external-link href=\"https://docs.python.org/3/library/timeit.html\">timeit </external-link>"
+      "benchmarked and visualized performance gains using <a href=\"https://docs.python.org/3/library/timeit.html\">timeit </a>"
     ]
   },
   {
@@ -18,7 +18,7 @@
     "projectUrl": "Lightning-AI/lightning",
     "projectLogoUrl": "Lightning.webp",
     "bullets": [
-      "Introduced configurable formatting display for metric values <br> in Pytorch Lightning's <a target=\"_blank\" rel=\"noopener\" href=\"https://lightning.ai/docs/pytorch/stable/api/lightning.pytorch.callbacks.RichProgressBar.html\" > RichProgressBar</a>, <br> enabling precise tracking of extreme loss values during training"
+      "Introduced configurable formatting display for metric values <br> in Pytorch Lightning's <a href=\"https://lightning.ai/docs/pytorch/stable/api/lightning.pytorch.callbacks.RichProgressBar.html\" > RichProgressBar</a>, <br> enabling precise tracking of extreme loss values during training"
     ]
   },
   {
@@ -39,7 +39,7 @@
     "projectUrl": "Lightning-AI/lightning",
     "projectLogoUrl": "Lightning.webp",
     "bullets": [
-      "Introduced configurable delimiter for machine learning metrics <br> in PyTorch Lightning's <a target=\"_blank\" rel=\"noopener\" href=\"https://lightning.ai/docs/pytorch/stable/api/lightning.pytorch.callbacks.RichProgressBar.html\" > Rich Progress Bar</a>, <br> enhancing flexibility and readability of the display"
+      "Introduced configurable delimiter for machine learning metrics <br> in PyTorch Lightning's <a href=\"https://lightning.ai/docs/pytorch/stable/api/lightning.pytorch.callbacks.RichProgressBar.html\" > Rich Progress Bar</a>, <br> enhancing flexibility and readability of the display"
     ]
   },
   {
