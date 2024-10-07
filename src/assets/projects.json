@@ -1,7 +1,7 @@
 [
   {
     "url": "backup",
-    "description": "Automated backup and restoration of important files across the entire disk",
+    "description": "Automated backup and recovery of important files across the entire disk",
     "image": "backup.webp",
     "badges": "true",
     "package": "backupmaster"
@@ -27,7 +27,7 @@
   },
   {
     "url": "chat",
-    "description": "CLI interface for local LLM assistant",
+    "description": "CLI for local LLM assistant",
     "image": "https://raw.githubusercontent.com/quintenroets/chat/main/assets/examples/example.png",
     "badges": "true",
     "package": "powerchat-cli"
@@ -44,7 +44,7 @@
   },
   {
     "url": "sysetup",
-    "description": "Automated personal setup for new installations of Linux systems, including apps, shortcuts, and settings.",
+    "description": "Automated personal system setup for new Linux installations, including apps, shortcuts, and settings.",
     "image": "sysetup.webp"
   },
   {
