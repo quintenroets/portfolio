@@ -6,20 +6,20 @@
     }"
   >
     <div class="flex">
-      <a :href="info.url" target="_blank" rel="noopener" v-if="info.url">
+      <ExternalLink :href="info.url">
         <div
           class="image-wrapper w-20 aspect-1 mr-4"
           :class="{ 'mb-4': info.bullets, 'mb-2': !info.bullets }"
         >
           <img :src="logoUrl" alt="Company logo" />
         </div>
-      </a>
+      </ExternalLink>
       <div class="flex flex-col">
         <p class="font-bold">{{ info.function }}</p>
         <p v-if="info.company">
-          <a :href="info.url" target="_blank" rel="noopener"
-            >{{ info.company }}
-          </a>
+          <ExternalLink :href="info.url">
+            {{ info.company }}
+          </ExternalLink>
           • {{ info.type }}
         </p>
         <p>{{ info.duration }}</p>
@@ -39,16 +39,8 @@
   </div>
 </template>
 
-<style scoped>
-p {
-  margin-bottom: 0 !important;
-  font-size: 14px !important;
-}
-a {
-  @apply text-dark !important;
-}
-</style>
 <script>
+import ExternalLink from "@/components/externalLink.vue";
 const requireLogo = require.context("@/assets/logos/", false, /\.webp$/);
 
 export default {
@@ -60,5 +52,16 @@ export default {
       return requireLogo("./" + this.info.logo);
     },
   },
+  components: { ExternalLink },
 };
 </script>
+
+<style scoped>
+p {
+  margin-bottom: 0 !important;
+  font-size: 14px !important;
+}
+a {
+  @apply text-dark !important;
+}
+</style>

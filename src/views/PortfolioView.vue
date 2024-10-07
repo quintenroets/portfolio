@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ProjectsComponent />
+    <ProjectsComponent class="mb-4" />
     <ContributionsComponent />
   </div>
 </template>

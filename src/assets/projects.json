@@ -1,19 +1,24 @@
 [
   {
     "url": "backup",
-    "description": "Automate the back up of important files across the entire disk",
-    "image": "backup.png"
+    "description": "Automate the backup of important files across the entire disk",
+    "image": "backup.png",
+    "badges": "true",
+    "package": "backupmaster"
   },
   {
     "url": "canvasdl",
-    "description": "Simplify academic life by automating tasks like downloading materials, checking updates, and managing deadlines. The package has received over 4,000 downloads within a month of its release.",
-    "image": "https://raw.githubusercontent.com/quintenroets/canvasdl/main/examples/console.png",
-    "packageName": "canvasdl"
+    "description": "Simplify academic life by automating tasks like downloading materials, checking updates, and managing deadlines",
+    "image": "canvasdl.png",
+    "packageName": "canvasdl",
+    "badges": "true"
   },
   {
     "url": "music",
-    "description": "Analyze and manage your favorite artists and their music",
-    "image": "https://raw.githubusercontent.com/quintenroets/music/main/assets/examples/artists.png"
+    "description": "Analyze and manage favorite music and artists",
+    "image": "https://raw.githubusercontent.com/quintenroets/music/main/assets/examples/artists.png",
+    "badges": "true",
+    "package": "musicmaster"
   },
   {
     "url": "revnets",
@@ -24,8 +29,9 @@
   {
     "url": "chat",
     "description": "CLI interface for local LLM assistant",
-
-    "image": "https://raw.githubusercontent.com/quintenroets/chat/main/assets/examples/example.png"
+    "image": "https://raw.githubusercontent.com/quintenroets/chat/main/assets/examples/example.png",
+    "badges": "true",
+    "package": "powerchat-cli"
   },
   {
     "url": "corona",
@@ -39,10 +45,10 @@
   },
   { "url": "portfolio", "description": "Portfolio webapp" },
   {
-    "url": "school",
-    "description": "Automatically download Ufora course materials"
+    "url": "sysetup",
+    "description": "Personal setup for linux OS",
+    "image": "sysetup.webp"
   },
-  { "url": "sysetup", "description": "Personal setup for linux OS" },
   {
     "url": "python-package-template",
     "description": "Template for Python package published on PyPI"
@@ -50,35 +56,47 @@
 
   {
     "url": "superpathlib",
-    "description": "Enhanced pathlib library for advanced file operations. 2000+ monthly downloads"
+    "description": "Enhanced pathlib library for advanced file operations.",
+    "badges": "true"
   },
-  { "url": "cli", "description": "High-level CLI" },
+  {
+    "url": "cli",
+    "description": "High-level CLI",
+    "badges": "true",
+    "package": "powercli"
+  },
   {
     "url": "cacher",
     "description": "Persistent cache for expensive function calls"
   },
   {
     "url": "downloader",
-    "description": "Download files in chunks with option to resume from partial downloads and retry on errors"
+    "description": "Download files in chunks, resume from partial downloads and retry on errors",
+    "badges": "true"
   },
   {
     "url": "package-dev-tools",
-    "description": "CI/CD tools for Python packages"
+    "description": "CI/CD tools for Python packages",
+    "badges": "true"
   },
   {
     "url": "package-dev-utils",
-    "description": "Common development utilities for Python packages"
+    "description": "Common development utilities for Python packages",
+    "badges": "true"
   },
   {
     "url": "package-utils",
-    "description": "Common utilities for Python packages"
+    "description": "Common utilities for Python packages",
+    "badges": "true"
   },
   {
     "url": "powertrace",
-    "description": "Detailed stack trace logging and visualization"
+    "description": "Detailed stack trace logging and visualization",
+    "badges": "true"
   },
   {
     "url": "powertrace-hooks",
-    "description": "Automated stack trace logging and visualization"
+    "description": "Automated stack trace logging and visualization",
+    "badges": "true"
   }
 ]

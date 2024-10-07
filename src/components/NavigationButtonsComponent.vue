@@ -1,6 +1,8 @@
 <template>
   <div>
-    <div class="absolute top-1/2 left-0 transform -translate-y-1/2">
+    <div
+      class="absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-12"
+    >
       <button
         @click="onPrevious"
         class="px-3 py-1 bg-gray-200 rounded-full hover:bg-gray-300"
@@ -12,7 +14,9 @@
         />
       </button>
     </div>
-    <div class="absolute top-1/2 right-0 transform -translate-y-1/2">
+    <div
+      class="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-12"
+    >
       <button
         @click="onNext"
         class="px-3 py-1 bg-gray-200 rounded-full hover:bg-gray-300"

@@ -8,7 +8,7 @@
     "bullets": [
       "Discovered inefficiency in high-frequency metric rendering function, <br> inside Pytorch Lightning's <a target=\"_blank\" rel=\"noopener\" href=\"https://lightning.ai/docs/pytorch/stable/api/lightning.pytorch.callbacks.RichProgressBar.html\" > RichProgressBar</a>",
       "Replaced in-loop string concatenations with a generator expression, <br> improving runtime efficiency by 10%",
-      "benchmarked and visualized performance gains using <a target=\"_blank\"rel=\"noopener\" href=\"https://docs.python.org/3/library/timeit.html\">timeit</a>"
+      "benchmarked and visualized performance gains using <external-link href=\"https://docs.python.org/3/library/timeit.html\">timeit </external-link>"
     ]
   },
   {

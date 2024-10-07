@@ -1,63 +1,60 @@
 <template>
-  <div class="max-h-full">
-    <div>
-      <a
-        target="_blank"
-        rel="noopener"
-        :href="fullProjectUrl"
-        class="max-w-fit"
-      >
-        <div class="flex items-center">
-          <font-awesome-icon
-            class="w-8 h-8 text-dark hover:text-dark !important mr-2.5"
-            :icon="['fab', 'github']"
-          />
-          <div class="text-3xl font-bold">
-            {{ project.name ? project.name : project.url }}
-          </div>
+  <InfoCard :href="fullProjectUrl">
+    <div class="flex flex-col h-full">
+      <div class="flex justify-between items-center">
+        <div class="flex items-center max-h-full">
+          <font-awesome-icon class="w-8 h-8 mr-2.5" :icon="['fab', 'github']" />
+          <ExternalLink :href="fullProjectUrl" :highlight-without-hover="false">
+            <div class="text-2xl font-bold">
+              {{ project.name ? project.name : project.url }}
+            </div>
+          </ExternalLink>
         </div>
-        <!--
+        <div v-if="project.badges">
+          <ExternalLink
+            :href="'https://badge.fury.io/py/' + packageName"
+            class="flex"
+          >
+            <img
+              :src="'https://badge.fury.io/py/' + packageName + '.svg'"
+              alt="PyPI version"
+            />
+            <img
+              :src="'https://img.shields.io/pypi/dm/' + packageName"
+              alt="PyPI downloads"
+            />
+          </ExternalLink>
+        </div>
+      </div>
+      <div class="my-2 text-center text-lg">
+        <span v-html="project.description"></span>
+      </div>
+      <div class="flex justify-center grow">
         <img
-          :src="
-            'https://github-readme-stats.vercel.app/api/pin/?username=quintenroets&repo=' +
-            project.url
-          "
-          alt="Repository description"
+          :src="imageUrl"
+          alt="Project image"
+          v-if="imageUrl"
+          class="flex justify-center max-h-[22rem] rounded mx-2"
         />
-        -->
-      </a>
+      </div>
     </div>
-
-    <!--
-    <div class="flex mt-2" v-html="readmeContent"></div>
-    -->
-
-    <div class="mt-2 text-left">
-      <span v-html="project.description"></span>
-    </div>
-    <a
-      :href="fullProjectUrl"
-      target="_blank"
-      rel="noopener"
-      v-if="project.image"
-    >
-      <img :src="imageUrl" alt="Example image" class="h-96" />
-    </a>
-  </div>
+  </InfoCard>
 </template>
 
 <script>
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { marked } from "marked";
-const requireImage = require.context("@/assets/projects/", false, /\.png$/);
+import InfoCard from "@/components/InfoCard.vue";
+import ExternalLink from "@/components/externalLink.vue";
+const requireImage = require.context(
+  "@/assets/projects/",
+  false,
+  /\.(png|webp)$/,
+);
 
 library.add(faGithub);
 export default {
-  data: function () {
-    return { readmeContent: {} };
-  },
   props: {
     project: {},
   },
@@ -65,44 +62,20 @@ export default {
     fullProjectUrl() {
       return "https://github.com/quintenroets/" + this.project.url;
     },
+    packageName() {
+      return this.project.package ? this.project.package : this.project.url;
+    },
     imageUrl() {
-      return this.project.image.includes("raw")
+      return this.project.image === undefined ||
+        this.project.image.includes("raw")
         ? this.project.image
         : requireImage("./" + this.project.image);
     },
   },
   components: {
+    ExternalLink,
     FontAwesomeIcon,
-  },
-  watch: {
-    project() {
-      this.fetchShields();
-    },
-  },
-  methods: {
-    fetchShields() {
-      this.readmeContent = "";
-      const repo =
-        this.project.name !== undefined ? this.project.name : this.project.url;
-      const url = `https://api.github.com/repos/quintenroets/${repo}/contents/README.md`;
-      const config = { headers: { Accept: "application/vnd.github.v3.raw" } };
-      fetch(url, config).then((response) => {
-        response.text().then((content) => {
-          if (content.includes("![")) {
-            let start = content.indexOf("\n");
-            let end = content.indexOf("\n\n");
-            let badges = content.substring(start, end);
-            let readmeContent = marked(badges);
-            start = readmeContent.indexOf("<p>");
-            end = readmeContent.indexOf("</p>");
-            this.readmeContent = readmeContent.substring(start + 3, end);
-          }
-        });
-      });
-    },
-  },
-  mounted() {
-    this.fetchShields();
+    InfoCard,
   },
 };
 </script>

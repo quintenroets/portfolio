@@ -28,11 +28,8 @@
           </p>
           <p>
             This is why I believe in the importance of
-            <a
-              target="_blank"
-              rel="noopener"
-              href="https://en.wikipedia.org/wiki/AI_safety"
-              >AI safety</a
+            <ExternalLink href="https://en.wikipedia.org/wiki/AI_safety"
+              >AI safety</ExternalLink
             >. This domain studies problems like machine alignment and
             mechanistic interpretability to safeguard the adoption of advanced
             AI. By prioritizing AI safety, I believe we can build a world where
@@ -41,47 +38,31 @@
           </p>
           <p>
             I am a proud member of the
-            <a
-              target="_blank"
-              rel="noopener"
-              href="https://www.effectivealtruism.org/"
-              >Effective Altruism</a
+            <ExternalLink href="https://www.effectivealtruism.org/"
+              >Effective Altruism</ExternalLink
             >
-            community where I completed an AI Safety Fellowship. Last December,
-            I participated in the
-            <a
-              target="_blank"
-              rel="noopener"
+            community. I joined the AI Safety Fellowship and in December 2022, I
+            participated in the
+            <ExternalLink
               href="https://www.effectivealtruism.org/ea-global/events/eagxberkeley2022"
-              >EAGxBerkeley</a
+              >EAGxBerkeley</ExternalLink
             >
-            conference and this August, I will be at the
-            <a
-              target="_blank"
-              rel="noopener"
-              href="https://www.effectivealtruism.org/ea-global/events/eagxnyc"
-              >EAGxNYC</a
-            >
-            conference. I hope to see you there!
+            conference.
           </p>
           <p class="mb-0 !important">
             For those interested in the possibilities and risks of advanced AI,
             I recommend reading
-            <a
-              target="_blank"
-              rel="noopener"
+            <ExternalLink
               href="https://en.wikipedia.org/wiki/Our_Final_Invention"
             >
               Our Final Invention
-            </a>
+            </ExternalLink>
             by James Barrat and
-            <a
-              target="_blank"
-              rel="noopener"
+            <ExternalLink
               href="https://en.wikipedia.org/wiki/Superintelligence:_Paths,_Dangers,_Strategies"
             >
               Superintelligence
-            </a>
+            </ExternalLink>
             by Nick Bostrom.
           </p>
         </div>
@@ -92,6 +73,7 @@
 
 <script>
 import { useHead } from "unhead";
+import ExternalLink from "@/components/externalLink.vue";
 export default {
   setup() {
     useHead({
@@ -104,5 +86,6 @@ export default {
       ],
     });
   },
+  components: { ExternalLink },
 };
 </script>

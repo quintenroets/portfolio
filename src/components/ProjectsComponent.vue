@@ -1,26 +1,16 @@
 <template>
   <div>
-    <h1>Open-source Projects</h1>
-    <div class="flex justify-center my-4">
-      <div class="px-12 relative">
-        <div
-          class="bg-almost-white rounded-xl shadow-lg w-[44rem] h-[35rem] border-2"
-        >
-          <div class="p-6 text-left h-full">
-            <NavigationButtonsComponent
-              v-bind:current-index="currentIndex"
-              v-bind:total="numberOfProjects"
-              @next="onNext"
-              @previous="onPrevious"
-            />
-            <ProjectIntroductionCard v-if="currentIndex === 0" />
-            <ProjectCard
-              v-bind:project="project"
-              class="mb-4"
-              v-if="currentIndex !== 0"
-            />
-          </div>
-        </div>
+    <h1 class="mb-4">Open-source Projects</h1>
+    <div class="flex justify-center">
+      <div class="w-[40rem] h-[30rem] relative flex">
+        <NavigationButtonsComponent
+          v-bind:current-index="currentIndex"
+          v-bind:total="numberOfProjects"
+          @next="onNext"
+          @previous="onPrevious"
+        />
+        <ProjectIntroductionCard v-if="currentIndex === 0" />
+        <ProjectCard v-bind:project="project" v-if="currentIndex !== 0" />
       </div>
     </div>
   </div>
