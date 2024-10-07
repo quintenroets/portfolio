@@ -1,7 +1,11 @@
 <template>
   <div class="flex flex-col items-start w-56">
     <div class="block mt-4" v-for="item in contactItems" :key="item.href">
-      <component :href="item.href" :is="item.href ? 'external-link' : 'div'">
+      <component
+        :href="item.href"
+        :is="item.href ? 'external-link' : 'div'"
+        :highlight="false"
+      >
         <font-awesome-icon :icon="item.icon" class="text-2xl w-8" />
         <span class="ml-2"> {{ item.text }} </span>
       </component>
