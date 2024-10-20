@@ -10,7 +10,7 @@
           @previous="onPrevious"
         />
         <ProjectIntroductionCard v-if="currentIndex === 0" />
-        <ProjectCard v-bind:project="project" v-if="currentIndex !== 0" />
+        <ProjectCards v-bind:current-index="currentIndex" v-else />
       </div>
     </div>
   </div>
@@ -18,9 +18,8 @@
 
 <script>
 import NavigationButtonsComponent from "@/components/NavigationButtonsComponent.vue";
-import ProjectCard from "@/components/ProjectCard.vue";
 import ProjectIntroductionCard from "@/components/ProjectIntroductionCard.vue";
-import projects from "@/assets/projects.json";
+import ProjectCards from "@/components/ProjectCards.vue";
 
 export default {
   data() {
@@ -29,11 +28,8 @@ export default {
     };
   },
   computed: {
-    project() {
-      return projects[this.currentIndex - 1];
-    },
     numberOfProjects() {
-      return projects.length + 1;
+      return 19;
     },
   },
   methods: {
@@ -45,7 +41,7 @@ export default {
     },
   },
   components: {
-    ProjectCard,
+    ProjectCards,
     NavigationButtonsComponent,
     ProjectIntroductionCard,
   },
