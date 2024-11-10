@@ -85,8 +85,10 @@
     />
     <ProjectCard
       v-if="currentIndex === 13"
-      url="cacher"
+      url="persistent-cache"
       description="Persistent cache for expensive function calls"
+      :badges="true"
+      package="persistent-function-cache"
     />
     <ProjectCard
       v-if="currentIndex === 14"
