@@ -70,33 +70,79 @@
       image="template.webp"
     />
     <ProjectCard
-      v-if="currentIndex === 1"
+      v-if="currentIndex === 11"
       url="superpathlib"
       description=""
       :badges="true"
-      image="superpathlib.png"
-    />
+    >
+      <div class="text-left">
+        Maximize your productivity with minimal code! <br />
+        <br />
+        Superpathlib is an enhanced version of Python's standard pathlib,
+        designed to make file operations more intuitive and extend functionality
+        without compromising performance. It builds on pathlib by introducing
+        additional properties, methods, and shortcuts that simplify common file
+        manipulations and reduce boilerplate code.
+        <br />
+        <br />
+        For custom operations, the package supports subclassing, which has been
+        added to the standard library in python3.12.
+      </div>
+    </ProjectCard>
     <ProjectCard
       v-if="currentIndex === 12"
       url="cli"
       description="High-level interface for interactions with the command-line and external processes"
       :badges="true"
       package="powercli"
-    />
+    >
+      <br />
+      <br />
+      <pre class="text-left" v-html="cliCode"></pre>
+    </ProjectCard>
     <ProjectCard
       v-if="currentIndex === 13"
       url="persistent-cache"
       description="Persistent cache for expensive function calls"
       :badges="true"
       package="persistent-function-cache"
-    />
+    >
+      <div class="text-left">
+        <br />
+        The cache key for a function call depends on the function's:
+        <ul>
+          <li>&#8226; signature</li>
+          <li>&#8226; implementation</li>
+          <li>&#8226; argument values</li>
+        </ul>
+        Custom cache key transformations and reductions can be specified.
+        <br />
+        <br />
+        <pre class="text-left" v-html="cacherCode"></pre>
+      </div>
+    </ProjectCard>
     <ProjectCard
       v-if="currentIndex === 14"
       url="downloader"
-      description="Package to download files in chunks, resume from partial downloads and retry on errors"
+      description="Package to download files in a script as if they were downloaded from a browser"
       :badges="true"
       package="fire-downloader"
-    />
+    >
+      <div class="text-left">
+        Features:
+        <ul class="ml-4">
+          <li>Retries after error</li>
+          <li>Resumes from partial download after error</li>
+          <li>Shows progressbar during download</li>
+          <li>Downloads multiple urls in parallel</li>
+          <li>
+            Only downloads when the destination does not exist yet or when the
+            server indicates a newer version
+          </li>
+          <li>Custom callback on progress update can be specified</li>
+        </ul>
+      </div>
+    </ProjectCard>
     <ProjectCard
       v-if="currentIndex === 15"
       url="package-dev-tools"
@@ -110,19 +156,19 @@
       :badges="true"
     />
     <ProjectCard
-      v-if="currentIndex === 16"
+      v-if="currentIndex === 17"
       url="package-utils"
       description="Generic utilities for Python packages"
       :badges="true"
     />
     <ProjectCard
-      v-if="currentIndex === 17"
+      v-if="currentIndex === 18"
       url="powertrace"
       description="Package for detailed stack trace logging and visualization"
       :badges="true"
     />
     <ProjectCard
-      v-if="currentIndex === 18"
+      v-if="currentIndex === 19"
       url="powertrace-hooks"
       description="Package that installs automated stack trace logging and visualization"
       :badges="true"
@@ -132,6 +178,10 @@
 
 <script>
 import ProjectCard from "@/components/ProjectCard.vue";
+import "prismjs";
+import "prismjs/themes/prism.css";
+import Prism from "prismjs";
+import "prismjs/components/prism-python";
 
 export default {
   props: {
@@ -140,5 +190,31 @@ export default {
   components: {
     ProjectCard,
   },
+  computed: {
+    cliCode() {
+      let code =
+        "import cli\n\n" +
+        'cli.launch("chromium")\n\n' +
+        'items = cli.capture_output("ls")\n' +
+        "for item in cli.track_progress(items):\n" +
+        '\tif cli.confirm(f"Delete {item}?"):\n' +
+        '\t\tprint("deleting..")';
+      return Prism.highlight(code, Prism.languages.python, "python");
+    },
+    cacherCode() {
+      let code =
+        "from persistent_cache import cache\n\n" +
+        "@cache\n" +
+        "def expensive_function(..):\n" +
+        "\t..\n";
+      return Prism.highlight(code, Prism.languages.python, "python");
+    },
+  },
 };
 </script>
+
+<style scoped>
+ul {
+  list-style-type: disc;
+}
+</style>
