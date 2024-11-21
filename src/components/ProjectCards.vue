@@ -110,11 +110,13 @@
       <div class="text-left">
         <br />
         The cache key for a function call depends on the function's:
-        <ul>
-          <li>&#8226; signature</li>
-          <li>&#8226; implementation</li>
-          <li>&#8226; argument values</li>
-        </ul>
+        <div class="ml-4">
+          <ul>
+            <li>signature</li>
+            <li>implementation</li>
+            <li>argument values</li>
+          </ul>
+        </div>
         Custom cache key transformations and reductions can be specified.
         <br />
         <br />
@@ -145,6 +147,14 @@
     </ProjectCard>
     <ProjectCard
       v-if="currentIndex === 15"
+      url="powertrace"
+      description="Package for detailed stack trace logging and visualization"
+      :badges="true"
+      image="powertrace.webp"
+    >
+    </ProjectCard>
+    <ProjectCard
+      v-if="currentIndex === 16"
       url="package-dev-tools"
       description="CI/CD tools for Python packages"
       :badges="true"
@@ -165,7 +175,7 @@
       </div>
     </ProjectCard>
     <ProjectCard
-      v-if="currentIndex === 16"
+      v-if="currentIndex === 17"
       url="package-utils"
       description="Generic utilities for Python packages"
       :badges="true"
@@ -186,14 +196,6 @@
           <li>..</li>
         </ul>
       </div>
-    </ProjectCard>
-    <ProjectCard
-      v-if="currentIndex === 17"
-      url="powertrace"
-      description="Package for detailed stack trace logging and visualization"
-      :badges="true"
-      image="powertrace.webp"
-    >
     </ProjectCard>
   </div>
 </template>
