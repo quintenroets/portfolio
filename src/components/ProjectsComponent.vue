@@ -33,7 +33,7 @@ export default {
   },
   computed: {
     numberOfProjects() {
-      return 19;
+      return 18;
     },
   },
   methods: {

@@ -192,7 +192,7 @@
       url="powertrace"
       description="Package for detailed stack trace logging and visualization"
       :badges="true"
-      image="powertrace.png"
+      image="powertrace.webp"
     >
     </ProjectCard>
   </div>
