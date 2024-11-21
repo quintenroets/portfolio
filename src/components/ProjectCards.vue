@@ -148,31 +148,53 @@
       url="package-dev-tools"
       description="CI/CD tools for Python packages"
       :badges="true"
-    />
+    >
+      <div class="text-left">
+        <br />
+        This project contains scripts and provides pre-commit hooks for:
+        <ul class="ml-4">
+          <li>automatically adding type annotations</li>
+          <li>updating project badges</li>
+          <li>bumping package versions</li>
+          <li>checking test coverage</li>
+          <li>instantiating new projects</li>
+          <li>extracting supported Python versions</li>
+          <li>..</li>
+        </ul>
+        <br />
+      </div>
+    </ProjectCard>
     <ProjectCard
       v-if="currentIndex === 16"
-      url="package-dev-utils"
-      description="Development utilities for Python packages"
-      :badges="true"
-    />
-    <ProjectCard
-      v-if="currentIndex === 17"
       url="package-utils"
       description="Generic utilities for Python packages"
       :badges="true"
-    />
+    >
+      <div class="text-left">
+        <br />
+        <ul class="ml-4">
+          <li>
+            creating cli entry points for function with dataclass arguments,
+            with the dataclass fields configurable from the cli
+          </li>
+          <li>
+            generic context object for managing options, config values and
+            secrets, configurable from the cli and with config files
+          </li>
+          <li>dataclass serialization functionality</li>
+          <li>cached file content properties and decorators</li>
+          <li>..</li>
+        </ul>
+      </div>
+    </ProjectCard>
     <ProjectCard
-      v-if="currentIndex === 18"
+      v-if="currentIndex === 17"
       url="powertrace"
       description="Package for detailed stack trace logging and visualization"
       :badges="true"
-    />
-    <ProjectCard
-      v-if="currentIndex === 19"
-      url="powertrace-hooks"
-      description="Package that installs automated stack trace logging and visualization"
-      :badges="true"
-    />
+      image="powertrace.png"
+    >
+    </ProjectCard>
   </div>
 </template>
 

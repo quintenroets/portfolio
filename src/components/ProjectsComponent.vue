@@ -9,7 +9,7 @@
           @next="onNext"
           @previous="onPrevious"
         />
-        <ProjectIntroductionCard v-if="currentIndex === 99" />
+        <ProjectIntroductionCard v-if="currentIndex === 0" />
         <ProjectCards
           class="w-full"
           v-bind:current-index="currentIndex"
