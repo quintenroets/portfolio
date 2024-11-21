@@ -1,7 +1,7 @@
 <template>
   <div>
     <ProjectCard
-      v-if="currentIndex === 99"
+      v-if="currentIndex === 1"
       url="backup"
       description="Automated backup and recovery of important files across the entire disk"
       image="backup.webp"
