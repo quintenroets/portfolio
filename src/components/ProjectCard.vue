@@ -6,11 +6,11 @@
           <font-awesome-icon class="w-8 h-8 mr-2.5" :icon="['fab', 'github']" />
           <ExternalLink :href="fullProjectUrl" :highlight-without-hover="false">
             <div class="text-2xl font-bold">
-              {{ project.name ? project.name : project.url }}
+              {{ name ? name : url }}
             </div>
           </ExternalLink>
         </div>
-        <div v-if="project.badges">
+        <div v-if="badges">
           <ExternalLink
             :href="'https://badge.fury.io/py/' + packageName"
             class="flex"
@@ -27,7 +27,8 @@
         </div>
       </div>
       <div class="my-2 text-center text-lg">
-        <span v-html="project.description"></span>
+        <span v-html="description"></span>
+        <slot></slot>
       </div>
       <div class="flex justify-center grow mb-6">
         <img
@@ -56,20 +57,23 @@ const requireImage = require.context(
 library.add(faGithub);
 export default {
   props: {
-    project: {},
+    package: { type: Number },
+    url: { type: String },
+    image: { type: String },
+    description: { type: String },
+    badges: { type: Boolean, default: false },
   },
   computed: {
     fullProjectUrl() {
-      return "https://github.com/quintenroets/" + this.project.url;
+      return "https://github.com/quintenroets/" + this.url;
     },
     packageName() {
-      return this.project.package ? this.project.package : this.project.url;
+      return this.package ? this.package : this.url;
     },
     imageUrl() {
-      return this.project.image === undefined ||
-        this.project.image.includes("raw")
-        ? this.project.image
-        : requireImage("./" + this.project.image);
+      return this.image === undefined || this.image.includes("raw")
+        ? this.image
+        : requireImage("./" + this.image);
     },
   },
   components: {
