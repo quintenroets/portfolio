@@ -35,9 +35,13 @@
             >approach</ExternalLink
           >
           stabilized the reconstruction process for large networks and enabled
-          me to reconstruct a network with 318,000 parameters, the largest
+          me to reconstruct a network with 1.5 million parameters, the largest
           reconstruction seen to date. The corresponding paper is currently
-          under review for publication.
+          under review for publication and the
+          <ExternalLink href="https://arxiv.org/abs/2409.19138"
+            >preprint</ExternalLink
+          >
+          is available on arxiv.
         </p>
         <p>
           <ExternalLink href="https://www.ugent.be/en" class="min-w-max">
