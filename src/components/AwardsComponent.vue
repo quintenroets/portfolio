@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="mb-4">Awards</h1>
+    <h1 class="mb-4">Honors & Awards</h1>
     <div class="flex justify-center mb-4">
       <div class="w-[40rem] h-64 relative">
         <NavigationButtonsComponent
