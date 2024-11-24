@@ -13,19 +13,17 @@
         <p>Hello and welcome! My name is Quinten.</p>
         <p>
           I am a Machine Learning expert with a specialization in Computer
-          Vision. Over the past eight years, I have built a proven track record
-          in empirical research and in the practical implementation,
-          optimization, and evaluation of ML pipelines. My expertise ranges from
-          training and automated labeling to inference and performance
-          monitoring.
+          Vision. Over the past eight years, I have built a track record in
+          empirical research and in the practical implementation, optimization,
+          and evaluation of ML pipelines. My expertise ranges from training and
+          automated labeling to inference and performance monitoring.
         </p>
         <p>
-          I am deeply passionate about my work and sharing knowledge with my
-          community. I have created 33 open-source projects and published 26
-          PyPI packages, collectively downloaded over 20,000 times per month. My
-          research contributions include two papers on neural network learning
-          dynamics and eight contributions to major projects like Pytorch
-          Lightning.
+          I am passionate about my work and sharing knowledge with my community.
+          I have created 33 open-source projects and published 26 PyPI packages,
+          collectively downloaded over 20,000 times per month. My research
+          contributions include two papers on neural network learning dynamics
+          and eight contributions to major projects like Pytorch Lightning.
         </p>
         <p></p>
 

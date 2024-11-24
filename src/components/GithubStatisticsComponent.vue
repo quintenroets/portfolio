@@ -28,8 +28,7 @@
       <div class="w-7/12 mx-7">
         In my free time, I work on projects that automate my day-to-day tasks
         and help other people. This practice keeps me up to date with the newest
-        trends and best practices in software development, a crucial aspect of
-        being an effective software engineer.
+        trends and best practices in software development.
       </div>
       <img
         class="w-4/12 -translate-y-8 -translate-x-10"
