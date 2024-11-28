@@ -262,7 +262,7 @@
       url="downloader"
       :badges="true"
       package="fire-downloader"
-      image="downloader.png"
+      image="downloader.webp"
     >
       Download files in a script as if they were downloaded from a browser
       <div class="text-left">
