@@ -3,52 +3,138 @@
     <ProjectCard
       v-if="currentIndex === 1"
       url="backup"
-      description="Automated backup and recovery of important files across the entire disk"
       image="backup.webp"
       :badges="true"
       package="backupmaster"
-    />
+    >
+      Automated backup and recovery of important files across the entire disk
+      <ul class="ml-4">
+        <li>
+          git-like interface for backing up files where version control is not
+          required/feasible
+        </li>
+        <li>
+          supports 70+ different cloud providers by leveraging
+          <ExternalLink href="https://rclone.org/">Rclone</ExternalLink>
+        </li>
+        <li>easy configuration for files/directories to include/ignore</li>
+      </ul>
+    </ProjectCard>
     <ProjectCard
       v-if="currentIndex === 2"
       url="canvasdl"
-      description="Cli tool to simplify academic life by automating tasks like downloading course material, checking updates, and managing deadlines"
       image="canvasdl.webp"
       :badges="true"
-    />
+      image-height="max-h-60"
+    >
+      Cli tool to simplify academic life
+      <ul class="ml-4 mb-1">
+        <li>
+          synchronizes all content from different platforms like Canvas, Edstem,
+          Piazza, and Gradescope to local files in unified format
+        </li>
+        <li>saves all deadlines to Google Calendar</li>
+        <li>
+          supports 3,482 different universities by leveraging the Canvas API
+        </li>
+      </ul>
+    </ProjectCard>
     <ProjectCard
       v-if="currentIndex === 3"
       url="music"
-      description="Application to analyze and manage favorite music and artists"
-      image="https://raw.githubusercontent.com/quintenroets/music/main/assets/examples/artists.png"
+      image="music.webp"
       :badges="true"
       package="musicmaster"
-    />
+      image-height="max-h-60"
+    >
+      Application to manage favorite music and artists
+      <ul class="ml-4 mb-1">
+        <li>responsive webapp built with Vue framework</li>
+        <li>stores configurable artist and music preferences</li>
+        <li>
+          leverages Spotify's API to recommend new content based on stored
+          preferences
+        </li>
+        <li>notifies user of new releases from favorite artists</li>
+      </ul>
+    </ProjectCard>
     <ProjectCard
       v-if="currentIndex === 4"
       url="revnets"
-      description="Experiments to reconstruct internal parameters of black box neural networks"
       image="revnets.webp"
-    />
+      image-height="max-h-36"
+    >
+      Internal parameter reconstruction of black box neural networks
+      <ul class="ml-4 mb-1">
+        <li>
+          all experiments used in the paper
+          <ExternalLink href="https://arxiv.org/abs/2409.19138"
+            >Sequencing the Neurome</ExternalLink
+          >
+        </li>
+        <li>
+          reconstructs target networks with up to 1.5 million samples and up to
+          7 layers deep by using advanced query sampling techniques to train
+          surrogate models on the outputs of the target network
+        </li>
+        <li>
+          configurable experiments implemented in Pytorch Lightning with over
+          1000 variations in architectures, reconstruction algorithms and
+          optimization criteria
+        </li>
+        <li>379 tests that verify all algorithms behave correctly</li>
+        <li>
+          optimized methods for measuring the similarity between two neural
+          networks
+        </li>
+      </ul>
+    </ProjectCard>
     <ProjectCard
       v-if="currentIndex === 5"
       url="chat"
-      description="CLI for local LLM assistant"
       image="https://raw.githubusercontent.com/quintenroets/chat/main/assets/examples/example.png"
       :badges="true"
       package="powerchat-cli"
-    />
+    >
+      CLI for local and private LLM assistant
+      <ul class="ml-4 mb-1">
+        <li>
+          operates entirely offline by using LangChain integration with Ollama
+          models
+        </li>
+        <li>saves conversation history to local files</li>
+        <li>supports configurable model versions and sizes</li>
+      </ul>
+    </ProjectCard>
     <ProjectCard
       v-if="currentIndex === 6"
       url="corona"
-      description="Visualization tool for current Covid pandemic situation in Belgium"
       image="https://raw.githubusercontent.com/quintenroets/corona/main/examples/out.png"
-    />
+      image-height="max-h-60"
+    >
+      Visualization tool for current Covid pandemic situation in Belgium
+      <ul class="ml-4 mb-1">
+        <li>
+          visualizes pandemic situation precisely by using matplotlib to display
+          exponential trends on a logarithmic scale
+        </li>
+        <li>uses official statistics reported by Sciensano</li>
+        <li>supports customizable start date and filtering by provinces</li>
+      </ul>
+    </ProjectCard>
     <ProjectCard
       v-if="currentIndex === 7"
       url="actions"
-      description="GitHub actions for CI/CD"
       image="https://raw.githubusercontent.com/quintenroets/actions/main/assets/examples/workflow.png"
-    />
+    >
+      modular and composable GitHub actions for CI/CD
+      <ul class="ml-4 mb-1">
+        <li>running tests</li>
+        <li>running code quality checks</li>
+        <li>building releases and publishing packages</li>
+        <li>syncing changes across different repositories</li>
+      </ul>
+    </ProjectCard>
     <ProjectCard
       v-if="currentIndex === 8"
       url="sysetup"
@@ -206,12 +292,14 @@ import "prismjs";
 import "prismjs/themes/prism.css";
 import Prism from "prismjs";
 import "prismjs/components/prism-python";
+import ExternalLink from "@/components/externalLink.vue";
 
 export default {
   props: {
     currentIndex: Number,
   },
   components: {
+    ExternalLink,
     ProjectCard,
   },
   computed: {
