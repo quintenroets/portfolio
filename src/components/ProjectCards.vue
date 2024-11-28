@@ -262,23 +262,22 @@
       url="downloader"
       :badges="true"
       package="fire-downloader"
+      image="downloader.png"
     >
-      Package to download files in a script as if they were downloaded from a
-      browser
+      Download files in a script as if they were downloaded from a browser
       <div class="text-left">
-        Features:
         <ul class="ml-4">
-          <li>Retries after error</li>
-          <li>Resumes from partial download after error</li>
-          <li>Shows progressbar during download</li>
-          <li>Downloads multiple urls in parallel</li>
+          <li>shows progressbar during download</li>
+          <li>downloads multiple urls in parallel</li>
+          <li>retries and resumes from partial download after error</li>
           <li>
-            Only downloads when the destination does not exist yet or when the
-            server indicates a newer version
+            saves downloads and skips re-downloading unless the server indicates
+            an update
           </li>
-          <li>Custom callback on progress update can be specified</li>
+          <li>supports custom callbacks on progress updates</li>
         </ul>
       </div>
+      <br />
     </ProjectCard>
     <ProjectCard
       v-if="currentIndex === 15"

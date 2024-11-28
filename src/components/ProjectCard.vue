@@ -26,10 +26,10 @@
           </ExternalLink>
         </div>
       </div>
-      <div
-        class="flex-column content-center justify-center grow mb-6 text-md mt-1 text-left"
-      >
-        <slot></slot>
+      <div class="flex-column content-center grow mb-6 text-md mt-1 text-left">
+        <div>
+          <slot></slot>
+        </div>
         <div class="flex justify-center">
           <img
             :src="imageUrl"
