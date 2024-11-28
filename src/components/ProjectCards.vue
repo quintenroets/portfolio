@@ -49,7 +49,7 @@
     >
       Application to manage favorite music and artists
       <ul class="ml-4 mb-1">
-        <li>responsive webapp built with Vue framework</li>
+        <li>responsive webapp built with Vue.js</li>
         <li>stores configurable artist and music preferences</li>
         <li>
           leverages Spotify's API to recommend new content based on stored
@@ -135,87 +135,136 @@
         <li>syncing changes across different repositories</li>
       </ul>
     </ProjectCard>
-    <ProjectCard
-      v-if="currentIndex === 8"
-      url="sysetup"
-      description="Automated personal system setup for new Linux installations, including apps, shortcuts, and settings"
-      image="sysetup.webp"
-    />
+    <ProjectCard v-if="currentIndex === 8" url="sysetup" image="sysetup.webp">
+      Automated personal system setup for new Linux installations
+      <ul class="ml-4 mb-1">
+        <li>works out of the box with simple shell command</li>
+        <li>
+          retrieves appropriate files, settings and environment configurations
+          using backupmaster
+        </li>
+        <li>
+          secures personal data with encrypted files and private cloud storage
+        </li>
+      </ul>
+    </ProjectCard>
     <ProjectCard
       v-if="currentIndex === 9"
       url="portfolio"
-      description="Portfolio webapp"
       image="portfolio.webp"
-    />
+    >
+      Personal portfolio webapp
+      <ul class="ml-4 mb-1">
+        <li>
+          summarizes professional experience with interactive, single-page
+          application
+        </li>
+        <li>designed with Vue.js</li>
+        <li>deployed and hosted using Netlify</li>
+      </ul>
+    </ProjectCard>
     <ProjectCard
       v-if="currentIndex === 10"
       url="python-package-template"
-      description="Repository to automate the maintenance of Python projects. Custom CI scripts instantiate new
-      projects and propagate all changes in this repository to derived project
-      with pull requests."
       image="template.webp"
-    />
+    >
+      Template repository
+      <ul class="ml-4 mb-1">
+        <li>automates the setup and maintenance of Python projects</li>
+        <li>
+          Custom CI scripts instantiate new projects and propagate all changes
+          in the template repository to derived projects with pull requests.
+        </li>
+      </ul>
+    </ProjectCard>
     <ProjectCard
       v-if="currentIndex === 11"
       url="superpathlib"
       description=""
       :badges="true"
     >
-      <div class="text-left">
-        Maximize your productivity with minimal code! <br />
+      Enhanced pathlib library for advanced file operations
+      <ul class="ml-4 mb-1">
+        <li>extends Python's standard library pathlib</li>
+        <li>
+          introduces properties for accessing file content in different formats
+          like text, bytes, yaml, json or numpy
+        </li>
+        <li>
+          provides properties for setting or accessing file metadata like last
+          modified time, content hash, filesize or custom tags
+        </li>
+        <li>
+          exposes common methods like extracting archives, finding files by
+          custom conditions, creating paths from uris, ..
+        </li>
+        <li>
+          supports subclassing for custom operations, which has been added to
+          the standard library in python3.12
+        </li>
         <br />
-        Superpathlib is an enhanced version of Python's standard pathlib,
-        designed to make file operations more intuitive and extend functionality
-        without compromising performance. It builds on pathlib by introducing
-        additional properties, methods, and shortcuts that simplify common file
-        manipulations and reduce boilerplate code.
-        <br />
-        <br />
-        For custom operations, the package supports subclassing, which has been
-        added to the standard library in python3.12.
-      </div>
+        <pre class="text-sm" v-html="superpathlibCode"></pre>
+      </ul>
     </ProjectCard>
     <ProjectCard
       v-if="currentIndex === 12"
       url="cli"
-      description="High-level interface for interactions with the command-line and external processes"
       :badges="true"
       package="powercli"
     >
-      <br />
-      <br />
-      <pre class="text-left" v-html="cliCode"></pre>
+      High-level interface for command-line interactions and external processes
+      <ul class="ml-4 mb-1">
+        <li>
+          introduces high-level functions for launching/ capturing results from
+          external commands by leveraging Python's subprocess library
+        </li>
+        <li>
+          parses wide variety of input arguments into cli-compatible strings
+        </li>
+        <li>
+          offers methods to ask user inputs or visualize progress by using the
+          Rich library
+        </li>
+        <br />
+        <pre class="text-sm" v-html="cliCode"></pre>
+      </ul>
     </ProjectCard>
     <ProjectCard
       v-if="currentIndex === 13"
       url="persistent-cache"
-      description="Persistent cache for expensive function calls"
       :badges="true"
       package="persistent-function-cache"
     >
-      <div class="text-left">
+      Persistent cache for expensive function calls
+      <ul class="ml-4 mb-1">
+        <li>
+          enabled by pickling results to files and applying deterministic hash
+          functions
+        </li>
+        <li>
+          avoids stale results by computing the cache key based on a function's
+          <div class="ml-4">
+            <ul>
+              <li>argument values</li>
+              <li>signature</li>
+              <li>implementation</li>
+            </ul>
+          </div>
+        </li>
+        <li>supports function arguments of any complex data type</li>
+        <li>allows custom cache key transformations and reductions</li>
         <br />
-        The cache key for a function call depends on the function's:
-        <div class="ml-4">
-          <ul>
-            <li>signature</li>
-            <li>implementation</li>
-            <li>argument values</li>
-          </ul>
-        </div>
-        Custom cache key transformations and reductions can be specified.
-        <br />
-        <br />
-        <pre class="text-left" v-html="cacherCode"></pre>
-      </div>
+        <pre class="text-sm" v-html="cacherCode"></pre>
+      </ul>
     </ProjectCard>
     <ProjectCard
       v-if="currentIndex === 14"
       url="downloader"
-      description="Package to download files in a script as if they were downloaded from a browser"
       :badges="true"
       package="fire-downloader"
     >
+      Package to download files in a script as if they were downloaded from a
+      browser
       <div class="text-left">
         Features:
         <ul class="ml-4">
@@ -234,17 +283,17 @@
     <ProjectCard
       v-if="currentIndex === 15"
       url="powertrace"
-      description="Package for detailed stack trace logging and visualization"
       :badges="true"
       image="powertrace.webp"
     >
+      Package for detailed stack trace logging and visualization
     </ProjectCard>
     <ProjectCard
       v-if="currentIndex === 16"
       url="package-dev-tools"
-      description="CI/CD tools for Python packages"
       :badges="true"
     >
+      CI/CD tools for Python packages
       <div class="text-left">
         <br />
         This project contains scripts and provides pre-commit hooks for:
@@ -260,12 +309,8 @@
         <br />
       </div>
     </ProjectCard>
-    <ProjectCard
-      v-if="currentIndex === 17"
-      url="package-utils"
-      description="Generic utilities for Python packages"
-      :badges="true"
-    >
+    <ProjectCard v-if="currentIndex === 17" url="package-utils" :badges="true">
+      Generic utilities for Python packages
       <div class="text-left">
         <br />
         <ul class="ml-4">
@@ -303,14 +348,25 @@ export default {
     ProjectCard,
   },
   computed: {
+    superpathlibCode() {
+      let code =
+        "path.json = {key: value}\n" +
+        "\n" +
+        "with Path.tempfile() as tmp:\n" +
+        "    do_work(logfile=tmp)\n";
+      return Prism.highlight(code, Prism.languages.python, "python");
+    },
     cliCode() {
       let code =
-        "import cli\n\n" +
-        'cli.launch("chromium")\n\n' +
+        'cli.launch("chromium")' +
+        "\n\n" +
         'items = cli.capture_output("ls")\n' +
         "for item in cli.track_progress(items):\n" +
         '\tif cli.confirm(f"Delete {item}?"):\n' +
-        '\t\tprint("deleting..")';
+        '\t\tprint("deleting..")' +
+        "\n\n" +
+        'options = {"l": "username", "p": 22}\n' +
+        'cli.run("ssh", options, "localhost") ';
       return Prism.highlight(code, Prism.languages.python, "python");
     },
     cacherCode() {

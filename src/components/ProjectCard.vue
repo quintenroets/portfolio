@@ -26,13 +26,10 @@
           </ExternalLink>
         </div>
       </div>
-      <div class="my-2 text-center text-lg" v-if="description">
-        <span v-html="description"></span>
-      </div>
-      <div class="text-md text-left mt-1">
+      <div
+        class="flex-column content-center justify-center grow mb-6 text-md mt-1 text-left"
+      >
         <slot></slot>
-      </div>
-      <div class="flex-column content-center justify-center grow mb-6">
         <div class="flex justify-center">
           <img
             :src="imageUrl"
