@@ -1,30 +1,30 @@
 <template>
   <div>
     <div
-      class="absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-12"
+      class="absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-[4.5rem]"
     >
       <button
         @click="onPrevious"
-        class="px-3 py-1 bg-gray-200 rounded-full hover:bg-gray-300"
+        class="pl-4 px-4 py-3 pb-2 bg-gray-200 rounded-full hover:bg-gray-300"
         v-if="currentIndex > 0"
       >
         <font-awesome-icon
           :icon="['fas', 'chevron-left']"
-          class="text-md text-white"
+          class="text-2xl text-white"
         />
       </button>
     </div>
     <div
-      class="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-12"
+      class="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-[4.5rem]"
     >
       <button
         @click="onNext"
-        class="px-3 py-1 bg-gray-200 rounded-full hover:bg-gray-300"
+        class="pl-4 px-4 py-3 pb-2 bg-gray-200 rounded-full hover:bg-gray-300"
         v-if="currentIndex < total - 1"
       >
         <font-awesome-icon
           :icon="['fas', 'chevron-right']"
-          class="text-md text-white"
+          class="text-2xl text-white"
         />
       </button>
     </div>
