@@ -26,17 +26,22 @@
           </ExternalLink>
         </div>
       </div>
-      <div class="my-2 text-center text-lg">
+      <div class="my-2 text-center text-lg" v-if="description">
         <span v-html="description"></span>
+      </div>
+      <div class="text-md text-left mt-1">
         <slot></slot>
       </div>
-      <div class="flex justify-center grow mb-6">
-        <img
-          :src="imageUrl"
-          alt="Project image"
-          v-if="imageUrl"
-          class="flex justify-center max-h-[22rem] rounded mx-2"
-        />
+      <div class="flex-column content-center justify-center grow mb-6">
+        <div class="flex justify-center">
+          <img
+            :src="imageUrl"
+            alt="Project image"
+            v-if="imageUrl"
+            class="rounded mx-2"
+            :class="this.imageHeight"
+          />
+        </div>
       </div>
     </div>
   </InfoCard>
@@ -60,6 +65,7 @@ export default {
     package: { type: Number },
     url: { type: String },
     image: { type: String },
+    imageHeight: { type: String, default: "max-h-64" },
     description: { type: String },
     badges: { type: Boolean, default: false },
   },

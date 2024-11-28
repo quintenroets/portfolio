@@ -31,10 +31,9 @@
           I currently work as a Machine Learning Engineer at
           <ExternalLink href="https://www.flawlessai.com/"
             >Flawless AI</ExternalLink
-          >
-          where I work on generative models with cinematic quality. I'm excited
-          to share more about my background and experience as you continue to
-          explore this page!
+          >, where I work on generative models with cinematic quality. I'm
+          excited to share more about my background and experience as you
+          continue to explore this page!
         </p>
       </div>
     </div>
