@@ -1,9 +1,9 @@
 <template>
   <div>
     <PublicationsComponent />
-    <ProjectsComponent class="mb-4" />
+    <ProjectsComponent />
     <ContributionsComponent />
-    <AwardsComponent />
+    <AwardsComponent class="mb-4" />
   </div>
 </template>
 
