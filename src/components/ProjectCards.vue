@@ -297,7 +297,7 @@
       url="package-dev-tools"
       :badges="true"
       title="Development tools for Python packages"
-      image="package_dev_tools.png"
+      image="package_dev_tools.webp"
       image-height="max-h-60"
     >
       <ul class="ml-4">
@@ -359,8 +359,6 @@ export default {
     },
     cliCode() {
       return (
-        'cli.launch("chromium")' +
-        "\n\n" +
         'items = cli.capture_output("ls")\n' +
         "for item in cli.track_progress(items):\n" +
         '\tif cli.confirm(f"Delete {item}?"):\n' +
