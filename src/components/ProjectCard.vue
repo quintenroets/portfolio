@@ -26,9 +26,14 @@
           </ExternalLink>
         </div>
       </div>
-      <div class="flex-column content-center grow mb-6 text-md mt-1 text-left">
-        <div>
+      <div class="flex-column content-center grow mb-6 text-m text-left">
+        <div class="mb-1">
+          <div class="text-lg" v-if="title">{{ title }}</div>
           <slot></slot>
+          <div class="ml-4" v-if="code">
+            <br />
+            <pre class="text-sm" v-html="renderedCode"></pre>
+          </div>
         </div>
         <div class="flex justify-center">
           <img
@@ -50,6 +55,10 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import InfoCard from "@/components/InfoCard.vue";
 import ExternalLink from "@/components/externalLink.vue";
+import "prismjs";
+import "prismjs/themes/prism.css";
+import Prism from "prismjs";
+import "prismjs/components/prism-python";
 const requireImage = require.context(
   "@/assets/projects/",
   false,
@@ -61,6 +70,8 @@ export default {
   props: {
     package: { type: Number },
     url: { type: String },
+    title: { type: String },
+    code: { type: String },
     image: { type: String },
     imageHeight: { type: String, default: "max-h-64" },
     description: { type: String },
@@ -72,6 +83,9 @@ export default {
     },
     packageName() {
       return this.package ? this.package : this.url;
+    },
+    renderedCode() {
+      return Prism.highlight(this.code, Prism.languages.python, "python");
     },
     imageUrl() {
       return this.image === undefined || this.image.includes("raw")
