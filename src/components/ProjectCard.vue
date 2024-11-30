@@ -1,6 +1,6 @@
 <template>
   <InfoCard :href="fullProjectUrl">
-    <div class="flex flex-col h-full">
+    <div class="flex flex-col h-full pb-5">
       <div class="flex justify-between items-center">
         <div class="flex items-center max-h-full">
           <font-awesome-icon class="w-8 h-8 mr-2.5" :icon="['fab', 'github']" />
@@ -10,38 +10,23 @@
             </div>
           </ExternalLink>
         </div>
-        <div v-if="badges">
-          <ExternalLink
-            :href="'https://badge.fury.io/py/' + packageName"
-            class="flex"
-          >
-            <img
-              :src="'https://badge.fury.io/py/' + packageName + '.svg'"
-              alt="PyPI version"
-            />
-            <img
-              :src="'https://img.shields.io/pypi/dm/' + packageName"
-              alt="PyPI downloads"
-            />
-          </ExternalLink>
-        </div>
+        <BadgesBlock :badges="badges" :package-name="packageName" />
       </div>
-      <div class="flex-column content-center grow mb-6 text-m text-left">
-        <div class="mb-1">
-          <div class="text-lg" v-if="title">{{ title }}</div>
-          <slot></slot>
-          <div class="ml-4" v-if="code">
-            <br />
-            <pre class="text-sm" v-html="renderedCode"></pre>
-          </div>
+      <div class="text-lg mt-1" v-if="title">{{ title }}</div>
+      <div class="text-m">
+        <slot></slot>
+      </div>
+      <div class="flex items-center grow">
+        <div class="ml-4" v-if="code">
+          <br />
+          <pre class="text-sm" v-html="renderedCode"></pre>
         </div>
-        <div class="flex justify-center">
+        <div class="flex justify-center w-full" v-if="imageUrl">
           <img
             :src="imageUrl"
             alt="Project image"
-            v-if="imageUrl"
-            class="rounded mx-2"
-            :class="this.imageHeight"
+            class="rounded bg-sidebargray"
+            :class="imageHeight"
           />
         </div>
       </div>
@@ -52,6 +37,7 @@
 <script>
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import BadgesBlock from "@/components/BadgesBlock.vue";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import InfoCard from "@/components/InfoCard.vue";
 import ExternalLink from "@/components/externalLink.vue";
@@ -68,7 +54,7 @@ const requireImage = require.context(
 library.add(faGithub);
 export default {
   props: {
-    package: { type: Number },
+    package: { type: String },
     url: { type: String },
     title: { type: String },
     code: { type: String },
@@ -81,19 +67,20 @@ export default {
     fullProjectUrl() {
       return "https://github.com/quintenroets/" + this.url;
     },
+    imageUrl() {
+      return this.image === undefined || this.image.includes("raw")
+        ? this.image
+        : requireImage("./" + this.image);
+    },
     packageName() {
       return this.package ? this.package : this.url;
     },
     renderedCode() {
       return Prism.highlight(this.code, Prism.languages.python, "python");
     },
-    imageUrl() {
-      return this.image === undefined || this.image.includes("raw")
-        ? this.image
-        : requireImage("./" + this.image);
-    },
   },
   components: {
+    BadgesBlock,
     ExternalLink,
     FontAwesomeIcon,
     InfoCard,
