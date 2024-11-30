@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="mb-4">Open-source Projects</h1>
-    <div class="flex justify-center">
+    <div class="flex justify-center mb-4">
       <div class="w-[40rem] h-[30rem] relative flex">
         <NavigationButtonsComponent
           v-bind:current-index="currentIndex"
