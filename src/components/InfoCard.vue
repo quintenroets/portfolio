@@ -14,7 +14,7 @@ import ExternalLink from "@/components/externalLink.vue";
 export default {
   components: { ExternalLink },
   props: {
-    href: {},
+    href: { type: String, default: "" },
   },
 };
 </script>
