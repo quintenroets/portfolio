@@ -17,6 +17,13 @@
           image="sequencing.webp"
           url="https://arxiv.org/abs/2409.19138"
         />
+        <PublicationCard
+          v-if="currentIndex === 1"
+          title="Automated labeling and training of computer vision models in a live production environment"
+          issuer="Confidential"
+          date="Jun 2022"
+          image="automated_labeling.webp"
+        />
       </div>
     </div>
   </div>
@@ -33,7 +40,7 @@ export default {
   },
   computed: {
     numberOfPublications() {
-      return 1;
+      return 2;
     },
   },
   methods: {

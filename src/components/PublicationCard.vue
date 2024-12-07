@@ -5,7 +5,8 @@
         <div class="text-lg font-bold">
           {{ this.title }}
         </div>
-        <div>{{ this.issuer }}, {{ this.date }}</div>
+        <span class="italic">{{ this.issuer }}</span>
+        <span>, {{ this.date }}</span>
       </div>
       <div class="flex justify-center grow">
         <img
@@ -28,7 +29,7 @@ export default {
     title: { type: String },
     smallerTitle: { type: String },
     issuer: { type: String },
-    url: { type: String },
+    url: { type: String, default: "" },
     image: { type: String },
     date: { type: String },
   },
