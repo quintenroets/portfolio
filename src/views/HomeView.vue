@@ -10,7 +10,7 @@
     </div>
     <div class="flex justify-center">
       <div class="max-w-2xl mt-4 text-left">
-        <p>Hello and welcome! My name is Quinten.</p>
+        <p>Hello and welcome!</p>
         <p>
           I am a Machine Learning expert with a specialization in Computer
           Vision. Over the past eight years, I have built a track record in
@@ -19,11 +19,20 @@
           automated labeling to inference and performance monitoring.
         </p>
         <p>
-          I am passionate about my work and sharing knowledge with my community.
-          I have created 33 open-source projects and published 26 PyPI packages,
-          collectively downloaded over 20,000 times per month. My research
-          contributions include two papers on neural network learning dynamics
-          and eight contributions to major projects like Pytorch Lightning.
+          My 33 open-source projects show the passion I have for sharing
+          knowledge with the community. I created 26 PyPI packages, collectively
+          downloaded over 20,000 times per month. My research contributions
+          include two papers on neural network learning dynamics and nine
+          contributions to major projects like
+          <ExternalLink href="https://github.com/huggingface/transformers/"
+            >Hugging Face Transformers</ExternalLink
+          >
+          and
+          <ExternalLink
+            href="https://github.com/Lightning-AI/pytorch-lightning"
+          >
+            Pytorch Lightning</ExternalLink
+          >.
         </p>
         <p></p>
 
