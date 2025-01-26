@@ -5,8 +5,8 @@
     "project": "Pytorch Lightning",
     "projectUrl": "Lightning-AI/lightning",
     "projectLogoUrl": "Lightning.webp",
+    "problem": "Inefficiency in high-frequency metric rendering function, inside Pytorch Lightning's <a target=\"_blank\" rel=\"noopener\" href=\"https://lightning.ai/docs/pytorch/stable/api/lightning.pytorch.callbacks.RichProgressBar.html\" > RichProgressBar</a>",
     "bullets": [
-      "Discovered inefficiency in high-frequency metric rendering function, <br> inside Pytorch Lightning's <a target=\"_blank\" rel=\"noopener\" href=\"https://lightning.ai/docs/pytorch/stable/api/lightning.pytorch.callbacks.RichProgressBar.html\" > RichProgressBar</a>",
       "Replaced in-loop string concatenations with a generator expression, <br> improving runtime efficiency by 10%",
       "benchmarked and visualized performance gains using <a target=\"_blank\"rel=\"noopener\" href=\"https://docs.python.org/3/library/timeit.html\">timeit</a>"
     ]
@@ -17,8 +17,20 @@
     "project": "Pytorch Lightning",
     "projectUrl": "Lightning-AI/lightning",
     "projectLogoUrl": "Lightning.webp",
+    "problem": "The RichProgressBar displays metrics as 3-decimal floats, which is not precise enough for tracking loss values in extreme ranges",
     "bullets": [
-      "Introduced configurable formatting display for metric values <br> in Pytorch Lightning's <a target=\"_blank\" rel=\"noopener\" href=\"https://lightning.ai/docs/pytorch/stable/api/lightning.pytorch.callbacks.RichProgressBar.html\" > RichProgressBar</a>, <br> enabling precise tracking of extreme loss values during training"
+      "Introduced configurable formatting and precision for displayed metrics"
+    ]
+  },
+  {
+    "number": "35519",
+    "title": "Remove batch size argument warning when unjustified",
+    "project": "Transformers",
+    "projectUrl": "huggingface/transformers",
+    "projectLogoUrl": "Transformers.webp",
+    "problem": "The StaticCache module for caching attention keys and values for transformers models uses a deprecated batch size parameter, causing warnings even with correct usage",
+    "bullets": [
+      "Refactored the StaticCache module to remove the reliance on the batch size parameter"
     ]
   },
   {
@@ -27,8 +39,9 @@
     "project": "Pytorch Lightning",
     "projectUrl": "Lightning-AI/lightning",
     "projectLogoUrl": "Lightning.webp",
+    "problem": "The default display configuration does not report metrics in a stable and readable way",
     "bullets": [
-      "Introduced a consistent decimal precision for all metric values, <br>improving stability and readability for all machine learning metrics displayed",
+      "Introduced consistent decimal precision for all metric values",
       "Implemented unit tests for verifying configurable formatting"
     ]
   },
@@ -38,28 +51,9 @@
     "project": "Pytorch Lightning",
     "projectUrl": "Lightning-AI/lightning",
     "projectLogoUrl": "Lightning.webp",
+    "problem": "The metrics display is not flexible enough",
     "bullets": [
-      "Introduced configurable delimiter for machine learning metrics <br> in PyTorch Lightning's <a target=\"_blank\" rel=\"noopener\" href=\"https://lightning.ai/docs/pytorch/stable/api/lightning.pytorch.callbacks.RichProgressBar.html\" > Rich Progress Bar</a>, <br> enhancing flexibility and readability of the display"
-    ]
-  },
-  {
-    "number": "9565",
-    "title": "Add new variable for external cursor mode",
-    "project": "Fish Shell",
-    "projectUrl": "fish-shell/fish-shell",
-    "projectLogoUrl": "Fish.webp",
-    "bullets": [
-      "Introduced configurable external cursor shape, <br> enabling users to specify cursor shape during script executions"
-    ]
-  },
-  {
-    "number": "814",
-    "title": "Add mouse scroll support",
-    "project": "keyd",
-    "projectUrl": "rvaiya/keyd",
-    "projectLogoUrl": "",
-    "bullets": [
-      "Implemented support for mapping mouse scrolling to custom actions when modifier key is active"
+      "Introduced configurable delimiter, supporting more stable metric displays"
     ]
   },
   {
@@ -68,8 +62,31 @@
     "project": "ww-run-raise",
     "projectUrl": "academo/ww-run-raise",
     "projectLogoUrl": "",
+    "problem": "Only one open window per application can be activated",
     "bullets": [
-      "Added functionality to cycle through open windows when application is raised repeatedly"
+      "Added functionality to cycle through open windows of an application"
+    ]
+  },
+  {
+    "number": "814",
+    "title": "Add mouse scroll support",
+    "project": "keyd",
+    "projectUrl": "rvaiya/keyd",
+    "projectLogoUrl": "",
+    "problem": "No custom event handling for mouse scrolls",
+    "bullets": [
+      "Enabled running custom actions on mouse scrolling events with modifier keys"
+    ]
+  },
+  {
+    "number": "9565",
+    "title": "Add new variable for external cursor mode",
+    "project": "Fish Shell",
+    "projectUrl": "fish-shell/fish-shell",
+    "projectLogoUrl": "Fish.webp",
+    "problem": "Cursor turns into disturbing block when running scripts",
+    "bullets": [
+      "Introduced configurable external cursor shape, <br> enabling users to specify cursor shape during script executions"
     ]
   },
   {
@@ -78,8 +95,9 @@
     "project": "ww-run-raise",
     "projectUrl": "academo/ww-run-raise",
     "projectLogoUrl": "",
+    "problem": "Programs running in different sessions interfere with the detection of open applications",
     "bullets": [
-      "Added functionality to make the program work when multiple users are logged in"
+      "Introduced multi-user support by making pgrep only consider programs running for a specific user"
     ]
   }
 ]

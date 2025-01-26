@@ -37,6 +37,10 @@
       <div class="text-lg font-bold my-2">
         {{ contribution.title }}
       </div>
+      <div class="" v-if="contribution.problem">
+        <span class="font-bold">Problem solved: </span>
+        <span v-html="contribution.problem"></span>
+      </div>
       <ul class="list-disc ml-4">
         <span class="flex" v-for="line in contribution.bullets" :key="line">
           <li>
