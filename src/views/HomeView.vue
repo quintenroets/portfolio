@@ -21,7 +21,7 @@
         <p>
           My 33 open-source projects show the passion I have for sharing
           knowledge with the community. I created 26 PyPI packages, collectively
-          downloaded over 20,000 times per month. My research contributions
+          downloaded over 30,000 times per month. My research contributions
           include two papers on neural network learning dynamics and nine
           contributions to major projects like
           <ExternalLink href="https://github.com/huggingface/transformers/"
