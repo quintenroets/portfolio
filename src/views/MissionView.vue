@@ -10,7 +10,7 @@
         </div>
         <div class="text-left">
           <p>
-            As a Machine Learning enthusiast with two master's degrees in AI, I
+            As a Machine Learning Engineer with two master's degrees in AI, I
             have been privileged to observe and participate in the ongoing AI
             revolution from a front-line perspective. My hands-on experiences
             with foundation models have solidified my belief that the boundaries

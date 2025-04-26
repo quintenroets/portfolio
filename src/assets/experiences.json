@@ -22,8 +22,8 @@
     "duration": "Oct 2023 - May 2024 • 8 months",
     "function": "Deep Learning Data Engineer",
     "bullets": [
-      "Created scalable framework for ingesting, processing, and curating visual data, delivering 7 datasets and 54 million samples",
-      "Developed sampling algorithm for custom training distributions, increasing model performance by 3-7% for 12 projects in total"
+      "Developed sampling algorithm for custom training data distributions, reducing the neural renderer SSIM by 30%",
+      "Created scalable framework for ingesting, processing, and curating visual data, delivering 7 datasets and 54 million samples"
     ]
   },
   {
@@ -35,9 +35,9 @@
     "function": "NLP Research Engineer",
     "location": "Ghent, Belgium",
     "bullets": [
-      "Invented method to measure degree of privacy-preservation in text embeddings, contributing to $90K business deal",
-      "Designed parallelized, distributed experiments with innovative caching scheme, reducing benchmarking time for different product solutions to under 3 minutes",
-      "Created web-based labeling tool pre-annotated with internal ML-based suggestions, reducing manual annotation time by 95%",
+      "Invented method to measure degree of privacy-preservation in transformer text embeddings, contributing to $90K business deal",
+      "Optimized caching structure for distributed experiments, reducing benchmarking time for new product solutions from 30 minutes to 2 minutes",
+      "Created web-based labeling tool, pre-annotated with internal ML-based suggestions, reducing manual annotation time by 95%",
       "Deployed an enhanced email parser in production, leading to an average accuracy gain of 0.5% across all customers"
     ]
   },
