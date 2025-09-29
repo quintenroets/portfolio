@@ -1,5 +1,15 @@
 [
   {
+    "company": "Apple",
+    "type": "Full-time",
+    "url": "https://www.apple.com/",
+    "logo": "Apple.webp",
+    "duration": "Sept 2025 - now",
+    "function": "Machine Learning Engineer",
+    "location": "San Francisco Bay Area, CA"
+  },
+
+  {
     "company": "Flawless",
     "type": "Full-time",
     "url": "https://www.flawlessai.com/",
@@ -9,9 +19,10 @@
     "formatting_skip_margin": "true"
   },
   {
-    "duration": "May 2024 - now",
+    "duration": "May 2024 - Sept 2025 • 1 year, 5 months",
     "function": "Machine Learning Engineer",
     "bullets": [
+      "Trained vision transformer backbone for face tracking on 86 million frames achieving a photometric loss under 0.004",
       "Pioneered fully automated pipeline for the core product, reducing the time to process new client projects from 4 weeks to 1 day",
       "Standardized component interfaces and built parameterizable template repository with fully automated CI/CD process, reducing the time to integrate new research solutions from 2 months to 6 hours",
       "Orchestrated distributed experiments with full lineage, processing up to 400 million frames per hour"
