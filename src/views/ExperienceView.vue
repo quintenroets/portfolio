@@ -32,7 +32,7 @@ export default {
           name: `description`,
           content:
             "Discover my education at Columbia University & Ghent University and " +
-            "explore my professional experiences at Tekst.ai, Robovision & ST Engineering iDirect.",
+            "explore my professional experiences at Apple, Flawless.ai, Tekst.ai, Robovision & ST Engineering iDirect.",
         },
       ],
     });

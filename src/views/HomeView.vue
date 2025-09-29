@@ -13,10 +13,11 @@
         <p>Hello and welcome!</p>
         <p>
           I am a Machine Learning expert with a specialization in Computer
-          Vision. Over the past eight years, I have built a track record in
-          empirical research and in the practical implementation, optimization,
-          and evaluation of ML pipelines. My expertise ranges from training and
-          automated labeling to inference and performance monitoring.
+          Vision and Natural Language Processing. Over the past eight years, I
+          have built a track record in empirical research and in the practical
+          implementation, optimization, and evaluation of ML pipelines. My
+          expertise ranges from training and automated labeling to inference and
+          performance monitoring.
         </p>
         <p>
           My 33 open-source projects show the passion I have for sharing
@@ -38,9 +39,19 @@
 
         <p>
           I currently work as a Machine Learning Engineer at
+          <ExternalLink href="https://www.apple.com/">Apple</ExternalLink>,
+          where I work on large language models. Before that, I worked on
+          generative models for visual dubbing at
+
           <ExternalLink href="https://www.flawlessai.com/"
             >Flawless AI</ExternalLink
-          >, where I work on generative models with cinematic quality. I'm
+          >
+          and released
+          <ExternalLink
+            href="https://www.linkedin.com/posts/quintenroets_we-did-it-we-cracked-the-code-visual-dubbing-activity-7325568031059791872-0uYe?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC9QslAB1spOqaFAfaoYyZcbuQSPM3LbZpw"
+            >Watch The Skies</ExternalLink
+          >
+          to the theaters as the first movie ever to be visually dubbed. I'm
           excited to share more about my background and experience as you
           continue to explore this page!
         </p>

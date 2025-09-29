@@ -10,6 +10,7 @@
         <div
           class="image-wrapper w-20 aspect-1 mr-4"
           :class="{ 'mb-4': info.bullets, 'mb-2': !info.bullets }"
+          v-if="logoUrl"
         >
           <img :src="logoUrl" alt="Company logo" />
         </div>
@@ -49,7 +50,7 @@ export default {
   },
   computed: {
     logoUrl() {
-      return requireLogo("./" + this.info.logo);
+      return this.info.logo ? requireLogo("./" + this.info.logo) : "";
     },
   },
   components: { ExternalLink },
