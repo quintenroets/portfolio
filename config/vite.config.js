@@ -15,7 +15,7 @@ export default defineConfig({
     postcss: {
       plugins: [
         tailwindcss({
-          config: resolve(__dirname, "tailwind.config.js"),
+          config: resolve(__dirname, "tailwind.config.cjs"),
         }),
         autoprefixer,
       ],
