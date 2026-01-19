@@ -2,7 +2,7 @@
 import aspectRatio from "@tailwindcss/aspect-ratio";
 
 export default {
-  content: ["./src/**/*.vue"],
+  content: ["../src/**/*.vue", "../index.html"],
   theme: {
     extend: {
       colors: {
