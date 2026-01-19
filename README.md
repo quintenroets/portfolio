@@ -46,9 +46,3 @@ bun lint
 ### Validate routes
 
 Start the dev server in one terminal, then run:
-
-```bash
-bun run test
-```
-
-Screenshots are saved to `test-results/validate-routes/`.
