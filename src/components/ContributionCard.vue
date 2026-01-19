@@ -60,7 +60,11 @@ import ExternalLink from "@/components/externalLink.vue";
 import InfoCard from "@/components/InfoCard.vue";
 
 library.add(faGithub);
-const requireLogo = require.context("@/assets/logos/", false, /\.webp$/);
+
+const logos = import.meta.glob("@/assets/logos/*.webp", {
+  eager: true,
+  import: "default",
+});
 export default {
   props: {
     contribution: {},
@@ -73,7 +77,8 @@ export default {
       return this.fullProjectUrl + "/pull/" + this.contribution.number;
     },
     logoUrl() {
-      return requireLogo("./" + this.contribution.projectLogoUrl);
+      const path = `/src/assets/logos/${this.contribution.projectLogoUrl}`;
+      return logos[path] || "";
     },
   },
   components: {
@@ -85,10 +90,10 @@ export default {
 </script>
 
 <style scoped>
-span >>> a {
+span :deep(a) {
   @apply text-blue;
 }
-span >>> a {
+span :deep(a) {
   @apply hover:text-hover-blue;
 }
 </style>

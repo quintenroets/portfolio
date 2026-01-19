@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+import aspectRatio from "@tailwindcss/aspect-ratio";
+
+export default {
   content: ["./src/**/*.vue"],
   theme: {
     extend: {
@@ -20,5 +22,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("@tailwindcss/aspect-ratio")],
+  plugins: [aspectRatio],
 };

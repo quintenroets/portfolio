@@ -42,7 +42,11 @@
 
 <script>
 import ExternalLink from "@/components/externalLink.vue";
-const requireLogo = require.context("@/assets/logos/", false, /\.webp$/);
+
+const logos = import.meta.glob("@/assets/logos/*.webp", {
+  eager: true,
+  import: "default",
+});
 
 export default {
   props: {
@@ -50,7 +54,11 @@ export default {
   },
   computed: {
     logoUrl() {
-      return this.info.logo ? requireLogo("./" + this.info.logo) : "";
+      if (!this.info.logo) {
+        return "";
+      }
+      const path = `/src/assets/logos/${this.info.logo}`;
+      return logos[path] || "";
     },
   },
   components: { ExternalLink },

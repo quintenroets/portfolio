@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Validate
-        uses: quintenroets/actions/validate/npm@main
+        uses: quintenroets/actions/validate/bun@main
