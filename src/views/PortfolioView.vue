@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import { useHead } from "unhead";
+import { useHead } from "@unhead/vue";
 import ContributionsComponent from "@/components/ContributionsComponent.vue";
 import ProjectsComponent from "@/components/ProjectsComponent.vue";
 import AwardsComponent from "@/components/AwardsComponent.vue";

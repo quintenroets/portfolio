@@ -72,7 +72,7 @@
 </template>
 
 <script>
-import { useHead } from "unhead";
+import { useHead } from "@unhead/vue";
 import ExternalLink from "@/components/externalLink.vue";
 export default {
   setup() {

@@ -14,28 +14,31 @@
 
 ## Project setup
 
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-
-```
-npm run serve
+```bash
+curl -fsSL https://bun.sh/install | bash
+bun install
 ```
 
-### Compiles and minifies for production
+### Development server
 
+```bash
+bun dev
 ```
-npm run build
+
+### Build for production
+
+```bash
+bun build
+```
+
+### Preview production build
+
+```bash
+bun preview
 ```
 
 ### Lints and fixes files
 
+```bash
+bun lint
 ```
-npm run lint
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).

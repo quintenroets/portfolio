@@ -16,7 +16,7 @@
 <script>
 import ExperienceCard from "../components/ExperienceCard.vue";
 import experiences from "../assets/experiences.json";
-import { useHead } from "unhead";
+import { useHead } from "@unhead/vue";
 
 export default {
   components: { ExperienceCard },

@@ -26,7 +26,7 @@
 <script>
 import Loading from "vue-loading-overlay";
 import "vue-loading-overlay/dist/css/index.css";
-import { useHead } from "unhead";
+import { useHead } from "@unhead/vue";
 
 export default {
   components: {

@@ -45,11 +45,11 @@ import "prismjs";
 import "prismjs/themes/prism.css";
 import Prism from "prismjs";
 import "prismjs/components/prism-python";
-const requireImage = require.context(
-  "@/assets/projects/",
-  false,
-  /\.(png|webp)$/,
-);
+
+const projectImages = import.meta.glob("@/assets/projects/*.{png,webp}", {
+  eager: true,
+  import: "default",
+});
 
 library.add(faGithub);
 export default {
@@ -68,9 +68,11 @@ export default {
       return "https://github.com/quintenroets/" + this.url;
     },
     imageUrl() {
-      return this.image === undefined || this.image.includes("raw")
-        ? this.image
-        : requireImage("./" + this.image);
+      if (this.image === undefined || this.image.includes("raw")) {
+        return this.image;
+      }
+      const path = `/src/assets/projects/${this.image}`;
+      return projectImages[path] || "";
     },
     packageName() {
       return this.package ? this.package : this.url;

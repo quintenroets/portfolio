@@ -22,7 +22,11 @@
 
 <script>
 import InfoCard from "@/components/InfoCard.vue";
-const requireLogo = require.context("@/assets/publications/", false, /\.webp$/);
+
+const publicationImages = import.meta.glob("@/assets/publications/*.webp", {
+  eager: true,
+  import: "default",
+});
 
 export default {
   props: {
@@ -35,7 +39,8 @@ export default {
   },
   computed: {
     imageUrl() {
-      return requireLogo("./" + this.image);
+      const path = `/src/assets/publications/${this.image}`;
+      return publicationImages[path] || "";
     },
   },
   components: {
