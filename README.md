@@ -45,4 +45,4 @@ bun lint
 
 ### Validate routes
 
-Start the dev server in one terminal, then run:
+Run the validation (it will start the dev server automatically if needed):

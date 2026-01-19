@@ -1,6 +1,6 @@
 validate:
 	bun install
-	npx playwright install
+	npx playwright install --with-deps
 	@bun run check-format || { code=$$?; bun run format; exit $$code; }
 	bun run lint
 	make build

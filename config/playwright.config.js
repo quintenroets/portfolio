@@ -12,4 +12,10 @@ export default defineConfig({
     viewport: { width: 1280, height: 720 },
     screenshot: "off",
   },
+  webServer: {
+    command: "bun run dev",
+    port: 8080,
+    reuseExistingServer: true,
+    timeout: 120000,
+  },
 });
