@@ -27,7 +27,7 @@ Use this guide when acting as an agent in this codebase.
   - Move results into baseline: `mkdir -p test-baseline && mv test-results/* test-baseline/`
 - After changes:
   - Run all tests again: `bun run test`
-  - Diff results vs baseline: `diff -qr test-baseline test-results | grep -E "\\.png$"`
+  - Diff results vs baseline: `diff -qr test-baseline test-results | grep -E "\\.png"`
   - If any PNGs differ, open both images and confirm whether differences are meaningful
 
 ## Tooling Notes

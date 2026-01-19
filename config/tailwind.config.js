@@ -1,8 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 import aspectRatio from "@tailwindcss/aspect-ratio";
+import { fileURLToPath } from "url";
+import { resolve } from "path";
+
+const rootDir = fileURLToPath(new URL("..", import.meta.url));
 
 export default {
-  content: ["../src/**/*.vue", "../index.html"],
+  content: [
+    resolve(rootDir, "src/**/*.{vue,js,jsx,ts,tsx}"),
+    resolve(rootDir, "src/assets/css/tailwind.css"),
+    resolve(rootDir, "index.html"),
+  ],
   theme: {
     extend: {
       colors: {
