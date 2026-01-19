@@ -42,3 +42,7 @@ bun preview
 ```bash
 bun lint
 ```
+
+### Validate routes
+
+Run the validation (it will start the dev server automatically if needed):
