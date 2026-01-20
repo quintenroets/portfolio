@@ -3,6 +3,7 @@ import vue from "@vitejs/plugin-vue";
 import { resolve } from "path";
 import tailwindcss from "tailwindcss";
 import autoprefixer from "autoprefixer";
+import { DEV_PORT } from "./dev-port";
 
 export default defineConfig({
   plugins: [vue()],
@@ -22,6 +23,6 @@ export default defineConfig({
     },
   },
   server: {
-    port: 8080,
+    port: DEV_PORT,
   },
 });
