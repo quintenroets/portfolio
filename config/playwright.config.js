@@ -14,7 +14,7 @@ export default defineConfig({
   },
   webServer: {
     command: "bun run dev",
-    port: 8080,
+    port: 7000,
     reuseExistingServer: true,
     timeout: 120000,
   },

@@ -39,9 +39,8 @@
 
         <p>
           I currently work as a Machine Learning Engineer at
-          <ExternalLink href="https://www.apple.com/">Apple</ExternalLink>,
-          where I work on large language models. Before that, I worked on
-          generative models for visual dubbing at
+          <ExternalLink href="https://www.apple.com/">Apple</ExternalLink>.
+          Before that, I worked on generative models for visual dubbing at
 
           <ExternalLink href="https://www.flawlessai.com/"
             >Flawless AI</ExternalLink

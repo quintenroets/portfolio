@@ -6,8 +6,10 @@
         :is="item.href ? 'external-link' : 'div'"
         :highlight="false"
       >
-        <font-awesome-icon :icon="item.icon" class="text-2xl w-8" />
-        <span class="ml-2"> {{ item.text }} </span>
+        <span class="flex items-center">
+          <font-awesome-icon :icon="item.icon" class="text-2xl w-8" />
+          <span class="ml-2"> {{ item.text }} </span>
+        </span>
       </component>
     </div>
   </div>
@@ -55,7 +57,7 @@ export default {
         },
         {
           icon: ["fas", "map-marker-alt"],
-          text: "Santa Monica, CA",
+          text: "San Francisco, CA",
         },
       ],
     };
