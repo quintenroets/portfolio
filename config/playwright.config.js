@@ -1,4 +1,5 @@
 import { defineConfig } from "@playwright/test";
+import { DEV_PORT } from "./dev-port";
 
 export default defineConfig({
   testDir: "../tests",
@@ -7,14 +8,14 @@ export default defineConfig({
   fullyParallel: true,
   testMatch: ["**/*.pw.js"],
   use: {
-    baseURL: "http://localhost:8080",
+    baseURL: `http://localhost:${DEV_PORT}`,
     headless: true,
     viewport: { width: 1280, height: 720 },
     screenshot: "off",
   },
   webServer: {
     command: "bun run dev",
-    port: 7000,
+    port: DEV_PORT,
     reuseExistingServer: true,
     timeout: 120000,
   },
