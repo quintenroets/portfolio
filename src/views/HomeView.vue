@@ -15,12 +15,12 @@
           I am a Machine Learning expert with a specialization in Computer
           Vision and Natural Language Processing. Over the past eight years, I
           have built a track record in empirical research and in the practical
-          implementation, optimization, and evaluation of ML pipelines. My
+          implementation, optimization, and evaluation of ML systems. My
           expertise ranges from training and automated labeling to inference and
           performance monitoring.
         </p>
         <p>
-          My 33 open-source projects show the passion I have for sharing
+          My 33 open-source projects demonstrate my passion for sharing
           knowledge with the community. I created 26 PyPI packages, collectively
           downloaded over 30,000 times per month. My research contributions
           include two papers on neural network learning dynamics and nine
