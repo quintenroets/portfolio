@@ -12,18 +12,18 @@
       <div class="max-w-2xl mt-4 text-left">
         <p>Hello and welcome!</p>
         <p>
-          I am a Machine Learning expert with a specialization in Computer
-          Vision and Natural Language Processing. Over the past eight years, I
-          have built a track record in empirical research and in the practical
-          implementation, optimization, and evaluation of ML systems. My
-          expertise ranges from training and automated labeling to inference and
+          I am a Machine Learning Engineer at
+          <ExternalLink href="https://www.apple.com/">Apple</ExternalLink> with
+          eight years of experience in computer vision and NLP. I have built a
+          track record in empirical research and the implementation,
+          optimization, and evaluation of production ML systems. My expertise
+          ranges from training and automated labeling to inference and
           performance monitoring.
         </p>
         <p>
-          My 33 open-source projects demonstrate my passion for sharing
-          knowledge with the community. I created 26 PyPI packages, collectively
-          downloaded over 30,000 times per month. My research contributions
-          include two papers on neural network learning dynamics and nine
+          I created and maintain 33 open-source projects, including 26 PyPI
+          packages with more than 30,000 downloads per month. My open-source ML
+          work includes two papers on neural network learning dynamics and nine
           contributions to major projects like
           <ExternalLink href="https://github.com/huggingface/transformers/"
             >Hugging Face Transformers</ExternalLink
@@ -35,13 +35,8 @@
             Pytorch Lightning</ExternalLink
           >.
         </p>
-        <p></p>
-
         <p>
-          I currently work as a Machine Learning Engineer at
-          <ExternalLink href="https://www.apple.com/">Apple</ExternalLink>.
-          Before that, I worked on generative models for visual dubbing at
-
+          Previously, I worked on generative models for visual dubbing at
           <ExternalLink href="https://www.flawlessai.com/"
             >Flawless AI</ExternalLink
           >
@@ -50,9 +45,8 @@
             href="https://www.linkedin.com/posts/quintenroets_we-did-it-we-cracked-the-code-visual-dubbing-activity-7325568031059791872-0uYe?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC9QslAB1spOqaFAfaoYyZcbuQSPM3LbZpw"
             >Watch The Skies</ExternalLink
           >
-          to the theaters as the first movie ever to be visually dubbed. I'm
-          excited to share more about my background and experience as you
-          continue to explore this page!
+          in theaters as the first movie ever to be visually dubbed. I'm excited
+          to share more about my experience as you explore the rest of the site.
         </p>
       </div>
     </div>

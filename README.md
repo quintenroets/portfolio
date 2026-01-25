@@ -15,34 +15,48 @@
 ## Project setup
 
 ```bash
-curl -fsSL https://bun.sh/install | bash
-bun install
+make install-bun
+make install
 ```
 
 ### Development server
 
 ```bash
-bun dev
+make serve
 ```
 
 ### Build for production
 
 ```bash
-bun build
+make build
 ```
 
 ### Preview production build
 
 ```bash
-bun preview
+make preview
 ```
 
 ### Lints and fixes files
 
 ```bash
-bun lint
+make lint
+```
+
+### Format files
+
+```bash
+make format
+```
+
+### Run tests
+
+```bash
+make test
 ```
 
 ### Validate routes
 
-Run the validation (it will start the dev server automatically if needed):
+```bash
+make validate
+```
