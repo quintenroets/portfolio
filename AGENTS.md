@@ -7,17 +7,17 @@ Use this guide when acting as an agent in this codebase.
 
 ## Quick Start
 
-- Install deps: `bun install`
-- Dev server: `bun run dev`
-- Build: `bun run build`
-- Preview build: `bun run preview`
-- Lint (auto-fix): `bun run lint`
-- Format (write): `bun run format`
-- Format (check): `bun run check-format`
+- Install Bun: `make install-bun`
+- Install deps: `make install`
+- Dev server: `make serve`
+- Build: `make build`
+- Preview build: `make preview`
+- Lint (auto-fix): `make lint`
+- Format (check with auto-fix): `make format`
 
 ## Tests
 
-- Playwright visual validation: `bun run test`
+- Playwright visual validation: `make test`
 
 ## Visual Regression Workflow
 
@@ -135,9 +135,8 @@ Follow the established patterns in existing files.
 
 ## Linting & Formatting Workflow
 
-- Run `npm run lint` to auto-fix ESLint issues.
-- Run `npm run format` before final review if changes touch formatting.
-- Use `npm run check-format` in CI-like checks.
+- Run `make lint` to auto-fix ESLint issues.
+- Run `make format` before final review if changes touch formatting.
 
 ## Recommended Agent Workflow
 
